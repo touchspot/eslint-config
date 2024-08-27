@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/touchspot/eslint-config/compare/v1.0.1...v1.0.2) (2024-08-27)
+
+
+### Bug Fixes
+
+* global ignores should be set without any other options ([90b4864](https://github.com/touchspot/eslint-config/commit/90b48640c8e286529b99aab66c63ea299c5f6abf))
+
 ## [1.0.1](https://github.com/touchspot/eslint-config/compare/v1.0.0...v1.0.1) (2024-08-27)
 
 
