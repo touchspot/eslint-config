@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/touchspot/eslint-config/compare/v1.0.0...v1.0.1) (2024-08-27)
+
+
+### Bug Fixes
+
+* disable some rules for dts files ([cfa118f](https://github.com/touchspot/eslint-config/commit/cfa118fc8af988e153a6a1792ea1cb06dc9e8a40))
+
 ## 1.0.0 (2024-08-27)
 
 
