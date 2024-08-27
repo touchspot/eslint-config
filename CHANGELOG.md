@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/touchspot/eslint-config/compare/v1.0.3...v1.0.4) (2024-08-27)
+
+
+### Bug Fixes
+
+* enable `env.browser()` and `env.node()` when `frameworks.next()` is used ([bac51a5](https://github.com/touchspot/eslint-config/commit/bac51a57d1afea3043ed693a54b5b5ea40eaed10))
+
 ## [1.0.3](https://github.com/touchspot/eslint-config/compare/v1.0.2...v1.0.3) (2024-08-27)
 
 
