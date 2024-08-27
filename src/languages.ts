@@ -143,15 +143,6 @@ export const javascript = () =>
 export const typescript = () =>
 	TSESLint.config(
 		{
-			name: "@touchspot/eslint-config/languages/typescript/parser",
-			files: ["**/*.{ts,tsx,mts,cts}"],
-			languageOptions: {
-				parserOptions: {
-					projectService: true,
-				},
-			},
-		},
-		{
 			name: "@touchspot/eslint-config/languages/typescript/typescript-eslint",
 			files: ["**/*.{ts,tsx,mts,cts}"],
 			extends: [...TSESLint.configs.strictTypeChecked, ...TSESLint.configs.stylisticTypeChecked],
