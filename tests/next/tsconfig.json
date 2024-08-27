@@ -1,0 +1,14 @@
+{
+	"extends": ["@tsconfig/next/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+	"compilerOptions": {
+		"noEmit": true,
+		"target": "ESNext",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"allowJs": true,
+		"paths": {
+			"#pkg/*": ["./src/*"]
+		}
+	},
+	"include": ["./src", "./*.js"]
+}

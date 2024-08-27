@@ -1,0 +1,15 @@
+{
+	"name": "test-typescript",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"check:format": "prettier --check .",
+		"check:type": "tsc --noEmit",
+		"fix:format": "prettier --write --log-level=warn .",
+		"inspect": "config-inspector",
+		"test": "eslint ."
+	},
+	"devDependencies": {
+		"@touchspot/eslint-config": "workspace:^"
+	}
+}

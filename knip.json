@@ -1,0 +1,24 @@
+{
+	"$schema": "node_modules/knip/schema.json",
+	"include": ["dependencies", "exports", "files", "types"],
+	"ignoreDependencies": [
+		"@eslint/config-inspector",
+		"@touchspot/prettier-config",
+		"better-typescript-lib",
+		"husky",
+		"next",
+		"react",
+		"tailwindcss",
+		"turbo",
+		"typescript-transform-paths"
+	],
+	"workspaces": {
+		".": {
+			"entry": ["lib/*"],
+			"project": ["src/**/*"]
+		},
+		"tests/*": {
+			"entry": ["src/**/*"]
+		}
+	}
+}

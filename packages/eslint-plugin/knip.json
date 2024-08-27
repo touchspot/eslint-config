@@ -1,6 +1,0 @@
-{
-	"$schema": "../../node_modules/knip/schema-jsonc.json",
-	"project": ["src/**/*.ts"],
-	"entry": ["src/lib.ts"],
-	"include": ["exports", "files", "types"]
-}

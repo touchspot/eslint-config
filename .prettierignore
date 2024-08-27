@@ -1,5 +1,5 @@
-.cache/
-packages/
+.turbo/
+dist/
 tests/
 *-lock.*
 .release-please-manifest.json

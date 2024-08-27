@@ -1,30 +1,51 @@
 {
 	"$schema": "https://turbo.build/schema.json",
-	"globalDependencies": ["*-lock.*"],
-	"pipeline": {
-		"build": {
-			"inputs": ["**/*.ts", "package.json", "tsconfig.json"],
+	"globalDependencies": ["package.json", "pnpm-lock.yaml"],
+	"ui": "tui",
+	"tasks": {
+		"//#build": {
+			"inputs": ["lib/**", "src/**", "tsconfig.json"],
 			"outputs": ["dist/**"]
+		},
+		"//#check:format": {
+			"outputs": []
 		},
 		"check:format": {
 			"outputs": []
 		},
-		"check:type": {
-			"inputs": ["**/*.{ts,tsx}", "tsconfig.json"],
+		"//#check:lint": {
+			"dependsOn": ["build"],
+			"inputs": ["lib/**", "src/**", "*.js", "tsconfig.json"],
 			"outputs": []
 		},
-		"check:unused": {
+		"//#check:type": {
 			"dependsOn": ["build"],
-			"inputs": ["**/*.{ts,tsx}", "knip.json", "tsconfig.json"],
+			"inputs": ["lib/**", "src/**", "*.js", "tsconfig.json"],
 			"outputs": []
+		},
+		"check:type": {
+			"dependsOn": ["//#build"],
+			"inputs": ["src/**", "*.js", "tsconfig.json"],
+			"outputs": []
+		},
+		"//#check:unused": {
+			"outputs": []
+		},
+		"//#fix:format": {
+			"cache": false
 		},
 		"fix:format": {
 			"cache": false
 		},
+		"//#fix:lint": {
+			"cache": false
+		},
+		"fix:lint": {
+			"cache": false
+		},
 		"test": {
-			"dependsOn": ["^build"],
-			"inputs": [".eslint*", "**/*.{ts,tsx}"],
-			"outputs": []
+			"dependsOn": ["//#build"],
+			"cache": false
 		}
 	}
 }
