@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/touchspot/eslint-config/compare/v1.0.2...v1.0.3) (2024-08-27)
+
+
+### Bug Fixes
+
+* add default ignore patterns ([667686f](https://github.com/touchspot/eslint-config/commit/667686f0ec9d518c0a8466fc1d4f9b942c7a3645))
+
 ## [1.0.2](https://github.com/touchspot/eslint-config/compare/v1.0.1...v1.0.2) (2024-08-27)
 
 
