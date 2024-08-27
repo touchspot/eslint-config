@@ -7,8 +7,9 @@ import ImportX from "eslint-plugin-import-x";
 import React from "eslint-plugin-react";
 import ReactHooks from "eslint-plugin-react-hooks";
 import TailwindCSS from "eslint-plugin-tailwindcss";
-import Globals from "globals";
 import TSESLint from "typescript-eslint";
+
+import * as env from "./env.js";
 
 export const react = () =>
 	TSESLint.config(
@@ -85,12 +86,7 @@ export const next = () =>
 		{
 			name: "@touchspot/eslint-config/frameworks/next/parser",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [...react()],
-			languageOptions: {
-				globals: {
-					...Globals.node,
-				},
-			},
+			extends: [...env.browser(), ...env.node(), ...react()],
 		},
 		{
 			name: "@touchspot/eslint-config/frameworks/next/next",
