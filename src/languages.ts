@@ -145,6 +145,7 @@ export const typescript = () =>
 		{
 			name: "@touchspot/eslint-config/languages/typescript/typescript-eslint",
 			files: ["**/*.{ts,tsx,mts,cts}"],
+			ignores: ["**/*.d.*"],
 			extends: [...TSESLint.configs.strictTypeChecked, ...TSESLint.configs.stylisticTypeChecked],
 			rules: {
 				"@typescript-eslint/consistent-type-definitions": ["error", "type"],
@@ -206,6 +207,7 @@ export const typescript = () =>
 		{
 			name: "@touchspot/eslint-config/languages/typescript/functional",
 			files: ["**/*.{ts,tsx,mts,cts}"],
+			ignores: ["**/*.d.*"],
 			plugins: {
 				functional: Functional,
 			},
@@ -224,29 +226,20 @@ export const typescript = () =>
 		{
 			name: "@touchspot/eslint-config/languages/typescript/import-x",
 			files: ["**/*.{ts,tsx,mts,cts}"],
+			ignores: ["**/*.d.*"],
 			plugins: {
 				"import-x": ImportX,
 			},
 			rules: {
 				...ImportX.configs.typescript.rules,
 				"import-x/consistent-type-specifier-style": "error",
-			},
-		},
-
-		{
-			name: "@touchspot/eslint-config/languages/typescript/import-x",
-			files: ["**/*.{ts,tsx,mts,cts}"],
-			ignores: ["**/*.d.*"],
-			plugins: {
-				"import-x": ImportX,
-			},
-			rules: {
 				"import-x/no-default-export": "error",
 			},
 		},
 		{
 			name: "@touchspot/eslint-config/languages/typescript/no-relative-import-paths",
 			files: ["**/*.{ts,tsx,mts,cts}"],
+			ignores: ["**/*.d.*"],
 			plugins: {
 				"no-relative-import-paths": NoRelativeImportPaths,
 			},
