@@ -4,14 +4,17 @@ import TSESLint from "typescript-eslint";
 import * as languages from "./languages.js";
 
 const config = ({
-	ignores = ["build", "dist"],
+	ignores = ["dist"],
 }: {
 	readonly ignores?: readonly string[];
 } = {}) =>
 	TSESLint.config(
 		{
-			name: "@touchspot/eslint-config/config/base",
-			ignores: ignores.map((ignore) => `**/${ignore}/**`),
+			name: "@touchspot/eslint-config/config/ignore",
+			ignores: ignores.map((ignore) => `${ignore}/**`),
+		},
+		{
+			name: "@touchspot/eslint-config/config/linter",
 			linterOptions: {
 				reportUnusedDisableDirectives: "error",
 			},
