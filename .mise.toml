@@ -1,6 +1,5 @@
 [tools]
 node = "20.15.0"
-"npm:aicommits" = "1.11.0"
 
 [env]
 _.path = ["./node_modules/.bin"]
