@@ -30,7 +30,6 @@
 		"README.md"
 	],
 	"scripts": {
-		"prepare": "husky",
 		"build": "tspc --project tsconfig.build.json",
 		"check:format": "prettier --check .",
 		"check:lint": "eslint .",
@@ -38,8 +37,10 @@
 		"check:unused": "knip",
 		"fix:format": "prettier --write --log-level=warn .",
 		"fix:lint": "eslint --fix .",
-		"inspect": "config-inspector"
+		"inspect": "config-inspector",
+		"prepare": "husky"
 	},
+	"prettier": "@touchspot/prettier-config",
 	"dependencies": {
 		"@eslint/js": "^9.11.0",
 		"@next/eslint-plugin-next": "canary",
@@ -105,8 +106,8 @@
 			"optional": true
 		}
 	},
+	"packageManager": "pnpm@9.9.0",
 	"publishConfig": {
 		"access": "public"
-	},
-	"packageManager": "pnpm@9.9.0"
+	}
 }
