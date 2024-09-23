@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/touchspot/eslint-config/compare/v1.0.4...v1.0.5) (2024-09-23)
+
+
+### Bug Fixes
+
+* export `FlatConfig` type ([668978e](https://github.com/touchspot/eslint-config/commit/668978e9fb8ae05e9c1f79b8b6855a40da7c0a37))
+* upgrade dependencies ([50ff619](https://github.com/touchspot/eslint-config/commit/50ff619cd99e19744e89ef94754b692341545aec))
+
 ## [1.0.4](https://github.com/touchspot/eslint-config/compare/v1.0.3...v1.0.4) (2024-08-27)
 
 
