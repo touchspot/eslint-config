@@ -7,7 +7,7 @@ import ImportX from "eslint-plugin-import-x";
 import React from "eslint-plugin-react";
 import ReactHooks from "eslint-plugin-react-hooks";
 import TailwindCSS from "eslint-plugin-tailwindcss";
-import TSESLint from "typescript-eslint";
+import * as TSESLint from "typescript-eslint";
 
 import * as env from "./env.js";
 

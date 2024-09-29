@@ -1,5 +1,5 @@
 import Prettier from "eslint-config-prettier";
-import TSESLint from "typescript-eslint";
+import * as TSESLint from "typescript-eslint";
 
 import * as languages from "./languages.js";
 

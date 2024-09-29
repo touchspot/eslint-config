@@ -1,5 +1,5 @@
 import Globals from "globals";
-import TSESLint from "typescript-eslint";
+import * as TSESLint from "typescript-eslint";
 
 export const browser = ({
 	files = ["**/*.{js,jsx,mjs,cjs}", "**/*.{ts,tsx,mts,cts}"],

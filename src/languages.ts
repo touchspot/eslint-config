@@ -6,7 +6,7 @@ import NoRelativeImportPaths from "eslint-plugin-no-relative-import-paths";
 import Perfectionist from "eslint-plugin-perfectionist";
 import Unicorn from "eslint-plugin-unicorn";
 import UnusedImports from "eslint-plugin-unused-imports";
-import TSESLint from "typescript-eslint";
+import * as TSESLint from "typescript-eslint";
 
 export const javascript = () =>
 	TSESLint.config(
