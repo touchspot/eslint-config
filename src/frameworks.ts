@@ -3,7 +3,6 @@
 import Next from "@next/eslint-plugin-next";
 import CheckFile from "eslint-plugin-check-file";
 import Functional from "eslint-plugin-functional";
-import ImportX from "eslint-plugin-import-x";
 import React from "eslint-plugin-react";
 import ReactHooks from "eslint-plugin-react-hooks";
 import TailwindCSS from "eslint-plugin-tailwindcss";
@@ -112,9 +111,6 @@ export const next = () =>
 		{
 			name: "@touchspot/eslint-config/frameworks/next/import-x",
 			files: ["{src/,}app/**/*.{ts,tsx}"],
-			plugins: {
-				"import-x": ImportX,
-			},
 			rules: {
 				"import-x/no-default-export": "off",
 			},

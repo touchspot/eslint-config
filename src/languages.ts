@@ -35,14 +35,11 @@ export const javascript = () =>
 		{
 			name: "@touchspot/eslint-config/languages/javascript/import-x",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			plugins: {
-				"import-x": ImportX,
-			},
+			extends: [ImportX.flatConfigs.recommended],
 			settings: {
 				"import-x/internal-regex": "^#[^/]+/",
 			},
 			rules: {
-				...ImportX.configs.recommended.rules,
 				"import-x/export": "off",
 				"import-x/first": "error",
 				"import-x/namespace": "off",
@@ -56,9 +53,6 @@ export const javascript = () =>
 		{
 			name: "@touchspot/eslint-config/languages/javascript/import-x/cjs",
 			files: ["**/*.{cjs,cts}"],
-			plugins: {
-				"import-x": ImportX,
-			},
 			rules: {
 				"import-x/no-import-module-exports": "error",
 			},
@@ -227,11 +221,8 @@ export const typescript = () =>
 			name: "@touchspot/eslint-config/languages/typescript/import-x",
 			files: ["**/*.{ts,tsx,mts,cts}"],
 			ignores: ["**/*.d.*"],
-			plugins: {
-				"import-x": ImportX,
-			},
+			extends: [ImportX.flatConfigs.typescript],
 			rules: {
-				...ImportX.configs.typescript.rules,
 				"import-x/consistent-type-specifier-style": "error",
 				"import-x/no-default-export": "error",
 			},

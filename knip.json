@@ -3,9 +3,8 @@
 	"include": ["dependencies", "exports", "files", "types"],
 	"ignoreDependencies": [
 		"@eslint/config-inspector",
-		"@touchspot/prettier-config",
 		"better-typescript-lib",
-		"husky",
+		"eslint-import-resolver-typescript",
 		"next",
 		"react",
 		"tailwindcss",
