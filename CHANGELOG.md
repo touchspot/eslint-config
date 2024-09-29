@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.6](https://github.com/touchspot/eslint-config/compare/v1.0.5...v1.0.6) (2024-09-29)
+
+
+### Bug Fixes
+
+* correct usage of `eslint-plugin-import-x` ([936632b](https://github.com/touchspot/eslint-config/commit/936632b5951171148bba6cbc24f237368afa43ee))
+* solve eslint warnings ([8f8badf](https://github.com/touchspot/eslint-config/commit/8f8badf4b3d27087248b796c85737d3859f66f27))
+* upgrade dependencies ([c3555e0](https://github.com/touchspot/eslint-config/commit/c3555e07cf0e2aeaabc1dabec3ae347e910e5831))
+
 ## [1.0.5](https://github.com/touchspot/eslint-config/compare/v1.0.4...v1.0.5) (2024-09-23)
 
 
