@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/touchspot/eslint-config/compare/v1.2.0...v1.2.1) (2024-10-12)
+
+
+### Bug Fixes
+
+* disable `projectService` for javascript files ([7324743](https://github.com/touchspot/eslint-config/commit/732474376e7d80a4031d5ba03146144555946fcf))
+
 ## [1.2.0](https://github.com/touchspot/eslint-config/compare/v1.1.0...v1.2.0) (2024-10-12)
 
 
