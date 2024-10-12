@@ -1,5 +1,3 @@
-// @ts-check
-
 import Next from "@next/eslint-plugin-next";
 import type { TSESLint } from "@typescript-eslint/utils";
 import CheckFile from "eslint-plugin-check-file";
