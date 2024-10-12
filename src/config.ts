@@ -26,7 +26,9 @@ const config = ({
 				parser: TSESLint.parser,
 				parserOptions: {
 					ecmaVersion: "latest",
-					projectService: true,
+					projectService: {
+						allowDefaultProject: ["*.{js,jsx,mjs,cjs}"],
+					},
 				},
 			},
 		},
