@@ -22,7 +22,7 @@ export const react = () =>
 		},
 		{
 			name: "@touchspot/eslint-config/frameworks/react/functional",
-			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
+			files: ["**/*.{ts,tsx,mts,cts}"],
 			plugins: {
 				functional: Functional,
 			},
