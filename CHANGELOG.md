@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.4](https://github.com/touchspot/eslint-config/compare/v1.2.3...v1.2.4) (2024-10-12)
+
+
+### Bug Fixes
+
+* disable buggy rules ([816f74c](https://github.com/touchspot/eslint-config/commit/816f74cc7a451501b8f3fb983ea9313ec3fb454d))
+
 ## [1.2.3](https://github.com/touchspot/eslint-config/compare/v1.2.2...v1.2.3) (2024-10-12)
 
 
