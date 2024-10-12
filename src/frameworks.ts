@@ -41,8 +41,8 @@ export const react = () =>
 			name: "@touchspot/eslint-config/frameworks/react/react",
 			files: ["**/*.{js,jsx,tsx}"],
 			extends: [
-				React.configs.flat.recommended as TSESLint.FlatConfig.Config, // eslint-disable-line import-x/no-named-as-default-member
-				React.configs.flat["jsx-runtime"] as TSESLint.FlatConfig.Config, // eslint-disable-line import-x/no-named-as-default-member
+				React.configs.flat.recommended as TSESLint.FlatConfig.Config,
+				React.configs.flat["jsx-runtime"] as TSESLint.FlatConfig.Config,
 			],
 			settings: {
 				react: {
