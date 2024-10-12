@@ -76,14 +76,12 @@ export const react = () =>
 
 export const next = () =>
 	config(
+		...env.browser(),
+		...env.node(),
+		...react(),
 		{
 			name: "@touchspot/eslint-config/frameworks/next/ignore",
 			ignores: [".next/**"],
-		},
-		{
-			name: "@touchspot/eslint-config/frameworks/next/parser",
-			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [...env.browser(), ...env.node(), ...react()],
 		},
 		{
 			name: "@touchspot/eslint-config/frameworks/next/next",
