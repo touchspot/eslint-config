@@ -30,7 +30,7 @@
 		"README.md"
 	],
 	"scripts": {
-		"build": "tspc --project tsconfig.build.json",
+		"build": "tspc --project .",
 		"check:format": "prettier --check .",
 		"check:lint": "eslint .",
 		"check:type": "tsc --noEmit",
