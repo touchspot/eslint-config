@@ -1,17 +1,18 @@
 // @ts-check
 
 import Next from "@next/eslint-plugin-next";
+import type { TSESLint } from "@typescript-eslint/utils";
 import CheckFile from "eslint-plugin-check-file";
 import Functional from "eslint-plugin-functional";
 import React from "eslint-plugin-react";
 import ReactHooks from "eslint-plugin-react-hooks";
 import TailwindCSS from "eslint-plugin-tailwindcss";
-import * as TSESLint from "typescript-eslint";
+import { config } from "typescript-eslint";
 
 import * as env from "./env.js";
 
 export const react = () =>
-	TSESLint.config(
+	config(
 		{
 			name: "@touchspot/eslint-config/frameworks/react/parser",
 			files: ["**/*.{js,jsx,tsx}"],
@@ -41,17 +42,16 @@ export const react = () =>
 		{
 			name: "@touchspot/eslint-config/frameworks/react/react",
 			files: ["**/*.{js,jsx,tsx}"],
-			plugins: {
-				react: React,
-			},
+			extends: [
+				React.configs.flat.recommended as TSESLint.FlatConfig.Config, // eslint-disable-line import-x/no-named-as-default-member
+				React.configs.flat["jsx-runtime"] as TSESLint.FlatConfig.Config, // eslint-disable-line import-x/no-named-as-default-member
+			],
 			settings: {
 				react: {
 					version: "detect",
 				},
 			},
 			rules: {
-				...React.configs.recommended.rules,
-				...React.configs["jsx-runtime"].rules,
 				"react/button-has-type": "error",
 				"react/iframe-missing-sandbox": "error",
 				"react/jsx-boolean-value": "error",
@@ -77,7 +77,7 @@ export const react = () =>
 	);
 
 export const next = () =>
-	TSESLint.config(
+	config(
 		{
 			name: "@touchspot/eslint-config/frameworks/next/ignore",
 			ignores: [".next/**"],
@@ -118,7 +118,7 @@ export const next = () =>
 	);
 
 export const tailwindcss = () =>
-	TSESLint.config({
+	config({
 		name: "@touchspot/eslint-config/frameworks/tailwindcss/tailwindcss",
 		files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 		plugins: {
