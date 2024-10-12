@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/touchspot/eslint-config/compare/v1.2.2...v1.2.3) (2024-10-12)
+
+
+### Bug Fixes
+
+* fix unintentional override of linting target glob ([3b3e64a](https://github.com/touchspot/eslint-config/commit/3b3e64aa55261e3199e00783447d2bd47d5f17e4))
+
 ## [1.2.2](https://github.com/touchspot/eslint-config/compare/v1.2.1...v1.2.2) (2024-10-12)
 
 
