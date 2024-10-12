@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/touchspot/eslint-config/compare/v1.1.0...v1.2.0) (2024-10-12)
+
+
+### Features
+
+* set `allowDefaultProject` for javascript files ([97bb1d7](https://github.com/touchspot/eslint-config/commit/97bb1d7140f4a1ae4afabb9f122ae50cf6d162e2))
+
+
+### Bug Fixes
+
+* use eslint-plugin-react-hooks@5 ([7987851](https://github.com/touchspot/eslint-config/commit/7987851989bc1685fb55fb3ae795947754896096))
+
 ## [1.1.0](https://github.com/touchspot/eslint-config/compare/v1.0.6...v1.1.0) (2024-10-12)
 
 
