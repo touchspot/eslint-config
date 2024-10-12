@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/touchspot/eslint-config/compare/v1.0.6...v1.1.0) (2024-10-12)
+
+
+### Features
+
+* upgrade dependencies ([9eaff9a](https://github.com/touchspot/eslint-config/commit/9eaff9aa03f9591eb5f86cb9bb1c35194048013a))
+
 ## [1.0.6](https://github.com/touchspot/eslint-config/compare/v1.0.5...v1.0.6) (2024-09-29)
 
 
