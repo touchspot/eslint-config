@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/touchspot/eslint-config/compare/v1.2.1...v1.2.2) (2024-10-12)
+
+
+### Bug Fixes
+
+* disable type-aware-linting rules for javascript files ([4c5eb7f](https://github.com/touchspot/eslint-config/commit/4c5eb7f6c53a56e6c3a0c1ef98f677fa59e3afb1))
+
 ## [1.2.1](https://github.com/touchspot/eslint-config/compare/v1.2.0...v1.2.1) (2024-10-12)
 
 
