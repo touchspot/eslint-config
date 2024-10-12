@@ -2,7 +2,7 @@ import Globals from "globals";
 import * as TSESLint from "typescript-eslint";
 
 export const browser = ({
-	files = ["**/*.{js,jsx,mjs,cjs}", "**/*.{ts,tsx,mts,cts}"],
+	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
 } = {}) =>
@@ -17,7 +17,7 @@ export const browser = ({
 	});
 
 export const node = ({
-	files = ["**/*.{js,jsx,mjs,cjs}", "**/*.{ts,tsx,mts,cts}"],
+	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
 } = {}) =>
