@@ -20,15 +20,23 @@ const config = ({
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/config/parser",
-			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
+			name: "@touchspot/eslint-config/config/parser/javascript",
+			files: ["**/*.{js,jsx,mjs,cjs}"],
 			languageOptions: {
 				parser: TSESLint.parser,
 				parserOptions: {
 					ecmaVersion: "latest",
-					projectService: {
-						allowDefaultProject: ["*.{js,jsx,mjs,cjs}"],
-					},
+				},
+			},
+		},
+		{
+			name: "@touchspot/eslint-config/config/parser/typescript",
+			files: ["**/*.{ts,tsx,mts,cts}"],
+			languageOptions: {
+				parser: TSESLint.parser,
+				parserOptions: {
+					ecmaVersion: "latest",
+					projectService: true,
 				},
 			},
 		},
