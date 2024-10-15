@@ -18,10 +18,8 @@
 	"author": "mozisan <mozisan@users.noreply.github.com>",
 	"type": "module",
 	"exports": {
-		".": {
-			"types": "./dist/lib/lib.d.ts",
-			"import": "./dist/lib/lib.js"
-		},
+		".": "./dist/lib/lib.js",
+		"./presets/*": "./dist/presets/*.js",
 		"./package.json": "./package.json"
 	},
 	"files": [
