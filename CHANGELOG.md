@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/touchspot/eslint-config/compare/v1.2.5...v1.3.0) (2024-10-15)
+
+
+### Features
+
+* separate entry points for each preset ([597e3d7](https://github.com/touchspot/eslint-config/commit/597e3d7100409698a0295c879f523df68de8d0bc))
+
 ## [1.2.5](https://github.com/touchspot/eslint-config/compare/v1.2.4...v1.2.5) (2024-10-15)
 
 
