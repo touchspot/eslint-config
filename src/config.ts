@@ -4,7 +4,7 @@ import * as TSESLint from "typescript-eslint";
 import * as languages from "./languages.js";
 
 const config = ({
-	ignores = [".cache", ".turbo", "dist"],
+	ignores = [".cache", ".turbo", "coverage", "dist"],
 }: {
 	readonly ignores?: readonly string[];
 } = {}) =>
