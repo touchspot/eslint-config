@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.5](https://github.com/touchspot/eslint-config/compare/v1.2.4...v1.2.5) (2024-10-15)
+
+
+### Bug Fixes
+
+* ignore `coverage` directory by default ([d805c3f](https://github.com/touchspot/eslint-config/commit/d805c3fd34a0af136a2516b5ceb1d61e6f278a0e))
+
 ## [1.2.4](https://github.com/touchspot/eslint-config/compare/v1.2.3...v1.2.4) (2024-10-12)
 
 
