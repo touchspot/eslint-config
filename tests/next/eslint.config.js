@@ -1,4 +1,5 @@
-import config, { frameworks } from "@touchspot/eslint-config";
+import config from "@touchspot/eslint-config";
+import next from "@touchspot/eslint-config/presets/next";
 
-/** @type {import("@typescript-eslint/utils").TSESLint.FlatConfig.ConfigArray} */
-export default [...config(), ...frameworks.next()];
+/** @type {import("@touchspot/eslint-config").FlatConfig} */
+export default [...config(), ...next()];

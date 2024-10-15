@@ -1,13 +1,8 @@
-import Next from "@next/eslint-plugin-next";
 import type { TSESLint } from "@typescript-eslint/utils";
-import CheckFile from "eslint-plugin-check-file";
 import Functional from "eslint-plugin-functional";
 import React from "eslint-plugin-react";
 import ReactHooks from "eslint-plugin-react-hooks";
-import TailwindCSS from "eslint-plugin-tailwindcss";
 import { config } from "typescript-eslint";
-
-import * as env from "./env.js";
 
 export const react = () =>
 	config(
@@ -73,64 +68,3 @@ export const react = () =>
 			},
 		},
 	);
-
-export const next = () =>
-	config(
-		...env.browser(),
-		...env.node(),
-		...react(),
-		{
-			name: "@touchspot/eslint-config/frameworks/next/ignore",
-			ignores: [".next/**"],
-		},
-		{
-			name: "@touchspot/eslint-config/frameworks/next/next",
-			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			plugins: {
-				"@next/next": Next,
-			},
-			rules: {
-				...Next.configs.recommended.rules,
-				...Next.configs["core-web-vitals"].rules,
-			},
-		},
-		{
-			name: "@touchspot/eslint-config/frameworks/next/check-file",
-			files: ["{src/,}app/**/*.{ts,tsx}"],
-			plugins: {
-				"check-file": CheckFile,
-			},
-			rules: {
-				"check-file/folder-naming-convention": ["error", { "**": "NEXT_JS_APP_ROUTER_CASE" }],
-			},
-		},
-		{
-			name: "@touchspot/eslint-config/frameworks/next/import-x",
-			files: ["{src/,}app/**/*.{ts,tsx}"],
-			rules: {
-				"import-x/no-default-export": "off",
-			},
-		},
-	);
-
-export const tailwindcss = () =>
-	config({
-		name: "@touchspot/eslint-config/frameworks/tailwindcss/tailwindcss",
-		files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-		plugins: {
-			tailwindcss: TailwindCSS,
-		},
-		settings: {
-			tailwindcss: {
-				callees: ["classnames", "clsx", "cn", "ctl", "cva", "twJoin", "twMerge", "tv"],
-			},
-		},
-		rules: {
-			"tailwindcss/enforces-negative-arbitrary-values": "error",
-			"tailwindcss/enforces-shorthand": "error",
-			"tailwindcss/migration-from-tailwind-2": "error",
-			"tailwindcss/no-custom-classname": "error",
-			"tailwindcss/no-contradicting-classname": "error",
-			"tailwindcss/no-unnecessary-arbitrary-value": "error",
-		},
-	});

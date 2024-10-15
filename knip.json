@@ -13,11 +13,11 @@
 	],
 	"workspaces": {
 		".": {
-			"entry": ["lib/*"],
-			"project": ["src/**/*"]
+			"entry": ["lib/**"],
+			"project": ["src/**"]
 		},
 		"tests/*": {
-			"entry": ["src/**/*"]
+			"entry": ["src/**"]
 		}
 	}
 }

@@ -3,7 +3,7 @@ import * as TSESLint from "typescript-eslint";
 
 import * as languages from "./languages.js";
 
-const config = ({
+export const config = ({
 	ignores = [".cache", ".turbo", "coverage", "dist"],
 }: {
 	readonly ignores?: readonly string[];
@@ -62,5 +62,3 @@ const config = ({
 		...languages.typescript(),
 		Prettier,
 	);
-
-export default config; // eslint-disable-line import-x/no-default-export
