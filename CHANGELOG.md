@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/touchspot/eslint-config/compare/v1.3.0...v1.4.0) (2024-10-22)
+
+
+### Features
+
+* support Next.js 15 ([8f8c867](https://github.com/touchspot/eslint-config/commit/8f8c867f3dee4e2c0fc77a7bba2d8d6f10d92b04))
+
 ## [1.3.0](https://github.com/touchspot/eslint-config/compare/v1.2.5...v1.3.0) (2024-10-15)
 
 
