@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.5.0](https://github.com/touchspot/eslint-config/compare/v1.4.1...v1.5.0) (2024-10-23)
+
+
+### Features
+
+* support react compiler ([a1afa76](https://github.com/touchspot/eslint-config/commit/a1afa7649606c13356ea10c350c42f21d33eee99))
+
+
+### Bug Fixes
+
+* fix config names ([1407250](https://github.com/touchspot/eslint-config/commit/14072503e8571ba2191be67e35c49ea635871b58))
+
 ## [1.4.1](https://github.com/touchspot/eslint-config/compare/v1.4.0...v1.4.1) (2024-10-23)
 
 
