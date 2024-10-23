@@ -1,6 +1,9 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export const useRefTest = () => {
 	const textRef = useRef("foo");
-	textRef.current = "bar";
+
+	useEffect(() => {
+		textRef.current = "bar";
+	}, []);
 };

@@ -1,10 +1,11 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import Functional from "eslint-plugin-functional";
 import React from "eslint-plugin-react";
+import ReactCompiler from "eslint-plugin-react-compiler";
 import ReactHooks from "eslint-plugin-react-hooks";
 import { config } from "typescript-eslint";
 
-export const react = () =>
+export const react = ({ compiler = true }: { readonly compiler?: boolean } = {}) =>
 	config(
 		{
 			name: "@touchspot/eslint-config/frameworks/react/parser",
@@ -67,4 +68,16 @@ export const react = () =>
 				"react-hooks/exhaustive-deps": "error",
 			},
 		},
+		compiler
+			? {
+					name: "@touchspot/eslint-config/frameworks/react/react-compiler",
+					files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
+					plugins: {
+						"react-compiler": ReactCompiler,
+					},
+					rules: {
+						"react-compiler/react-compiler": "error",
+					},
+				}
+			: {},
 	);

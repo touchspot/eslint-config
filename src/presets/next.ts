@@ -5,11 +5,11 @@ import { config } from "typescript-eslint";
 import * as env from "#pkg/env.js";
 import { react } from "#pkg/presets/react.js";
 
-export const next = () =>
+export const next = ({ reactCompiler = true }: { readonly reactCompiler?: boolean } = {}) =>
 	config(
 		...env.browser(),
 		...env.node(),
-		...react(),
+		...react({ compiler: reactCompiler }),
 		{
 			name: "@touchspot/eslint-config/frameworks/next/ignore",
 			ignores: [".next/**"],
