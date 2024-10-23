@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/touchspot/eslint-config/compare/v1.5.0...v1.5.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* handle `useEffectEvent` correctly ([686763a](https://github.com/touchspot/eslint-config/commit/686763ad0076f660eca302374887c294f4244c6d))
+
 ## [1.5.0](https://github.com/touchspot/eslint-config/compare/v1.4.1...v1.5.0) (2024-10-23)
 
 
