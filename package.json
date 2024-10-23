@@ -41,7 +41,7 @@
 	"prettier": "@touchspot/prettier-config",
 	"dependencies": {
 		"@eslint/js": "^9.13.0",
-		"@next/eslint-plugin-next": "^15.0.0",
+		"@next/eslint-plugin-next": "^15.0.1",
 		"@typescript-eslint/utils": "^8.11.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-import-resolver-typescript": "^3.6.3",
@@ -50,7 +50,7 @@
 		"eslint-plugin-import-x": "^4.3.1",
 		"eslint-plugin-no-relative-import-paths": "^1.5.5",
 		"eslint-plugin-perfectionist": "^3.9.1",
-		"eslint-plugin-react": "^7.37.1",
+		"eslint-plugin-react": "^7.37.2",
 		"eslint-plugin-react-hooks": "^5.0.0",
 		"eslint-plugin-tailwindcss": "^3.17.5",
 		"eslint-plugin-unicorn": "^56.0.0",
@@ -79,9 +79,10 @@
 		"inquirer": "^9.3.7",
 		"knip": "^5.33.3",
 		"lint-staged": "^15.2.10",
-		"next": "^15.0.0",
+		"next": "^15.0.1",
 		"prettier": "^3.3.3",
-		"react": "19.0.0-rc-65a56d0e-20241020",
+		"react": "19.0.0-rc-69d4b800-20241021",
+		"react-dom": "19.0.0-rc-69d4b800-20241021",
 		"tailwindcss": "^3.4.14",
 		"ts-patch": "^3.2.1",
 		"turbo": "^2.2.3",
@@ -91,7 +92,8 @@
 	"peerDependencies": {
 		"eslint": "^9",
 		"next": "^15",
-		"react": "19.0.0-rc-65a56d0e-20241020",
+		"react": "^19.0.0-rc",
+		"react-dom": "^19.0.0-rc",
 		"tailwindcss": "^3"
 	},
 	"peerDependenciesMeta": {
