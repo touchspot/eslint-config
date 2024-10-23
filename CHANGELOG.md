@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/touchspot/eslint-config/compare/v1.5.1...v1.5.2) (2024-10-23)
+
+
+### Bug Fixes
+
+* do not report error for react callback functions which have no problem ([4afedcc](https://github.com/touchspot/eslint-config/commit/4afedcc30ded6503af7cdbc2431f7fbbfafd3269))
+
 ## [1.5.1](https://github.com/touchspot/eslint-config/compare/v1.5.0...v1.5.1) (2024-10-23)
 
 
