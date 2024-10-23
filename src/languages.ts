@@ -92,6 +92,7 @@ export const javascript = () =>
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 			extends: [Unicorn.configs["flat/recommended"]],
 			rules: {
+				"unicorn/consistent-function-scoping": ["error", { checkArrowFunctions: false }],
 				"unicorn/filename-case": "off",
 				"unicorn/no-array-callback-reference": "off",
 				"unicorn/no-array-reduce": "off",
