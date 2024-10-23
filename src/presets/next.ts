@@ -11,11 +11,11 @@ export const next = ({ reactCompiler = true }: { readonly reactCompiler?: boolea
 		...env.node(),
 		...react({ compiler: reactCompiler }),
 		{
-			name: "@touchspot/eslint-config/frameworks/next/ignore",
+			name: "@touchspot/eslint-config/presets/next/ignore",
 			ignores: [".next/**"],
 		},
 		{
-			name: "@touchspot/eslint-config/frameworks/next/next",
+			name: "@touchspot/eslint-config/presets/next/next",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 			plugins: {
 				"@next/next": Next,
@@ -26,7 +26,7 @@ export const next = ({ reactCompiler = true }: { readonly reactCompiler?: boolea
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/frameworks/next/check-file",
+			name: "@touchspot/eslint-config/presets/next/check-file",
 			files: ["{src/,}app/**/*.{ts,tsx}"],
 			plugins: {
 				"check-file": CheckFile,
@@ -36,7 +36,7 @@ export const next = ({ reactCompiler = true }: { readonly reactCompiler?: boolea
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/frameworks/next/import-x",
+			name: "@touchspot/eslint-config/presets/next/import-x",
 			files: ["{src/,}app/**/*.{ts,tsx}"],
 			rules: {
 				"import-x/no-default-export": "off",

@@ -8,7 +8,7 @@ import { config } from "typescript-eslint";
 export const react = ({ compiler = true }: { readonly compiler?: boolean } = {}) =>
 	config(
 		{
-			name: "@touchspot/eslint-config/frameworks/react/parser",
+			name: "@touchspot/eslint-config/presets/react/parser",
 			files: ["**/*.{js,jsx,tsx}"],
 			languageOptions: {
 				parserOptions: {
@@ -17,7 +17,7 @@ export const react = ({ compiler = true }: { readonly compiler?: boolean } = {})
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/frameworks/react/functional",
+			name: "@touchspot/eslint-config/presets/react/functional",
 			files: ["**/*.{ts,tsx,mts,cts}"],
 			plugins: {
 				functional: Functional,
@@ -34,7 +34,7 @@ export const react = ({ compiler = true }: { readonly compiler?: boolean } = {})
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/frameworks/react/react",
+			name: "@touchspot/eslint-config/presets/react/react",
 			files: ["**/*.{js,jsx,tsx}"],
 			extends: [
 				(React.configs.flat?.["recommended"] ?? {}) as TSESLint.FlatConfig.Config,
@@ -58,7 +58,7 @@ export const react = ({ compiler = true }: { readonly compiler?: boolean } = {})
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/frameworks/react/react-hooks",
+			name: "@touchspot/eslint-config/presets/react/react-hooks",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 			plugins: {
 				"react-hooks": ReactHooks,
@@ -70,7 +70,7 @@ export const react = ({ compiler = true }: { readonly compiler?: boolean } = {})
 		},
 		compiler
 			? {
-					name: "@touchspot/eslint-config/frameworks/react/react-compiler",
+					name: "@touchspot/eslint-config/presets/react/react-compiler",
 					files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 					plugins: {
 						"react-compiler": ReactCompiler,
