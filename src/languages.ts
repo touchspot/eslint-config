@@ -71,7 +71,7 @@ export const javascript = () =>
 					"error",
 					{
 						type: "natural",
-						internalPattern: ["#*/**"],
+						internalPattern: ["^#.+"],
 						groups: [
 							"side-effect",
 							"builtin",
