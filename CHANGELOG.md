@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.3](https://github.com/touchspot/eslint-config/compare/v1.5.2...v1.5.3) (2024-11-22)
+
+
+### Bug Fixes
+
+* allow react@18 as peer dep ([c37e52b](https://github.com/touchspot/eslint-config/commit/c37e52bb53fb656c7eddd30000f99cfca087f696))
+* upgrade dependencies ([a8dcaed](https://github.com/touchspot/eslint-config/commit/a8dcaedbb994c9dcdc3d5884f98ae844d8a4eae8))
+
 ## [1.5.2](https://github.com/touchspot/eslint-config/compare/v1.5.1...v1.5.2) (2024-10-23)
 
 
