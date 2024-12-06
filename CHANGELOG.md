@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.4](https://github.com/touchspot/eslint-config/compare/v1.5.3...v1.5.4) (2024-12-06)
+
+
+### Bug Fixes
+
+* upgrade React and other dependencies ([f2833fc](https://github.com/touchspot/eslint-config/commit/f2833fca18cbd2ff5a2f46a492c9f66e1b13e07a))
+* use new resolver system of `eslint-plugin-import-x` ([5ba977e](https://github.com/touchspot/eslint-config/commit/5ba977e99d9c71cac8ad0ee4420391ee71609c0b))
+
 ## [1.5.3](https://github.com/touchspot/eslint-config/compare/v1.5.2...v1.5.3) (2024-11-22)
 
 
