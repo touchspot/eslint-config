@@ -1,4 +1,5 @@
 import ESLint from "@eslint/js";
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import CheckFile from "eslint-plugin-check-file";
 import Functional from "eslint-plugin-functional";
 import ImportX from "eslint-plugin-import-x";
@@ -144,6 +145,9 @@ export const typescript = () =>
 			files: ["**/*.{ts,tsx,mts,cts}"],
 			ignores: ["**/*.d.*"],
 			extends: [...TSESLint.configs.strictTypeChecked, ...TSESLint.configs.stylisticTypeChecked],
+			settings: {
+				"import-x/resolver-next": [createTypeScriptImportResolver()],
+			},
 			rules: {
 				"@typescript-eslint/consistent-type-definitions": ["error", "type"],
 				"@typescript-eslint/consistent-type-exports": "error",
