@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.6](https://github.com/touchspot/eslint-config/compare/v1.5.5...v1.5.6) (2025-02-02)
+
+
+### Bug Fixes
+
+* set `ignoreTernaryTests` to `false` for `@typescript-eslint/prefer-nullish-coalescing` ([2e76e0b](https://github.com/touchspot/eslint-config/commit/2e76e0b71c50073a9168885fc3ac2b48f8558c2f))
+* upgrade dependencies ([6ad9e32](https://github.com/touchspot/eslint-config/commit/6ad9e328cc0b89dad89e6f7421bc91d5671d24fa))
+
 ## [1.5.5](https://github.com/touchspot/eslint-config/compare/v1.5.4...v1.5.5) (2024-12-11)
 
 
