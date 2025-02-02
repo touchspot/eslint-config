@@ -1,4 +1,3 @@
-import type { TSESLint } from "@typescript-eslint/utils";
 import Functional from "eslint-plugin-functional";
 import React from "eslint-plugin-react";
 import ReactCompiler from "eslint-plugin-react-compiler";
@@ -36,10 +35,7 @@ export const react = ({ compiler = true }: { readonly compiler?: boolean } = {})
 		{
 			name: "@touchspot/eslint-config/presets/react/react",
 			files: ["**/*.{js,jsx,tsx}"],
-			extends: [
-				(React.configs.flat?.["recommended"] ?? {}) as TSESLint.FlatConfig.Config,
-				(React.configs.flat?.["jsx-runtime"] ?? {}) as TSESLint.FlatConfig.Config,
-			],
+			extends: [React.configs.flat["recommended"] ?? {}, React.configs.flat["jsx-runtime"] ?? {}],
 			settings: {
 				react: {
 					version: "detect",
