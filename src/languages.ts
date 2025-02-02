@@ -195,6 +195,7 @@ export const typescript = () =>
 				"@typescript-eslint/no-unused-vars": "off",
 				"@typescript-eslint/no-useless-empty-export": "error",
 				"@typescript-eslint/parameter-properties": "error",
+				"@typescript-eslint/prefer-nullish-coalescing": ["error", { ignoreTernaryTests: true }],
 				"@typescript-eslint/prefer-readonly": "error",
 				"@typescript-eslint/restrict-template-expressions": ["error", { allowNumber: true }],
 				"@typescript-eslint/return-await": ["error", "always"],
