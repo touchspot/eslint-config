@@ -23,19 +23,17 @@ export const config = ({
 			name: "@touchspot/eslint-config/config/parser/javascript",
 			files: ["**/*.{js,jsx,mjs,cjs}"],
 			languageOptions: {
+				ecmaVersion: "latest",
 				parser: TSESLint.parser,
-				parserOptions: {
-					ecmaVersion: "latest",
-				},
 			},
 		},
 		{
 			name: "@touchspot/eslint-config/config/parser/typescript",
 			files: ["**/*.{ts,tsx,mts,cts}"],
 			languageOptions: {
+				ecmaVersion: "latest",
 				parser: TSESLint.parser,
 				parserOptions: {
-					ecmaVersion: "latest",
 					projectService: true,
 				},
 			},
@@ -44,18 +42,14 @@ export const config = ({
 			name: "@touchspot/eslint-config/config/esm",
 			files: ["**/*.{js,jsx,mjs,ts,tsx,mts}"],
 			languageOptions: {
-				parserOptions: {
-					sourceType: "module",
-				},
+				sourceType: "module",
 			},
 		},
 		{
 			name: "@touchspot/eslint-config/config/cjs",
 			files: ["**/*.{cjs,cts}"],
 			languageOptions: {
-				parserOptions: {
-					sourceType: "commonjs",
-				},
+				sourceType: "commonjs",
 			},
 		},
 		...languages.javascript(),
