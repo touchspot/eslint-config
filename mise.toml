@@ -3,8 +3,8 @@ min_version = "2025.1.17"
 [tools]
 node = "22.11.0"
 
-[env]
-_.path = ["./node_modules/.bin"]
+[env._]
+path = ["{{ cwd }}/node_modules/.bin", "{{ config_root }}/node_modules/.bin"]
 
 [tasks.setup]
 run = ["mise install", "corepack enable", "pnpm install --frozen-lockfile"]
