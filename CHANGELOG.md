@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.2](https://github.com/touchspot/eslint-config/compare/v1.6.1...v1.6.2) (2025-04-14)
+
+
+### Bug Fixes
+
+* export `Config` type ([8a90741](https://github.com/touchspot/eslint-config/commit/8a90741a2f9a101635213a7d4deb043d6277eb29))
+* remove usage of `@typescript-eslint/utils` ([4a0f79d](https://github.com/touchspot/eslint-config/commit/4a0f79d725c4e054936423e1b330b9645f3691e6))
+
 ## [1.6.1](https://github.com/touchspot/eslint-config/compare/v1.6.0...v1.6.1) (2025-04-14)
 
 
