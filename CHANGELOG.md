@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/touchspot/eslint-config/compare/v1.5.6...v1.6.0) (2025-04-14)
+
+
+### Features
+
+* upgrade plugins ([f53711b](https://github.com/touchspot/eslint-config/commit/f53711b04a7c2d17ce639129bedb07d50e8efca1))
+
 ## [1.5.6](https://github.com/touchspot/eslint-config/compare/v1.5.5...v1.5.6) (2025-02-02)
 
 
