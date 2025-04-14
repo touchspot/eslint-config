@@ -4,7 +4,6 @@
 	"ignoreDependencies": [
 		"@eslint/config-inspector",
 		"better-typescript-lib",
-		"eslint-import-resolver-typescript",
 		"next",
 		"react",
 		"react-dom",

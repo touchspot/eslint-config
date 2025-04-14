@@ -1,7 +1,6 @@
 import Functional from "eslint-plugin-functional";
 import React from "eslint-plugin-react";
-import ReactCompiler from "eslint-plugin-react-compiler";
-import ReactHooks from "eslint-plugin-react-hooks";
+import * as ReactHooks from "eslint-plugin-react-hooks";
 import { config } from "typescript-eslint";
 
 export const react = ({ compiler = true }: { readonly compiler?: boolean } = {}) =>
@@ -62,18 +61,7 @@ export const react = ({ compiler = true }: { readonly compiler?: boolean } = {})
 			rules: {
 				"react-hooks/rules-of-hooks": "error",
 				"react-hooks/exhaustive-deps": "error",
+				"react-hooks/react-compiler": compiler ? "error" : "off",
 			},
 		},
-		compiler
-			? {
-					name: "@touchspot/eslint-config/presets/react/react-compiler",
-					files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-					plugins: {
-						"react-compiler": ReactCompiler,
-					},
-					rules: {
-						"react-compiler/react-compiler": "error",
-					},
-				}
-			: {},
 	);
