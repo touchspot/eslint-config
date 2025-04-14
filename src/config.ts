@@ -7,7 +7,7 @@ export const config = ({
 	ignores = [".cache", ".turbo", "coverage", "dist"],
 }: {
 	readonly ignores?: readonly string[];
-} = {}) =>
+} = {}): TSESLint.ConfigArray =>
 	TSESLint.config(
 		{
 			name: "@touchspot/eslint-config/config/ignore",

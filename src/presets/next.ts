@@ -1,12 +1,12 @@
 import Next from "@next/eslint-plugin-next";
 import CheckFile from "eslint-plugin-check-file";
-import { config } from "typescript-eslint";
+import * as TSESLint from "typescript-eslint";
 
 import * as env from "#pkg/env.js";
 import { react } from "#pkg/presets/react.js";
 
-export const next = ({ reactCompiler = true }: { readonly reactCompiler?: boolean } = {}) =>
-	config(
+export const next = ({ reactCompiler = true }: { readonly reactCompiler?: boolean } = {}): TSESLint.ConfigArray =>
+	TSESLint.config(
 		...env.browser(),
 		...env.node(),
 		...react({ compiler: reactCompiler }),

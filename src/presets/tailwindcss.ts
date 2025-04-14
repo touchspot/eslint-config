@@ -1,8 +1,8 @@
 import TailwindCSS from "eslint-plugin-tailwindcss";
-import { config } from "typescript-eslint";
+import * as TSESLint from "typescript-eslint";
 
-export const tailwindcss = () =>
-	config({
+export const tailwindcss = (): TSESLint.ConfigArray =>
+	TSESLint.config({
 		name: "@touchspot/eslint-config/presets/tailwindcss/tailwindcss",
 		files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 		plugins: {

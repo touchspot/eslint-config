@@ -5,7 +5,7 @@ export const browser = ({
 	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
-} = {}) =>
+} = {}): TSESLint.ConfigArray =>
 	TSESLint.config({
 		name: "@touchspot/eslint-config/env/browser",
 		files: [...files],
@@ -20,7 +20,7 @@ export const node = ({
 	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
-} = {}) =>
+} = {}): TSESLint.ConfigArray =>
 	TSESLint.config({
 		name: "@touchspot/eslint-config/env/node",
 		files: [...files],

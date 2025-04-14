@@ -9,7 +9,7 @@ import Unicorn from "eslint-plugin-unicorn";
 import UnusedImports from "eslint-plugin-unused-imports";
 import * as TSESLint from "typescript-eslint";
 
-export const javascript = () =>
+export const javascript = (): TSESLint.ConfigArray =>
 	TSESLint.config(
 		{
 			name: "@touchspot/eslint-config/languages/javascript/eslint",
@@ -138,7 +138,7 @@ export const javascript = () =>
 		},
 	);
 
-export const typescript = () =>
+export const typescript = (): TSESLint.ConfigArray =>
 	TSESLint.config(
 		{
 			name: "@touchspot/eslint-config/languages/typescript/typescript-eslint",

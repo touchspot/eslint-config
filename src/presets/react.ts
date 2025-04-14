@@ -1,10 +1,10 @@
 import Functional from "eslint-plugin-functional";
 import React from "eslint-plugin-react";
 import * as ReactHooks from "eslint-plugin-react-hooks";
-import { config } from "typescript-eslint";
+import * as TSESLint from "typescript-eslint";
 
-export const react = ({ compiler = true }: { readonly compiler?: boolean } = {}) =>
-	config(
+export const react = ({ compiler = true }: { readonly compiler?: boolean } = {}): TSESLint.ConfigArray =>
+	TSESLint.config(
 		{
 			name: "@touchspot/eslint-config/presets/react/parser",
 			files: ["**/*.{js,jsx,tsx}"],
