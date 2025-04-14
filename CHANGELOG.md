@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/touchspot/eslint-config/compare/v1.6.0...v1.6.1) (2025-04-14)
+
+
+### Bug Fixes
+
+* improve typings ([ff61865](https://github.com/touchspot/eslint-config/commit/ff618658b2eab5fee3d3f7eb9ec7bc843bd63b57))
+
 ## [1.6.0](https://github.com/touchspot/eslint-config/compare/v1.5.6...v1.6.0) (2025-04-14)
 
 
