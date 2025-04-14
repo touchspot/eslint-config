@@ -3,7 +3,6 @@
 	"include": ["dependencies", "exports", "files", "types"],
 	"ignoreDependencies": [
 		"@eslint/config-inspector",
-		"@typescript-eslint/utils",
 		"better-typescript-lib",
 		"next",
 		"react",
