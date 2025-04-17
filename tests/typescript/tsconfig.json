@@ -10,5 +10,5 @@
 			"#pkg/*": ["./src/*"]
 		}
 	},
-	"include": ["./src"]
+	"include": ["./src", "./*.ts"]
 }
