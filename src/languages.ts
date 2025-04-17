@@ -228,11 +228,17 @@ export const typescript = (): TSESLint.ConfigArray =>
 		{
 			name: "@touchspot/eslint-config/languages/typescript/import-x",
 			files: ["**/*.{ts,tsx,mts,cts}"],
-			ignores: ["**/*.d.*"],
 			extends: [ImportX.flatConfigs.typescript],
 			rules: {
 				"import-x/consistent-type-specifier-style": "error",
 				"import-x/no-default-export": "error",
+			},
+		},
+		{
+			name: "@touchspot/eslint-config/languages/typescript/import-x/overrides",
+			files: ["*.config.ts", "*.config.*.ts", "**/*.d.*"],
+			rules: {
+				"import-x/no-default-export": "off",
 			},
 		},
 		{
