@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/touchspot/eslint-config/compare/v1.6.2...v1.6.3) (2025-04-17)
+
+
+### Bug Fixes
+
+* allow default export for `*.config.ts` ([d8b8f26](https://github.com/touchspot/eslint-config/commit/d8b8f26422c6e18f52651daec768a963cefe03f1))
+
 ## [1.6.2](https://github.com/touchspot/eslint-config/compare/v1.6.1...v1.6.2) (2025-04-14)
 
 
