@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/touchspot/eslint-config/compare/v1.7.0...v1.7.1) (2025-05-06)
+
+
+### Bug Fixes
+
+* bump patch version to update latest tag ([2d0d0ea](https://github.com/touchspot/eslint-config/commit/2d0d0eac40e500c2063ed0ce1ebbbcdfdb59f775))
+
 ## [1.7.0](https://github.com/touchspot/eslint-config/compare/v1.6.4...v1.7.0) (2025-05-06)
 
 
