@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.4](https://github.com/touchspot/eslint-config/compare/v1.6.3...v1.6.4) (2025-05-06)
+
+
+### Bug Fixes
+
+* set `allowDeclarations: true` for `@typescript-eslint/no-namespace` ([c28736f](https://github.com/touchspot/eslint-config/commit/c28736f419d721cd0b447f82f0c9294d74a489df))
+
 ## [1.6.3](https://github.com/touchspot/eslint-config/compare/v1.6.2...v1.6.3) (2025-04-17)
 
 
