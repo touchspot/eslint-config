@@ -187,6 +187,7 @@ export const typescript = (): TSESLint.ConfigArray =>
 						format: null,
 					},
 				],
+				"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
 				"@typescript-eslint/no-import-type-side-effects": "error",
 				"no-shadow": "off",
 				"@typescript-eslint/no-shadow": ["error", { allow: ["_"] }],
