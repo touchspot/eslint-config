@@ -1,5 +1,12 @@
 packages:
-  - "tests/*"
+  - tests/*
+
 publicHoistPattern:
   - "@typescript/*"
+
 strictPeerDependencies: true
+
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - unrs-resolver
