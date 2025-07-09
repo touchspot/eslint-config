@@ -17,6 +17,12 @@
 	"license": "MIT",
 	"author": "mozisan <mozisan@users.noreply.github.com>",
 	"type": "module",
+	"imports": {
+		"#pkg/*.js": {
+			"types": "./src/*.ts",
+			"default": "./dist/src/*.js"
+		}
+	},
 	"exports": {
 		".": "./dist/lib/lib.js",
 		"./presets/*": "./dist/lib/presets/*.js",
@@ -28,7 +34,7 @@
 		"README.md"
 	],
 	"scripts": {
-		"build": "tspc --project .",
+		"build": "tsc --project .",
 		"check:format": "prettier --check .",
 		"check:lint": "eslint .",
 		"check:type": "tsc --noEmit",
@@ -80,10 +86,8 @@
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
 		"tailwindcss": "^4.1.11",
-		"ts-patch": "^3.3.0",
 		"turbo": "^2.5.4",
-		"typescript": "^5.8.3",
-		"typescript-transform-paths": "^3.5.5"
+		"typescript": "^5.8.3"
 	},
 	"peerDependencies": {
 		"eslint": "^9",
