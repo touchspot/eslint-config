@@ -1,7 +1,7 @@
 {
 	"extends": ["@tsconfig/node22/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
 	"compilerOptions": {
-		"outDir": "./dist",
+		"outDir": "dist",
 		"sourceMap": true,
 		"declaration": true,
 		"declarationMap": true,
@@ -16,5 +16,5 @@
 			{ "transform": "typescript-transform-paths", "afterDeclarations": true }
 		]
 	},
-	"include": ["./lib", "./src", "./typings"]
+	"include": ["lib", "src", "typings"]
 }
