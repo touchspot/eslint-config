@@ -91,7 +91,7 @@ export const javascript = (): TSESLint.ConfigArray =>
 		{
 			name: "@touchspot/eslint-config/languages/javascript/unicorn",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [Unicorn.configs["flat/recommended"]],
+			extends: [Unicorn.configs.recommended],
 			rules: {
 				"unicorn/consistent-function-scoping": ["error", { checkArrowFunctions: false }],
 				"unicorn/filename-case": "off",

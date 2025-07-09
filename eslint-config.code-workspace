@@ -12,6 +12,10 @@
 			"path": "./tests/next",
 		},
 		{
+			"name": "tests/tailwindcss",
+			"path": "./tests/tailwindcss",
+		},
+		{
 			"name": "tests/typescript",
 			"path": "./tests/typescript",
 		},
@@ -34,6 +38,7 @@
 		"files.trimTrailingWhitespace": true,
 		"javascript.validate.enable": true,
 		"prettier.enable": true,
+		"tailwindCSS.codeActions": false,
 		"typescript.format.enable": false,
 		"typescript.preferences.autoImportFileExcludePatterns": ["lib/", "tests/"],
 		"typescript.preferences.importModuleSpecifier": "non-relative",

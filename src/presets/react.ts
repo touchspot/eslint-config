@@ -3,7 +3,11 @@ import React from "eslint-plugin-react";
 import * as ReactHooks from "eslint-plugin-react-hooks";
 import * as TSESLint from "typescript-eslint";
 
-export const react = ({ compiler = true }: { readonly compiler?: boolean } = {}): TSESLint.ConfigArray =>
+type Options = {
+	readonly compiler?: boolean | undefined;
+};
+
+export const react = ({ compiler = true }: Options = {}): TSESLint.ConfigArray =>
 	TSESLint.config(
 		{
 			name: "@touchspot/eslint-config/presets/react/parser",

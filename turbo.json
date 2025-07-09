@@ -29,6 +29,7 @@
 			"outputs": []
 		},
 		"//#check:unused": {
+			"dependsOn": ["build"],
 			"outputs": []
 		},
 		"//#fix:format": {
