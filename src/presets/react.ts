@@ -55,9 +55,7 @@ export const react = ({ compiler = true }: { readonly compiler?: boolean } = {})
 		{
 			name: "@touchspot/eslint-config/presets/react/react-hooks",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			plugins: {
-				"react-hooks": ReactHooks,
-			},
+			extends: [ReactHooks.configs.recommended],
 			rules: {
 				"react-hooks/rules-of-hooks": "error",
 				"react-hooks/exhaustive-deps": "error",
