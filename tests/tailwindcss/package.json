@@ -1,5 +1,5 @@
 {
-	"name": "test-next",
+	"name": "test-tailwindcss",
 	"private": true,
 	"type": "module",
 	"imports": {
@@ -13,7 +13,7 @@
 		"inspect": "config-inspector",
 		"test": "eslint ."
 	},
-	"prettier": "@touchspot/prettier-config",
+	"prettier": "@touchspot/prettier-config/tailwindcss",
 	"devDependencies": {
 		"@touchspot/eslint-config": "workspace:^"
 	}

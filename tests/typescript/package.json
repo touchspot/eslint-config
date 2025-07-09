@@ -2,6 +2,10 @@
 	"name": "test-typescript",
 	"private": true,
 	"type": "module",
+	"imports": {
+		"#pkg/*.js": "./src/*.ts",
+		"#pkg/*.jsx": "./src/*.tsx"
+	},
 	"scripts": {
 		"check:format": "prettier --check .",
 		"check:type": "tsc --noEmit",

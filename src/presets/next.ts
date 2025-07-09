@@ -5,7 +5,11 @@ import * as TSESLint from "typescript-eslint";
 import * as env from "#pkg/env.js";
 import { react } from "#pkg/presets/react.js";
 
-export const next = ({ reactCompiler = true }: { readonly reactCompiler?: boolean } = {}): TSESLint.ConfigArray =>
+type Options = {
+	readonly reactCompiler?: boolean | undefined;
+};
+
+export const next = ({ reactCompiler = true }: Options = {}): TSESLint.ConfigArray =>
 	TSESLint.config(
 		...env.browser(),
 		...env.node(),

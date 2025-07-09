@@ -3,9 +3,10 @@
 	"compilerOptions": {
 		"noEmit": true,
 		"target": "ESNext",
+		"jsx": "preserve",
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
 		"allowJs": true
 	},
-	"include": ["src", "*.ts", "*.js"]
+	"include": ["src", "*.js"]
 }
