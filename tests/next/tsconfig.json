@@ -5,10 +5,7 @@
 		"target": "ESNext",
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
-		"allowJs": true,
-		"paths": {
-			"#pkg/*": ["./src/*"]
-		}
+		"allowJs": true
 	},
-	"include": ["./src"]
+	"include": ["src", "*.js"]
 }
