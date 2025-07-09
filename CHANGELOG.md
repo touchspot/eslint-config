@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.0](https://github.com/touchspot/eslint-config/compare/v1.7.1...v2.0.0) (2025-07-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* 
+
+### Features
+
+* support tailwindcss v4 ([bebd19a](https://github.com/touchspot/eslint-config/commit/bebd19ac05e3a883254bbcfdaa4b0887b4ee649f))
+
+
+### Bug Fixes
+
+* update dependencies ([ae310c3](https://github.com/touchspot/eslint-config/commit/ae310c389a27300e16b69b8d77c9521757d2e0ff))
+
 ## [1.7.1](https://github.com/touchspot/eslint-config/compare/v1.7.0...v1.7.1) (2025-05-06)
 
 
