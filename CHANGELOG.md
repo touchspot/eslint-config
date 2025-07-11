@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/touchspot/eslint-config/compare/v2.0.0...v2.1.0) (2025-07-11)
+
+
+### Features
+
+* enable `better-tailwindcss/enforce-shorthand-classes` ([fc34d6b](https://github.com/touchspot/eslint-config/commit/fc34d6ba00c40fe1c6e10552ad430536696b1eb5))
+
 ## [2.0.0](https://github.com/touchspot/eslint-config/compare/v1.7.1...v2.0.0) (2025-07-09)
 
 
