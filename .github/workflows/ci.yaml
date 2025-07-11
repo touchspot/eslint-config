@@ -18,13 +18,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup-toolchain
       - run: pnpm install --frozen-lockfile
-      - run: mise run check
-
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-toolchain
-      - run: pnpm install --frozen-lockfile
-      - run: mise run test
+      - run: pnpm exec turbo run ci --continue
