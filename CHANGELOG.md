@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/touchspot/eslint-config/compare/v2.0.0...v2.0.1) (2025-07-11)
+
+
+### Bug Fixes
+
+* enable `enforce-shorthand-classes` ([5f591e3](https://github.com/touchspot/eslint-config/commit/5f591e359b6b277a688ec7b6e55097580f9f5ce7))
+
 ## [2.0.0](https://github.com/touchspot/eslint-config/compare/v1.7.1...v2.0.0) (2025-07-09)
 
 
