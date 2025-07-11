@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/touchspot/eslint-config/compare/v2.1.0...v2.1.1) (2025-07-11)
+
+
+### Bug Fixes
+
+* fix publish error ([be8899f](https://github.com/touchspot/eslint-config/commit/be8899f5e44f25ec67811080e03fed375ee0bda9))
+
 ## [2.1.0](https://github.com/touchspot/eslint-config/compare/v2.0.0...v2.1.0) (2025-07-11)
 
 
