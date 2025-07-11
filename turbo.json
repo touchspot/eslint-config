@@ -7,6 +7,12 @@
 			"inputs": ["lib/**", "src/**", "tsconfig.json"],
 			"outputs": ["dist/**"]
 		},
+		"//#check": {
+			"dependsOn": ["check:format", "check:lint", "check:type", "check:unused"]
+		},
+		"check": {
+			"dependsOn": ["check:format", "check:type"]
+		},
 		"//#check:format": {
 			"outputs": []
 		},
@@ -32,6 +38,12 @@
 			"dependsOn": ["build"],
 			"outputs": []
 		},
+		"//#ci": {
+			"dependsOn": ["check"]
+		},
+		"ci": {
+			"dependsOn": ["check", "test"]
+		},
 		"//#fix:format": {
 			"cache": false
 		},
@@ -42,6 +54,7 @@
 			"cache": false
 		},
 		"fix:lint": {
+			"dependsOn": ["fix:format"],
 			"cache": false
 		},
 		"test": {
