@@ -1,7 +1,7 @@
-min_version = "2025.1.17"
+min_version = "2025.7.0"
 
-[tools]
-node = "22.14.0"
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
 
 [env._]
 path = ["{{ cwd }}/node_modules/.bin", "{{ config_root }}/node_modules/.bin"]
