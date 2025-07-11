@@ -39,6 +39,7 @@ export const tailwindcss = ({
 			...BetterTailwindCSS.configs["recommended-error"]?.rules,
 			"better-tailwindcss/enforce-consistent-line-wrapping": "off",
 			"better-tailwindcss/enforce-consistent-variable-syntax": "error",
+			"better-tailwindcss/enforce-shorthand-classes": "error",
 			"better-tailwindcss/no-unnecessary-whitespace": ["error", { allowMultiline: false }],
 		},
 	});
