@@ -3,6 +3,9 @@ import type { FC } from "react";
 export const Invalid: FC = () => (
 	<>
 		<div
+			className="!text-red-500" // eslint-disable-line better-tailwindcss/enforce-consistent-important-position
+		/>
+		<div
 			// prettier-ignore
 			className="w-full flex" // eslint-disable-line better-tailwindcss/enforce-consistent-class-order
 		/>
@@ -16,8 +19,11 @@ export const Invalid: FC = () => (
 			className="flex grid" // eslint-disable-line better-tailwindcss/no-conflicting-classes
 		/>
 		<div
+			className="rounded" // eslint-disable-line better-tailwindcss/no-deprecated-classes
+		/>
+		<div
 			// prettier-ignore
-			className="rounded rounded" // eslint-disable-line better-tailwindcss/no-duplicate-classes
+			className="rounded-sm rounded-sm" // eslint-disable-line better-tailwindcss/no-duplicate-classes
 		/>
 		<div
 			// prettier-ignore
