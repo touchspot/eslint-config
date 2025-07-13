@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/touchspot/eslint-config/compare/v2.1.1...v2.2.0) (2025-07-13)
+
+
+### Features
+
+* upgrade eslint-plugin-better-tailwindcss ([7cd8ebd](https://github.com/touchspot/eslint-config/commit/7cd8ebd8c4a9b01e286a909bbcdf8922255876bc))
+
 ## [2.1.1](https://github.com/touchspot/eslint-config/compare/v2.1.0...v2.1.1) (2025-07-11)
 
 
