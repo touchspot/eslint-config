@@ -12,6 +12,10 @@
 			"path": "./tests/next",
 		},
 		{
+			"name": "tests/react",
+			"path": "./tests/react",
+		},
+		{
 			"name": "tests/tailwindcss",
 			"path": "./tests/tailwindcss",
 		},

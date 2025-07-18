@@ -30,7 +30,7 @@ export const react = ({ compiler = true }: Options = {}): TSESLint.ConfigArray =
 					{
 						ignoreImmediateMutation: true,
 						ignoreNonConstDeclarations: { treatParametersAsConst: true },
-						ignoreAccessorPattern: ["ref.current", "*Ref.current"],
+						ignoreAccessorPattern: ["ref.current", "*Ref.current", "*Atom.*"],
 					},
 				],
 			},

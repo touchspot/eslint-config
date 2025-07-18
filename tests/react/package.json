@@ -1,0 +1,22 @@
+{
+	"name": "test-react",
+	"private": true,
+	"type": "module",
+	"imports": {
+		"#pkg/*.js": "./src/*.ts",
+		"#pkg/*.jsx": "./src/*.tsx"
+	},
+	"scripts": {
+		"check:format": "prettier --check .",
+		"check:type": "tsc --noEmit",
+		"fix:format": "prettier --write --log-level=warn .",
+		"inspect": "config-inspector",
+		"test": "eslint ."
+	},
+	"prettier": "@touchspot/prettier-config",
+	"devDependencies": {
+		"@touchspot/eslint-config": "workspace:^",
+		"@types/react": "^19.1.8",
+		"jotai": "^2.12.5"
+	}
+}
