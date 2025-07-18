@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.1](https://github.com/touchspot/eslint-config/compare/v2.3.0...v2.3.1) (2025-07-18)
+
+
+### Bug Fixes
+
+* allow tailwindcss@^3 as peer ([4782a54](https://github.com/touchspot/eslint-config/commit/4782a5407ecb72981253c6c12463b24e2c4b2a80))
+
 ## [2.3.0](https://github.com/touchspot/eslint-config/compare/v2.2.0...v2.3.0) (2025-07-18)
 
 
