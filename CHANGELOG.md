@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.3.0](https://github.com/touchspot/eslint-config/compare/v2.2.0...v2.3.0) (2025-07-18)
+
+
+### Features
+
+* allow jotai atom mutations ([06c0ba6](https://github.com/touchspot/eslint-config/commit/06c0ba6fa57d86f0b60271e191ad45807f767ebd))
+
+
+### Bug Fixes
+
+* upgrade dependencies ([c583855](https://github.com/touchspot/eslint-config/commit/c583855ce83afc645055f6da5e98c6e0e94c2904))
+
 ## [2.2.0](https://github.com/touchspot/eslint-config/compare/v2.1.1...v2.2.0) (2025-07-13)
 
 
