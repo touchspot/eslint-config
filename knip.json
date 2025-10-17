@@ -4,6 +4,7 @@
 	"ignoreDependencies": [
 		"@eslint/config-inspector",
 		"better-typescript-lib",
+		"commitizen",
 		"next",
 		"react",
 		"react-dom",
