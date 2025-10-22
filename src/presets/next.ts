@@ -1,19 +1,17 @@
+import type { Plugin } from "@eslint/core";
 import Next from "@next/eslint-plugin-next";
 import CheckFile from "eslint-plugin-check-file";
-import * as TSESLint from "typescript-eslint";
+import type { Config } from "eslint/config";
+import { defineConfig } from "eslint/config";
 
 import * as env from "#pkg/env.js";
 import { react } from "#pkg/presets/react.js";
 
-type Options = {
-	readonly reactCompiler?: boolean | undefined;
-};
-
-export const next = ({ reactCompiler = true }: Options = {}): TSESLint.ConfigArray =>
-	TSESLint.config(
+export const next = (): readonly Config[] =>
+	defineConfig(
 		...env.browser(),
 		...env.node(),
-		...react({ compiler: reactCompiler }),
+		...react(),
 		{
 			name: "@touchspot/eslint-config/presets/next/ignore",
 			ignores: [".next/**"],
@@ -22,7 +20,7 @@ export const next = ({ reactCompiler = true }: Options = {}): TSESLint.ConfigArr
 			name: "@touchspot/eslint-config/presets/next/next",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 			plugins: {
-				"@next/next": Next,
+				"@next/next": Next as unknown as Plugin,
 			},
 			rules: {
 				...Next.configs.recommended.rules,

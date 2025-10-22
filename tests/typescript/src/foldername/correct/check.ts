@@ -1,1 +1,1 @@
-export {};
+export const _ = 0;
