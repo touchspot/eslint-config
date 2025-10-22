@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/touchspot/eslint-config/compare/v3.0.0...v3.0.1) (2025-10-22)
+
+
+### Bug Fixes
+
+* widen `Config` type to include `EslintConfig.Config[]` ([3442fd0](https://github.com/touchspot/eslint-config/commit/3442fd0fd5c247cc28b2ba6a055ac30de672485b))
+
 ## [3.0.0](https://github.com/touchspot/eslint-config/compare/v2.3.1...v3.0.0) (2025-10-22)
 
 
