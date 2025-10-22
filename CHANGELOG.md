@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://github.com/touchspot/eslint-config/compare/v2.3.1...v3.0.0) (2025-10-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* require tsconfigRootDir as option and remove compiler option from next/react preset
+
+### Bug Fixes
+
+* update plugins ([ff4cd3c](https://github.com/touchspot/eslint-config/commit/ff4cd3c1e444669feb613326baf5f1b30e6c9eeb))
+
 ## [2.3.1](https://github.com/touchspot/eslint-config/compare/v2.3.0...v2.3.1) (2025-07-18)
 
 
