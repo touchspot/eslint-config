@@ -1,10 +1,11 @@
 declare module "@next/eslint-plugin-next" {
-	import type * as TSESLint from "typescript-eslint";
+	import type { Plugin } from "@eslint/core";
+	import type { Config } from "eslint/config";
 
-	const plugin: typeof TSESLint.plugin & {
+	const plugin: Plugin & {
 		readonly configs: {
-			readonly "core-web-vitals": TSESLint.ConfigArray[number];
-			readonly recommended: TSESLint.ConfigArray[number];
+			readonly "core-web-vitals": Config;
+			readonly recommended: Config;
 		};
 	};
 

@@ -1,14 +1,18 @@
 import Prettier from "eslint-config-prettier";
+import type { Config } from "eslint/config";
+import { defineConfig } from "eslint/config";
 import * as TSESLint from "typescript-eslint";
 
 import * as languages from "./languages.js";
 
 export const config = ({
+	tsconfigRootDir,
 	ignores = [".cache", ".turbo", "coverage", "dist"],
 }: {
+	readonly tsconfigRootDir: string;
 	readonly ignores?: readonly string[];
-} = {}): TSESLint.ConfigArray =>
-	TSESLint.config(
+}): readonly Config[] =>
+	defineConfig(
 		{
 			name: "@touchspot/eslint-config/config/ignore",
 			ignores: ignores.map((ignore) => `${ignore}/**`),
@@ -35,6 +39,7 @@ export const config = ({
 				parser: TSESLint.parser,
 				parserOptions: {
 					projectService: true,
+					tsconfigRootDir,
 				},
 			},
 		},

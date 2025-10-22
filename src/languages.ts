@@ -1,3 +1,4 @@
+import type { ConfigObject, Plugin } from "@eslint/core";
 import ESLint from "@eslint/js";
 import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import CheckFile from "eslint-plugin-check-file";
@@ -7,10 +8,12 @@ import NoRelativeImportPaths from "eslint-plugin-no-relative-import-paths";
 import Perfectionist from "eslint-plugin-perfectionist";
 import Unicorn from "eslint-plugin-unicorn";
 import UnusedImports from "eslint-plugin-unused-imports";
+import type { Config } from "eslint/config";
+import { defineConfig } from "eslint/config";
 import * as TSESLint from "typescript-eslint";
 
-export const javascript = (): TSESLint.ConfigArray =>
-	TSESLint.config(
+export const javascript = (): readonly Config[] =>
+	defineConfig(
 		{
 			name: "@touchspot/eslint-config/languages/javascript/eslint",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
@@ -36,7 +39,7 @@ export const javascript = (): TSESLint.ConfigArray =>
 		{
 			name: "@touchspot/eslint-config/languages/javascript/import-x",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [ImportX.flatConfigs.recommended],
+			extends: [ImportX.flatConfigs.recommended as ConfigObject],
 			settings: {
 				"import-x/internal-regex": "^#[^/]+/",
 			},
@@ -138,8 +141,8 @@ export const javascript = (): TSESLint.ConfigArray =>
 		},
 	);
 
-export const typescript = (): TSESLint.ConfigArray =>
-	TSESLint.config(
+export const typescript = (): readonly Config[] =>
+	defineConfig(
 		{
 			name: "@touchspot/eslint-config/languages/typescript/typescript-eslint",
 			files: ["**/*.{ts,tsx,mts,cts}"],
@@ -212,7 +215,7 @@ export const typescript = (): TSESLint.ConfigArray =>
 			files: ["**/*.{ts,tsx,mts,cts}"],
 			ignores: ["**/*.d.*"],
 			plugins: {
-				functional: Functional,
+				functional: Functional as Plugin,
 			},
 			rules: {
 				"functional/immutable-data": [
@@ -229,7 +232,7 @@ export const typescript = (): TSESLint.ConfigArray =>
 		{
 			name: "@touchspot/eslint-config/languages/typescript/import-x",
 			files: ["**/*.{ts,tsx,mts,cts}"],
-			extends: [ImportX.flatConfigs.typescript],
+			extends: [ImportX.flatConfigs.typescript as ConfigObject],
 			rules: {
 				"import-x/consistent-type-specifier-style": "error",
 				"import-x/no-default-export": "error",

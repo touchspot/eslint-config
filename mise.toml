@@ -20,3 +20,7 @@ run = ["turbo run fix:lint", "turbo run fix:format"]
 
 [tasks.test]
 run = "turbo run test"
+
+[tools]
+claude = "2.0.22"
+"npm:@openai/codex" = "0.47.0"
