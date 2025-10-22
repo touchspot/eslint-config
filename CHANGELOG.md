@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/touchspot/eslint-config/compare/v2.3.1...v3.0.0) (2025-10-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* require tsconfigRootDir as option and remove compiler option from next/react preset
+
+### Features
+
+* update plugins ([d15ee0c](https://github.com/touchspot/eslint-config/commit/d15ee0c8093c59ae14bc37fb21d52f6c8b5aaa51))
+
+
+### Bug Fixes
+
+* disable `better-tailwindcss/enforce-consistent-class-order` ([93f99ba](https://github.com/touchspot/eslint-config/commit/93f99ba1ef8ed727f45924dd5d4b962d73ab731f))
+
 ## [2.3.1](https://github.com/touchspot/eslint-config/compare/v2.3.0...v2.3.1) (2025-07-18)
 
 
