@@ -1,6 +1,7 @@
 import BetterTailwindCSS from "eslint-plugin-better-tailwindcss";
 import type { Matcher } from "eslint-plugin-better-tailwindcss/api/types";
-import * as TSESLint from "typescript-eslint";
+import type { Config } from "eslint/config";
+import { defineConfig } from "eslint/config";
 
 type Options = {
 	readonly entryPoint?: string | undefined;
@@ -18,8 +19,8 @@ export const tailwindcss = ({
 	callees,
 	variables,
 	tags,
-}: Options = {}): TSESLint.ConfigArray =>
-	TSESLint.config({
+}: Options = {}): readonly Config[] =>
+	defineConfig({
 		name: "@touchspot/eslint-config/presets/tailwindcss/tailwindcss",
 		files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 		plugins: {

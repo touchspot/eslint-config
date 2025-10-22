@@ -1,2 +1,2 @@
 /* eslint-disable check-file/folder-naming-convention */
-export {};
+export const _ = 0;

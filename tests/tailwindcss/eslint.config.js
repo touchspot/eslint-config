@@ -2,4 +2,4 @@ import config from "@touchspot/eslint-config";
 import tailwindcss from "@touchspot/eslint-config/presets/tailwindcss";
 
 /** @type {import("@touchspot/eslint-config").Config} */
-export default [...config(), ...tailwindcss({ entryPoint: "tailwind.css" })];
+export default [...config({ tsconfigRootDir: import.meta.dirname }), ...tailwindcss({ entryPoint: "tailwind.css" })];

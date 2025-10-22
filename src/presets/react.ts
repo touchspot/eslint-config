@@ -1,14 +1,12 @@
+import type { Plugin } from "@eslint/core";
 import Functional from "eslint-plugin-functional";
 import React from "eslint-plugin-react";
-import * as ReactHooks from "eslint-plugin-react-hooks";
-import * as TSESLint from "typescript-eslint";
+import ReactHooks from "eslint-plugin-react-hooks";
+import type { Config } from "eslint/config";
+import { defineConfig } from "eslint/config";
 
-type Options = {
-	readonly compiler?: boolean | undefined;
-};
-
-export const react = ({ compiler = true }: Options = {}): TSESLint.ConfigArray =>
-	TSESLint.config(
+export const react = (): readonly Config[] =>
+	defineConfig(
 		{
 			name: "@touchspot/eslint-config/presets/react/parser",
 			files: ["**/*.{js,jsx,tsx}"],
@@ -22,7 +20,7 @@ export const react = ({ compiler = true }: Options = {}): TSESLint.ConfigArray =
 			name: "@touchspot/eslint-config/presets/react/functional",
 			files: ["**/*.{ts,tsx,mts,cts}"],
 			plugins: {
-				functional: Functional,
+				functional: Functional as Plugin,
 			},
 			rules: {
 				"functional/immutable-data": [
@@ -59,11 +57,11 @@ export const react = ({ compiler = true }: Options = {}): TSESLint.ConfigArray =
 		{
 			name: "@touchspot/eslint-config/presets/react/react-hooks",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [ReactHooks.configs.recommended],
+			extends: [ReactHooks.configs.flat["recommended-latest"] ?? {}],
 			rules: {
-				"react-hooks/rules-of-hooks": "error",
 				"react-hooks/exhaustive-deps": "error",
-				"react-hooks/react-compiler": compiler ? "error" : "off",
+				"react-hooks/incompatible-library": "error",
+				"react-hooks/unsupported-syntax": "error",
 			},
 		},
 	);

@@ -1,12 +1,13 @@
+import type { Config } from "eslint/config";
+import { defineConfig } from "eslint/config";
 import Globals from "globals";
-import * as TSESLint from "typescript-eslint";
 
 export const browser = ({
 	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
-} = {}): TSESLint.ConfigArray =>
-	TSESLint.config({
+} = {}): readonly Config[] =>
+	defineConfig({
 		name: "@touchspot/eslint-config/env/browser",
 		files: [...files],
 		languageOptions: {
@@ -20,8 +21,8 @@ export const node = ({
 	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
-} = {}): TSESLint.ConfigArray =>
-	TSESLint.config({
+} = {}): readonly Config[] =>
+	defineConfig({
 		name: "@touchspot/eslint-config/env/node",
 		files: [...files],
 		languageOptions: {
