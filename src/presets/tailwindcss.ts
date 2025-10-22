@@ -38,6 +38,7 @@ export const tailwindcss = ({
 		},
 		rules: {
 			...BetterTailwindCSS.configs["recommended-error"]?.rules,
+			"better-tailwindcss/enforce-consistent-class-order": "off",
 			"better-tailwindcss/enforce-consistent-important-position": "error",
 			"better-tailwindcss/enforce-consistent-line-wrapping": "off",
 			"better-tailwindcss/enforce-consistent-variable-syntax": "error",
