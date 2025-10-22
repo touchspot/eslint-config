@@ -6,10 +6,6 @@ export const Invalid: FC = () => (
 			className="!text-red-500" // eslint-disable-line better-tailwindcss/enforce-consistent-important-position
 		/>
 		<div
-			// prettier-ignore
-			className="w-full flex" // eslint-disable-line better-tailwindcss/enforce-consistent-class-order
-		/>
-		<div
 			className="font-[var(--display)]" // eslint-disable-line better-tailwindcss/enforce-consistent-variable-syntax
 		/>
 		<div
