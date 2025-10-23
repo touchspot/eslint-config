@@ -7,9 +7,11 @@ import * as languages from "./languages.js";
 
 export const config = ({
 	tsconfigRootDir,
+	allowDefaultProject = "js",
 	ignores = [".cache", ".turbo", "coverage", "dist"],
 }: {
 	readonly tsconfigRootDir: string;
+	readonly allowDefaultProject?: "js" | readonly string[];
 	readonly ignores?: readonly string[];
 }): readonly Config[] =>
 	defineConfig(
@@ -24,21 +26,15 @@ export const config = ({
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/config/parser/javascript",
-			files: ["**/*.{js,jsx,mjs,cjs}"],
-			languageOptions: {
-				ecmaVersion: "latest",
-				parser: TSESLint.parser,
-			},
-		},
-		{
-			name: "@touchspot/eslint-config/config/parser/typescript",
-			files: ["**/*.{ts,tsx,mts,cts}"],
+			name: "@touchspot/eslint-config/config/parser",
+			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 			languageOptions: {
 				ecmaVersion: "latest",
 				parser: TSESLint.parser,
 				parserOptions: {
-					projectService: true,
+					projectService: {
+						allowDefaultProject: allowDefaultProject === "js" ? ["*.{js,jsx,mjs,cjs}"] : allowDefaultProject,
+					},
 					tsconfigRootDir,
 				},
 			},
