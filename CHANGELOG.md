@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.2](https://github.com/touchspot/eslint-config/compare/v3.0.1...v3.0.2) (2025-10-23)
+
+
+### Bug Fixes
+
+* support typescript-eslint FlatConfig; introduce ConfigArray ([1820232](https://github.com/touchspot/eslint-config/commit/1820232e5e5bedab5b8049739dac37e3b4143dae))
+
 ## [3.0.1](https://github.com/touchspot/eslint-config/compare/v3.0.0...v3.0.1) (2025-10-22)
 
 
