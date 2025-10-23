@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.3](https://github.com/touchspot/eslint-config/compare/v3.0.2...v3.0.3) (2025-10-23)
+
+
+### Bug Fixes
+
+* prevent parse errors when linting JS files ([adaabe4](https://github.com/touchspot/eslint-config/commit/adaabe4a9ce8d166f6d4445aa78ec975ba705630))
+
 ## [3.0.2](https://github.com/touchspot/eslint-config/compare/v3.0.1...v3.0.2) (2025-10-23)
 
 
