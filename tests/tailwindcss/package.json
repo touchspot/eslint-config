@@ -13,7 +13,6 @@
 		"inspect": "config-inspector",
 		"test": "eslint ."
 	},
-	"prettier": "@touchspot/prettier-config/tailwindcss",
 	"devDependencies": {
 		"@touchspot/eslint-config": "workspace:^"
 	}
