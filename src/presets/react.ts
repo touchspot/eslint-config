@@ -57,7 +57,7 @@ export const react = (): readonly Config[] =>
 		{
 			name: "@touchspot/eslint-config/presets/react/react-hooks",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [ReactHooks.configs.flat["recommended-latest"] ?? {}],
+			extends: [ReactHooks.configs.flat["recommended-latest"]],
 			rules: {
 				"react-hooks/exhaustive-deps": "error",
 				"react-hooks/incompatible-library": "error",
