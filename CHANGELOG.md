@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.5](https://github.com/touchspot/eslint-config/compare/v3.0.4...v3.0.5) (2025-10-28)
+
+
+### Bug Fixes
+
+* upgrade plugins ([3f38ba1](https://github.com/touchspot/eslint-config/commit/3f38ba164ab261451d2c5442a39064274ab753ce))
+
 ## [3.0.4](https://github.com/touchspot/eslint-config/compare/v3.0.3...v3.0.4) (2025-10-28)
 
 
