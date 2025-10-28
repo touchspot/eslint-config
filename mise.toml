@@ -3,6 +3,10 @@ min_version = "2025.7.0"
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
 
+[tools]
+claude = "2.0.28"
+"npm:@openai/codex" = "0.50.0"
+
 [env._]
 path = ["{{ cwd }}/node_modules/.bin", "{{ config_root }}/node_modules/.bin"]
 
@@ -20,7 +24,3 @@ run = ["turbo run fix:lint", "turbo run fix:format"]
 
 [tasks.test]
 run = "turbo run test"
-
-[tools]
-claude = "2.0.22"
-"npm:@openai/codex" = "0.47.0"
