@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.4](https://github.com/touchspot/eslint-config/compare/v3.0.3...v3.0.4) (2025-10-28)
+
+
+### Bug Fixes
+
+* allow Next.js 16 in peer deps ([0a0d393](https://github.com/touchspot/eslint-config/commit/0a0d393875d2aa8d124b2b090bc2fb578c864855))
+
 ## [3.0.3](https://github.com/touchspot/eslint-config/compare/v3.0.2...v3.0.3) (2025-10-23)
 
 
