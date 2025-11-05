@@ -17,6 +17,6 @@
 	"devDependencies": {
 		"@touchspot/eslint-config": "workspace:^",
 		"@types/react": "^19.2.2",
-		"jotai": "^2.15.0"
+		"jotai": "^2.15.1"
 	}
 }

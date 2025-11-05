@@ -1,0 +1,34 @@
+{
+	"alwaysThinkingEnabled": true,
+	"enableAllProjectMcpServers": true,
+	"includeCoAuthoredBy": false,
+	"sandbox": {
+		"enabled": true,
+		"autoAllowBashIfSandboxed": true,
+		"allowUnsandboxedCommands": false,
+		"excludedCommands": ["git"]
+	},
+	"statusLine": {
+		"type": "command",
+		"command": "ccusage statusline"
+	},
+	"permissions": {
+		"defaultMode": "acceptEdits",
+		"allow": ["Write", "Edit", "MultiEdit", "WebFetch", "WebSearch"],
+		"deny": [
+			"Write(**/node_modules/**)",
+			"Edit(**/node_modules/**)",
+			"MultiEdit(**/node_modules/**)",
+			"Write(.husky/**)",
+			"Edit(.husky/**)",
+			"MultiEdit(.husky/**)",
+			"Bash(sudo:*)",
+			"Bash(docker system:*)",
+			"Bash(git push:*)",
+			"Bash(npx:*)",
+			"Bash(pnpx:*)",
+			"Bash(npm publish:*)",
+			"Bash(pnpm publish:*)"
+		]
+	}
+}

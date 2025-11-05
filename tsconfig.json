@@ -10,11 +10,7 @@
 		"moduleResolution": "NodeNext",
 		"paths": {
 			"#pkg/*": ["./src/*"]
-		},
-		"plugins": [
-			{ "transform": "typescript-transform-paths" },
-			{ "transform": "typescript-transform-paths", "afterDeclarations": true }
-		]
+		}
 	},
 	"include": ["lib", "src", "typings"]
 }

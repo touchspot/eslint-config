@@ -16,12 +16,12 @@
 			"path": "./tests/react",
 		},
 		{
-			"name": "tests/tailwindcss",
-			"path": "./tests/tailwindcss",
+			"name": "tests/node",
+			"path": "./tests/node",
 		},
 		{
-			"name": "tests/typescript",
-			"path": "./tests/typescript",
+			"name": "tests/tailwindcss",
+			"path": "./tests/tailwindcss",
 		},
 	],
 	"settings": {
@@ -53,7 +53,7 @@
 		"typescript.suggest.enabled": true,
 		"typescript.suggest.paths": true,
 		"typescript.suggestionActions.enabled": true,
-		"typescript.tsdk": "node_modules/typescript/lib",
+		"typescript.tsdk": "@touchspot/eslint-config/node_modules/typescript/lib",
 		"typescript.validate.enable": true,
 	},
 }
