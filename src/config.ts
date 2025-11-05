@@ -7,11 +7,9 @@ import * as languages from "./languages.js";
 
 export const config = ({
 	tsconfigRootDir,
-	allowDefaultProject = "js",
 	ignores = [".cache", ".turbo", "coverage", "dist"],
 }: {
 	readonly tsconfigRootDir: string;
-	readonly allowDefaultProject?: "js" | readonly string[];
 	readonly ignores?: readonly string[];
 }): readonly Config[] =>
 	defineConfig(
@@ -32,10 +30,8 @@ export const config = ({
 				ecmaVersion: "latest",
 				parser: TSESLint.parser,
 				parserOptions: {
-					projectService: {
-						allowDefaultProject: allowDefaultProject === "js" ? ["*.{js,jsx,mjs,cjs}"] : allowDefaultProject,
-					},
 					tsconfigRootDir,
+					projectService: true,
 				},
 			},
 		},
