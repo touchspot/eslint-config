@@ -1,55 +1,57 @@
 import Prettier from "eslint-config-prettier";
-import type { Config } from "eslint/config";
-import { defineConfig } from "eslint/config";
-import * as TSESLint from "typescript-eslint";
+import { defineConfig, globalIgnores } from "eslint/config";
 
-import * as languages from "./languages.js";
+import { checkFileRuleset } from "#pkg/rulesets/check-file.js";
+import { eslintRuleset } from "#pkg/rulesets/eslint.js";
+import { functionalRuleset } from "#pkg/rulesets/functional.js";
+import { importXRuleset } from "#pkg/rulesets/import-x.js";
+import { noRelativeImportPathsRuleset } from "#pkg/rulesets/no-relative-import-paths.js";
+import { perfectionistRuleset } from "#pkg/rulesets/perfectionist.js";
+import { tseslintRuleset } from "#pkg/rulesets/tseslint.js";
+import { unicornRuleset } from "#pkg/rulesets/unicorn.js";
+import { unusedImportsRuleset } from "#pkg/rulesets/unused-imports.js";
 
-export const config = ({
-	tsconfigRootDir,
-	ignores = [".cache", ".turbo", "coverage", "dist"],
-}: {
-	readonly tsconfigRootDir: string;
-	readonly ignores?: readonly string[];
-}): readonly Config[] =>
+type Options = tseslintRuleset.Options;
+
+export const config = (options: Options, ...addons: Parameters<typeof defineConfig>) =>
 	defineConfig(
+		globalIgnores([".cache/", ".turbo/", "coverage/", "dist/"]),
 		{
-			name: "@touchspot/eslint-config/config/ignore",
-			ignores: ignores.map((ignore) => `${ignore}/**`),
-		},
-		{
-			name: "@touchspot/eslint-config/config/linter",
+			name: "@touchspot/eslint-config/linter",
 			linterOptions: {
 				reportUnusedDisableDirectives: "error",
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/config/parser",
+			name: "@touchspot/eslint-config/language",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 			languageOptions: {
 				ecmaVersion: "latest",
-				parser: TSESLint.parser,
-				parserOptions: {
-					tsconfigRootDir,
-					projectService: true,
-				},
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/config/esm",
+			name: "@touchspot/eslint-config/language/esm",
 			files: ["**/*.{js,jsx,mjs,ts,tsx,mts}"],
 			languageOptions: {
 				sourceType: "module",
 			},
 		},
 		{
-			name: "@touchspot/eslint-config/config/cjs",
+			name: "@touchspot/eslint-config/language/cjs",
 			files: ["**/*.{cjs,cts}"],
 			languageOptions: {
 				sourceType: "commonjs",
 			},
 		},
-		...languages.javascript(),
-		...languages.typescript(),
+		eslintRuleset(),
+		tseslintRuleset(options),
+		unicornRuleset(),
+		importXRuleset(),
+		unusedImportsRuleset(),
+		noRelativeImportPathsRuleset(),
+		functionalRuleset(),
+		perfectionistRuleset(),
+		checkFileRuleset(),
+		addons,
 		Prettier,
 	);

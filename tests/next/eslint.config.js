@@ -1,5 +1,9 @@
 import config from "@touchspot/eslint-config";
-import next from "@touchspot/eslint-config/presets/next";
+import next from "@touchspot/eslint-config/addons/next";
 
-/** @type {import("@touchspot/eslint-config").ConfigArray} */
-export default [...config({ tsconfigRootDir: import.meta.dirname }), ...next()];
+export default config(
+	{
+		tsconfigRootDir: import.meta.dirname,
+	},
+	next(),
+);

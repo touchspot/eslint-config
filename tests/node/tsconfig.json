@@ -5,7 +5,8 @@
 		"target": "ESNext",
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
-		"allowJs": true
+		"allowJs": true,
+		"checkJs": true
 	},
-	"include": ["src", "*.ts"]
+	"include": ["src", "*.ts", "*.js"]
 }

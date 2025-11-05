@@ -44,6 +44,12 @@
 		"ci": {
 			"dependsOn": ["check", "test"]
 		},
+		"//#fix": {
+			"dependsOn": ["fix:format", "fix:lint"]
+		},
+		"fix": {
+			"dependsOn": ["fix:format", "fix:lint"]
+		},
 		"//#fix:format": {
 			"cache": false
 		},
@@ -51,6 +57,7 @@
 			"cache": false
 		},
 		"//#fix:lint": {
+			"dependsOn": ["fix:format"],
 			"cache": false
 		},
 		"fix:lint": {

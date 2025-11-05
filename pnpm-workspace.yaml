@@ -7,9 +7,6 @@ onlyBuiltDependencies:
   - sharp
   - unrs-resolver
 
-patchedDependencies:
-  eslint-plugin-react-hooks: patches/eslint-plugin-react-hooks.patch
-
 peerDependencyRules:
   allowedVersions:
     typescript: "*"
@@ -18,3 +15,7 @@ publicHoistPattern:
   - "@typescript/*"
 
 strictPeerDependencies: true
+
+updateConfig:
+  ignoreDependencies:
+    - "@types/node"

@@ -9,7 +9,6 @@
 		"react",
 		"react-dom",
 		"tailwindcss",
-		"turbo",
 		"typescript-transform-paths"
 	],
 	"workspaces": {

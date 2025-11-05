@@ -1,5 +1,5 @@
 {
-	"name": "test-typescript",
+	"name": "test-node",
 	"private": true,
 	"type": "module",
 	"imports": {

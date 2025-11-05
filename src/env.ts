@@ -1,4 +1,3 @@
-import type { Config } from "eslint/config";
 import { defineConfig } from "eslint/config";
 import Globals from "globals";
 
@@ -6,7 +5,7 @@ export const browser = ({
 	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
-} = {}): readonly Config[] =>
+} = {}) =>
 	defineConfig({
 		name: "@touchspot/eslint-config/env/browser",
 		files: [...files],
@@ -21,7 +20,7 @@ export const node = ({
 	files = ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 }: {
 	readonly files?: readonly string[];
-} = {}): readonly Config[] =>
+} = {}) =>
 	defineConfig({
 		name: "@touchspot/eslint-config/env/node",
 		files: [...files],

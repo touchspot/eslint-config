@@ -6,7 +6,8 @@
 		"jsx": "preserve",
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
-		"allowJs": true
+		"allowJs": true,
+		"checkJs": true
 	},
-	"include": ["src"]
+	"include": ["src", "*.js"]
 }
