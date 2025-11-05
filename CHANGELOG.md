@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.0.0](https://github.com/touchspot/eslint-config/compare/v3.0.5...v4.0.0) (2025-11-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* The config function interface has changed. Presets have been renamed to addons with new import paths (`@touchspot/eslint-config/addons/*`).
+
+### Features
+
+* remove `allowDefaultProject` option ([afa6eab](https://github.com/touchspot/eslint-config/commit/afa6eabd105c85b19496bfe0ce35fff9c88174d3))
+* restructure module organization and config interface ([c3af789](https://github.com/touchspot/eslint-config/commit/c3af78953d02ce69ebb641b9159ee3f719914f54))
+
 ## [3.0.5](https://github.com/touchspot/eslint-config/compare/v3.0.4...v3.0.5) (2025-10-28)
 
 
