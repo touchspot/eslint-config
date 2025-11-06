@@ -4,7 +4,7 @@ import { ESLint } from "eslint";
 import type { Config } from "eslint/config";
 import { describe, expect, it } from "vitest";
 
-const sourceTypes = ["js", "jsx", "mjs", "cjs", "ts", "tsx", "mts", "cts"];
+const sourceTypes = ["js", "jsx", "mjs", "cjs", "ts", "tsx", "mts", "cts", "d.ts", "d.cts", "d.mts", "d.css.ts"];
 
 export const runSnapshotTest = (filename: string) => (config: readonly Config[]) => {
 	const testDir = Path.resolve(import.meta.dirname, "snapshots");
