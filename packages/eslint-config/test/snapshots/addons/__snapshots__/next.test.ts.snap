@@ -2494,8 +2494,11 @@ exports[`snapshot (addons/next) > should match snapshot (cjs) 1`] = `
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreAccessorPattern": [
           "ref.current",
@@ -2508,11 +2511,38 @@ exports[`snapshot (addons/next) > should match snapshot (cjs) 1`] = `
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,
@@ -10343,8 +10373,11 @@ exports[`snapshot (addons/next) > should match snapshot (js) 1`] = `
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreAccessorPattern": [
           "ref.current",
@@ -10357,11 +10390,38 @@ exports[`snapshot (addons/next) > should match snapshot (js) 1`] = `
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,
@@ -14256,8 +14316,11 @@ exports[`snapshot (addons/next) > should match snapshot (jsx) 1`] = `
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreAccessorPattern": [
           "ref.current",
@@ -14270,11 +14333,38 @@ exports[`snapshot (addons/next) > should match snapshot (jsx) 1`] = `
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,
@@ -18264,8 +18354,11 @@ exports[`snapshot (addons/next) > should match snapshot (mjs) 1`] = `
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreAccessorPattern": [
           "ref.current",
@@ -18278,11 +18371,38 @@ exports[`snapshot (addons/next) > should match snapshot (mjs) 1`] = `
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,
