@@ -6,8 +6,12 @@ idiomatic_version_file_enable_tools = ["node"]
 
 [tools]
 claude = "2.0.34"
+jq = "1.8.1"
 "npm:@openai/codex" = "0.55.0"
 "npm:ccusage" = "17.1.3"
+
+[env]
+PROJECT_DIR = "{{config_root}}"
 
 [env._]
 path = ["{{cwd}}/node_modules/.bin", "{{config_root}}/node_modules/.bin"]

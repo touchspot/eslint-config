@@ -14,7 +14,7 @@
 	},
 	"permissions": {
 		"defaultMode": "acceptEdits",
-		"allow": ["Write", "Edit", "MultiEdit", "WebFetch", "WebSearch"],
+		"allow": ["Write", "Edit", "MultiEdit", "WebFetch", "WebSearch", "Skill(git-committer)", "mcp__ide"],
 		"deny": [
 			"Write(**/node_modules/**)",
 			"Edit(**/node_modules/**)",

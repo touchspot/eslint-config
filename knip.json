@@ -3,7 +3,14 @@
 	"include": ["dependencies", "exports", "files", "types"],
 	"workspaces": {
 		".": {
-			"ignoreDependencies": ["better-typescript-lib", "commitizen", "typescript-transform-paths"]
+			"ignoreDependencies": [
+				"@types/fs-extra",
+				"better-typescript-lib",
+				"commitizen",
+				"typescript-transform-paths",
+				"zx"
+			],
+			"ignoreFiles": [".claude/**"]
 		},
 		"packages/eslint-config": {
 			"entry": ["lib/**", "test/**/*.test.*"],

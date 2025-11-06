@@ -8,5 +8,12 @@ export default defineConfig(
 			tsconfigRootDir: import.meta.dirname,
 		},
 		env.node(),
+		{
+			files: [".claude/**"],
+			rules: {
+				"no-console": "off",
+				"check-file/folder-naming-convention": ["error", { "**": "KEBAB_CASE" }, { ignoreWords: [".claude"] }],
+			},
+		},
 	),
 );

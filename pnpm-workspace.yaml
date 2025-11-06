@@ -16,6 +16,7 @@ catalog:
   "@tsconfig/next": ^2.0.3
   "@tsconfig/node22": ^22.0.2
   "@tsconfig/strictest": ^2.0.7
+  "@types/fs-extra": 11.0.4
   "@types/node": ^22.19.0
   "@types/react": ^19.2.2
   "@vitest/coverage-v8": ^4.0.7
@@ -52,6 +53,7 @@ catalog:
   typescript-transform-paths: ^3.5.5
   vite-tsconfig-paths: ^5.1.4
   vitest: ^4.0.7
+  zx: 8.8.5
 
 catalogMode: strict
 
