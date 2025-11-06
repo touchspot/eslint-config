@@ -1,0 +1,9 @@
+{
+	"extends": ["@tsconfig/next/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+	"compilerOptions": {
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"verbatimModuleSyntax": true
+	},
+	"include": ["src", "*.ts"]
+}

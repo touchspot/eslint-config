@@ -1,23 +1,17 @@
 {
 	"$schema": "node_modules/knip/schema.json",
 	"include": ["dependencies", "exports", "files", "types"],
-	"ignoreDependencies": [
-		"@eslint/config-inspector",
-		"better-typescript-lib",
-		"commitizen",
-		"next",
-		"react",
-		"react-dom",
-		"tailwindcss",
-		"typescript-transform-paths"
-	],
 	"workspaces": {
 		".": {
-			"entry": ["lib/**"],
-			"project": ["src/**"]
+			"ignoreDependencies": ["better-typescript-lib", "commitizen", "typescript-transform-paths"]
 		},
-		"tests/*": {
-			"entry": ["src/**", "*"]
+		"packages/eslint-config": {
+			"entry": ["lib/**", "test/**/*.test.*"],
+			"project": ["src/**", "test/**"],
+			"ignoreDependencies": ["@eslint/config-inspector", "next", "react", "react-dom", "tailwindcss"]
+		},
+		"playgrounds/*": {
+			"entry": ["src/**", "*.ts"]
 		}
 	}
 }

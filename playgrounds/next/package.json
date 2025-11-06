@@ -1,0 +1,28 @@
+{
+	"name": "playground-next",
+	"private": true,
+	"type": "module",
+	"imports": {
+		"#src/*.js": "./src/*.ts",
+		"#src/*.jsx": "./src/*.tsx",
+		"#tailwind.css": "./tailwind.css"
+	},
+	"scripts": {
+		"check:format": "prettier --check .",
+		"check:type": "tsc --noEmit",
+		"fix:format": "prettier --write --log-level=warn .",
+		"test": "eslint ."
+	},
+	"prettier": "@touchspot/prettier-config",
+	"dependencies": {
+		"jotai": "catalog:",
+		"next": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"tailwindcss": "catalog:"
+	},
+	"devDependencies": {
+		"@touchspot/eslint-config": "workspace:^",
+		"@types/react": "catalog:"
+	}
+}

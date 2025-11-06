@@ -1,0 +1,93 @@
+{
+	"name": "@touchspot/eslint-config",
+	"version": "3.0.5",
+	"description": "TOUCHSPOT ESLint config",
+	"keywords": [
+		"eslint",
+		"typescript"
+	],
+	"homepage": "https://github.com/touchspot/eslint-config/tree/main",
+	"bugs": {
+		"url": "https://github.com/touchspot/eslint-config/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/touchspot/eslint-config.git"
+	},
+	"license": "MIT",
+	"author": "mozisan <mozisan@users.noreply.github.com>",
+	"type": "module",
+	"exports": {
+		".": "./dist/lib/default.js",
+		"./addons/*": "./dist/lib/addons/*.js",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"dist",
+		"package.json",
+		"README.md"
+	],
+	"scripts": {
+		"build": "tspc --build tsconfig.build.json",
+		"check:format": "prettier --check .",
+		"check:lint": "eslint .",
+		"check:type": "tsc --noEmit",
+		"dev": "tspc --build tsconfig.build.json --watch",
+		"fix:format": "prettier --write --log-level=warn .",
+		"fix:lint": "eslint --fix .",
+		"inspect": "config-inspector",
+		"test": "vitest run --coverage"
+	},
+	"prettier": "@touchspot/prettier-config",
+	"dependencies": {
+		"@eslint/js": "catalog:",
+		"@next/eslint-plugin-next": "catalog:",
+		"eslint-config-prettier": "catalog:",
+		"eslint-import-resolver-typescript": "catalog:",
+		"eslint-plugin-better-tailwindcss": "catalog:",
+		"eslint-plugin-check-file": "catalog:",
+		"eslint-plugin-functional": "catalog:",
+		"eslint-plugin-import-x": "catalog:",
+		"eslint-plugin-no-relative-import-paths": "catalog:",
+		"eslint-plugin-perfectionist": "catalog:",
+		"eslint-plugin-react": "catalog:",
+		"eslint-plugin-react-hooks": "catalog:",
+		"eslint-plugin-unicorn": "catalog:",
+		"eslint-plugin-unused-imports": "catalog:",
+		"globals": "catalog:",
+		"typescript-eslint": "catalog:"
+	},
+	"devDependencies": {
+		"@eslint/config-inspector": "catalog:",
+		"@eslint/core": "catalog:",
+		"eslint": "catalog:",
+		"next": "catalog:",
+		"react": "catalog:",
+		"react-dom": "catalog:",
+		"tailwindcss": "catalog:"
+	},
+	"peerDependencies": {
+		"eslint": "^9",
+		"next": "^15 || ^16",
+		"react": "^19",
+		"react-dom": "^19",
+		"tailwindcss": "^3 || ^4"
+	},
+	"peerDependenciesMeta": {
+		"next": {
+			"optional": true
+		},
+		"react": {
+			"optional": true
+		},
+		"react-dom": {
+			"optional": true
+		},
+		"tailwindcss": {
+			"optional": true
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

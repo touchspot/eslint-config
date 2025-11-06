@@ -1,41 +1,43 @@
 {
 	"$schema": "https://turbo.build/schema.json",
-	"globalDependencies": ["package.json", "pnpm-lock.yaml"],
+	"globalDependencies": ["pnpm-lock.yaml"],
 	"ui": "tui",
 	"tasks": {
-		"//#build": {
-			"inputs": ["lib/**", "src/**", "tsconfig.json"],
-			"outputs": ["dist/**"]
+		"build": {
+			"inputs": ["lib/", "src/", "tsconfig*.json"],
+			"outputs": ["dist/"]
 		},
 		"//#check": {
-			"dependsOn": ["check:format", "check:lint", "check:type", "check:unused"]
+			"dependsOn": ["check:format", "check:lint", "check:unused"]
 		},
 		"check": {
-			"dependsOn": ["check:format", "check:type"]
+			"dependsOn": ["check:format", "check:lint", "check:type"]
 		},
 		"//#check:format": {
+			"inputs": ["$TURBO_DEFAULT$", "!.turbo/", "!packages/", "!playgrounds/"],
 			"outputs": []
 		},
 		"check:format": {
+			"inputs": ["$TURBO_DEFAULT$", "!.turbo/", "!coverage/", "!dist/", "!**/__snapshots__/"],
 			"outputs": []
 		},
 		"//#check:lint": {
-			"dependsOn": ["build"],
-			"inputs": ["lib/**", "src/**", "*.js", "tsconfig.json"],
+			"dependsOn": ["^build"],
+			"inputs": ["*.js", "*.ts", "tsconfig.json"],
 			"outputs": []
 		},
-		"//#check:type": {
-			"dependsOn": ["build"],
-			"inputs": ["lib/**", "src/**", "*.js", "tsconfig.json"],
+		"check:lint": {
+			"dependsOn": ["^build"],
+			"inputs": ["lib/", "src/", "test/", "*.js", "*.ts", "tsconfig.json", "!**/__snapshots__/"],
 			"outputs": []
 		},
 		"check:type": {
-			"dependsOn": ["//#build"],
-			"inputs": ["src/**", "*.js", "tsconfig.json"],
+			"dependsOn": ["^build"],
+			"inputs": ["lib/", "src/", "test/", "*.ts", "tsconfig.json", "!**/__snapshots__/"],
 			"outputs": []
 		},
 		"//#check:unused": {
-			"dependsOn": ["build"],
+			"dependsOn": ["^build"],
 			"outputs": []
 		},
 		"//#ci": {
@@ -43,6 +45,9 @@
 		},
 		"ci": {
 			"dependsOn": ["check", "test"]
+		},
+		"dev": {
+			"persistent": true
 		},
 		"//#fix": {
 			"dependsOn": ["fix:format", "fix:lint"]
@@ -57,16 +62,21 @@
 			"cache": false
 		},
 		"//#fix:lint": {
-			"dependsOn": ["fix:format"],
+			"dependsOn": ["^build", "fix:format"],
 			"cache": false
 		},
 		"fix:lint": {
-			"dependsOn": ["fix:format"],
+			"dependsOn": ["^build", "fix:format"],
 			"cache": false
 		},
+		"inspect": {
+			"dependsOn": ["^build", "build"],
+			"persistent": true
+		},
 		"test": {
-			"dependsOn": ["//#build"],
-			"cache": false
+			"dependsOn": ["^build"],
+			"inputs": ["lib/", "src/", "test/", "*.ts", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
+			"outputs": []
 		}
 	}
 }
