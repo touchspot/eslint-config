@@ -1,5 +1,5 @@
 ---
-name: git-committer
+name: git-commit
 description: Create git commits with Conventional Commits format. Analyzes changes to write meaningful messages. Use when committing changes, committing staged files, creating commits, making commits, or writing git commit messages.
 ---
 
@@ -38,7 +38,7 @@ git log -3
 
 This project uses commitlint with Conventional Commits. Run the helper script to extract all rules:
 
-!`"${PROJECT_DIR}/.claude/skills/git-committer/scripts/get-rules.js"`
+!`"${PROJECT_DIR}/.claude/skills/git-commit/scripts/get-rules.js"`
 
 This outputs a JSON object containing all commitlint rules.
 
@@ -117,8 +117,8 @@ Each rule is an array: `[level, applicability, value]`
 **Critical: Distinguish between END USER features vs DEVELOPER tools**
 
 - ✅ `feat`: Add new ESLint rule for async/await patterns (affects users of this config)
-- ❌ `feat`: Add git-committer skill (only affects developers of this project)
-- ✅ `chore`: Add git-committer skill for commit automation
+- ❌ `feat`: Add git-commit skill (only affects developers of this project)
+- ✅ `chore`: Add git-commit skill for commit automation
 
 **The subject line must answer "why", not "what" or "how".**
 
@@ -181,8 +181,8 @@ Always enclose the following in backticks:
 - File names: `auth.ts`, `package.json`, `mise.toml`, `.npmignore`
 - Directory names: `src/`, `__snapshots__/`
 - Library/package names: `react`, `zx`, `eslint`, `@touchspot/eslint-config`
-- Tool/command names: `git-committer`, `commitlint`, `pnpm`, `jq`
-- Function/method names: `useState()`, `commit.js`, `Skill(git-committer)`
+- Tool/command names: `git-commit`, `commitlint`, `pnpm`, `jq`
+- Function/method names: `useState()`, `commit.js`, `Skill(git-commit)`
 - Code identifiers: `mcp__ide`, `PROJECT_DIR`, `type-enum`
 - Constants/naming conventions: `KEBAB_CASE`, `UPPER_CASE`, `camelCase`
 - Environment variables: `NODE_ENV`, `PATH`
@@ -263,7 +263,7 @@ git add -u
 **Use the provided script for sandbox environments:**
 
 ```bash
-"${PROJECT_DIR}/.claude/skills/git-committer/scripts/commit.js" 'type: subject
+"${PROJECT_DIR}/.claude/skills/git-commit/scripts/commit.js" 'type: subject
 
 Body paragraph explaining what changed.
 
@@ -326,8 +326,8 @@ git status
     - File changes and implementation details go in the body, not subject
 
 6. **Don't use `feat` for developer-only changes**
-    - ❌ `feat`: add `git-committer` skill for commit automation
-    - ✅ `chore`: add `git-committer` skill for commit automation
+    - ❌ `feat`: add `git-commit` skill for commit automation
+    - ✅ `chore`: add `git-commit` skill for commit automation
     - ❌ `feat`: add GitHub Actions workflow for CI
     - ✅ `ci`: add GitHub Actions workflow for CI
     - Ask: "Does this change what END USERS can do with this ESLint config?"
