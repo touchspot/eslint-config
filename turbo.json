@@ -77,6 +77,11 @@
 			"dependsOn": ["^build"],
 			"inputs": ["lib/", "src/", "test/", "*.ts", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
 			"outputs": []
+		},
+		"test:update": {
+			"dependsOn": ["^build"],
+			"inputs": ["lib/", "src/", "test/", "*.ts", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
+			"outputs": ["**/__snapshots__/**"]
 		}
 	}
 }

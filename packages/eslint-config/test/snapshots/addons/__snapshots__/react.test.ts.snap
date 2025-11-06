@@ -14704,7 +14704,7 @@ exports[`snapshot (addons/react) > should match snapshot (jsx) 1`] = `
       0,
     ],
     "react/prop-types": [
-      2,
+      0,
     ],
     "react/react-in-jsx-scope": [
       0,
@@ -30201,7 +30201,7 @@ exports[`snapshot (addons/react) > should match snapshot (tsx) 1`] = `
       0,
     ],
     "react/prop-types": [
-      2,
+      0,
     ],
     "react/react-in-jsx-scope": [
       0,

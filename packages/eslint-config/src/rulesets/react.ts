@@ -25,6 +25,7 @@ export const reactRuleset = () =>
 				"error",
 				{ callbacksLast: true, noSortAlphabetically: true, reservedFirst: ["key", "ref"] },
 			],
+			"react/prop-types": "off",
 			"react/self-closing-comp": "error",
 		},
 	});
