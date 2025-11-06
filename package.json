@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"check:format": "prettier --check .",
+		"check:format": "prettier --check --log-level=warn .",
 		"check:lint": "eslint .",
 		"check:unused": "knip",
 		"fix:format": "prettier --write --log-level=warn .",

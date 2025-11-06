@@ -33,7 +33,7 @@
 	],
 	"scripts": {
 		"build": "tspc --build tsconfig.build.json",
-		"check:format": "prettier --check .",
+		"check:format": "prettier --check --log-level=warn .",
 		"check:lint": "eslint .",
 		"check:type": "tsc --noEmit",
 		"dev": "tspc --build tsconfig.build.json --watch",

@@ -8,7 +8,7 @@
 		"#tailwind.css": "./tailwind.css"
 	},
 	"scripts": {
-		"check:format": "prettier --check .",
+		"check:format": "prettier --check --log-level=warn .",
 		"check:type": "tsc --noEmit",
 		"fix:format": "prettier --write --log-level=warn .",
 		"test": "eslint ."
