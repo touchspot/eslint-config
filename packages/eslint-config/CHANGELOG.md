@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.3](https://github.com/touchspot/eslint-config/compare/v4.0.2...v4.0.3) (2025-11-06)
+
+
+### Bug Fixes
+
+* ensure test files and build artifacts are excluded from npm package ([5a10675](https://github.com/touchspot/eslint-config/commit/5a1067519172a69027654f8582738690d4fd0ae2))
+
 ## [4.0.2](https://github.com/touchspot/eslint-config/compare/v4.0.1...v4.0.2) (2025-11-06)
 
 
