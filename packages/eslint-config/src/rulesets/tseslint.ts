@@ -12,7 +12,7 @@ export const tseslintRuleset = (options: tseslintRuleset.Options) =>
 		{
 			name: "@touchspot/eslint-config/rulesets/tseslint",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [TSESLint.configs.base],
+			extends: [TSESLint.configs.base, TSESLint.configs.eslintRecommended],
 			languageOptions: {
 				parserOptions: {
 					tsconfigRootDir: options.tsconfigRootDir,

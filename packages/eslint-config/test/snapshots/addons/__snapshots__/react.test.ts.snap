@@ -9640,7 +9640,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       0,
     ],
     "constructor-super": [
-      2,
+      0,
     ],
     "curly": [
       0,
@@ -9711,7 +9711,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       0,
     ],
     "getter-return": [
-      2,
+      0,
       {
         "allowImplicit": false,
       },
@@ -9814,7 +9814,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       2,
     ],
     "no-class-assign": [
-      2,
+      0,
     ],
     "no-comma-dangle": [
       0,
@@ -9839,7 +9839,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       },
     ],
     "no-const-assign": [
-      2,
+      0,
     ],
     "no-constant-binary-expression": [
       2,
@@ -9860,16 +9860,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       2,
     ],
     "no-dupe-args": [
-      2,
+      0,
     ],
     "no-dupe-class-members": [
-      2,
+      0,
     ],
     "no-dupe-else-if": [
       2,
     ],
     "no-dupe-keys": [
-      2,
+      0,
     ],
     "no-duplicate-case": [
       2,
@@ -9916,7 +9916,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       0,
     ],
     "no-func-assign": [
-      2,
+      0,
     ],
     "no-global-assign": [
       2,
@@ -9925,7 +9925,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       },
     ],
     "no-import-assign": [
-      2,
+      0,
     ],
     "no-invalid-regexp": [
       2,
@@ -9978,13 +9978,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       0,
     ],
     "no-new-native-nonconstructor": [
-      2,
+      0,
+    ],
+    "no-new-symbol": [
+      0,
     ],
     "no-nonoctal-decimal-escape": [
       2,
     ],
     "no-obj-calls": [
-      2,
+      0,
     ],
     "no-octal": [
       2,
@@ -9996,7 +9999,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       2,
     ],
     "no-redeclare": [
-      2,
+      0,
       {
         "builtinGlobals": true,
       },
@@ -10028,7 +10031,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       },
     ],
     "no-setter-return": [
-      2,
+      0,
     ],
     "no-shadow-restricted-names": [
       2,
@@ -10049,13 +10052,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       0,
     ],
     "no-this-before-super": [
-      2,
+      0,
     ],
     "no-trailing-spaces": [
       0,
     ],
     "no-undef": [
-      2,
+      0,
       {
         "typeof": false,
       },
@@ -10064,13 +10067,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
       0,
     ],
     "no-unreachable": [
-      2,
+      0,
     ],
     "no-unsafe-finally": [
       2,
     ],
     "no-unsafe-negation": [
-      2,
+      0,
       {
         "enforceForOrderingRelations": false,
       },
@@ -10110,11 +10113,14 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
         "ignoreImport": false,
       },
     ],
+    "no-var": [
+      2,
+    ],
     "no-whitespace-before-property": [
       0,
     ],
     "no-with": [
-      2,
+      0,
     ],
     "no-wrap-func": [
       0,
@@ -10183,7 +10189,20 @@ exports[`snapshot (addons/react) > should match snapshot (d.css.ts) 1`] = `
         "type": "natural",
       },
     ],
+    "prefer-const": [
+      2,
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false,
+      },
+    ],
     "prefer-destructuring": [
+      2,
+    ],
+    "prefer-rest-params": [
+      2,
+    ],
+    "prefer-spread": [
       2,
     ],
     "quote-props": [
@@ -12981,7 +13000,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       0,
     ],
     "constructor-super": [
-      2,
+      0,
     ],
     "curly": [
       0,
@@ -13052,7 +13071,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       0,
     ],
     "getter-return": [
-      2,
+      0,
       {
         "allowImplicit": false,
       },
@@ -13158,7 +13177,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       2,
     ],
     "no-class-assign": [
-      2,
+      0,
     ],
     "no-comma-dangle": [
       0,
@@ -13183,7 +13202,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       },
     ],
     "no-const-assign": [
-      2,
+      0,
     ],
     "no-constant-binary-expression": [
       2,
@@ -13204,16 +13223,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       2,
     ],
     "no-dupe-args": [
-      2,
+      0,
     ],
     "no-dupe-class-members": [
-      2,
+      0,
     ],
     "no-dupe-else-if": [
       2,
     ],
     "no-dupe-keys": [
-      2,
+      0,
     ],
     "no-duplicate-case": [
       2,
@@ -13260,7 +13279,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       0,
     ],
     "no-func-assign": [
-      2,
+      0,
     ],
     "no-global-assign": [
       2,
@@ -13269,7 +13288,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       },
     ],
     "no-import-assign": [
-      2,
+      0,
     ],
     "no-invalid-regexp": [
       2,
@@ -13322,13 +13341,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       0,
     ],
     "no-new-native-nonconstructor": [
-      2,
+      0,
+    ],
+    "no-new-symbol": [
+      0,
     ],
     "no-nonoctal-decimal-escape": [
       2,
     ],
     "no-obj-calls": [
-      2,
+      0,
     ],
     "no-octal": [
       2,
@@ -13340,7 +13362,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       2,
     ],
     "no-redeclare": [
-      2,
+      0,
       {
         "builtinGlobals": true,
       },
@@ -13372,7 +13394,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       },
     ],
     "no-setter-return": [
-      2,
+      0,
     ],
     "no-shadow-restricted-names": [
       2,
@@ -13393,13 +13415,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       0,
     ],
     "no-this-before-super": [
-      2,
+      0,
     ],
     "no-trailing-spaces": [
       0,
     ],
     "no-undef": [
-      2,
+      0,
       {
         "typeof": false,
       },
@@ -13408,13 +13430,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
       0,
     ],
     "no-unreachable": [
-      2,
+      0,
     ],
     "no-unsafe-finally": [
       2,
     ],
     "no-unsafe-negation": [
-      2,
+      0,
       {
         "enforceForOrderingRelations": false,
       },
@@ -13454,11 +13476,14 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
         "ignoreImport": false,
       },
     ],
+    "no-var": [
+      2,
+    ],
     "no-whitespace-before-property": [
       0,
     ],
     "no-with": [
-      2,
+      0,
     ],
     "no-wrap-func": [
       0,
@@ -13527,7 +13552,20 @@ exports[`snapshot (addons/react) > should match snapshot (d.cts) 1`] = `
         "type": "natural",
       },
     ],
+    "prefer-const": [
+      2,
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false,
+      },
+    ],
     "prefer-destructuring": [
+      2,
+    ],
+    "prefer-rest-params": [
+      2,
+    ],
+    "prefer-spread": [
       2,
     ],
     "quote-props": [
@@ -16325,7 +16363,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       0,
     ],
     "constructor-super": [
-      2,
+      0,
     ],
     "curly": [
       0,
@@ -16396,7 +16434,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       0,
     ],
     "getter-return": [
-      2,
+      0,
       {
         "allowImplicit": false,
       },
@@ -16499,7 +16537,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       2,
     ],
     "no-class-assign": [
-      2,
+      0,
     ],
     "no-comma-dangle": [
       0,
@@ -16524,7 +16562,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       },
     ],
     "no-const-assign": [
-      2,
+      0,
     ],
     "no-constant-binary-expression": [
       2,
@@ -16545,16 +16583,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       2,
     ],
     "no-dupe-args": [
-      2,
+      0,
     ],
     "no-dupe-class-members": [
-      2,
+      0,
     ],
     "no-dupe-else-if": [
       2,
     ],
     "no-dupe-keys": [
-      2,
+      0,
     ],
     "no-duplicate-case": [
       2,
@@ -16601,7 +16639,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       0,
     ],
     "no-func-assign": [
-      2,
+      0,
     ],
     "no-global-assign": [
       2,
@@ -16610,7 +16648,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       },
     ],
     "no-import-assign": [
-      2,
+      0,
     ],
     "no-invalid-regexp": [
       2,
@@ -16663,13 +16701,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       0,
     ],
     "no-new-native-nonconstructor": [
-      2,
+      0,
+    ],
+    "no-new-symbol": [
+      0,
     ],
     "no-nonoctal-decimal-escape": [
       2,
     ],
     "no-obj-calls": [
-      2,
+      0,
     ],
     "no-octal": [
       2,
@@ -16681,7 +16722,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       2,
     ],
     "no-redeclare": [
-      2,
+      0,
       {
         "builtinGlobals": true,
       },
@@ -16713,7 +16754,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       },
     ],
     "no-setter-return": [
-      2,
+      0,
     ],
     "no-shadow-restricted-names": [
       2,
@@ -16734,13 +16775,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       0,
     ],
     "no-this-before-super": [
-      2,
+      0,
     ],
     "no-trailing-spaces": [
       0,
     ],
     "no-undef": [
-      2,
+      0,
       {
         "typeof": false,
       },
@@ -16749,13 +16790,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
       0,
     ],
     "no-unreachable": [
-      2,
+      0,
     ],
     "no-unsafe-finally": [
       2,
     ],
     "no-unsafe-negation": [
-      2,
+      0,
       {
         "enforceForOrderingRelations": false,
       },
@@ -16795,11 +16836,14 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
         "ignoreImport": false,
       },
     ],
+    "no-var": [
+      2,
+    ],
     "no-whitespace-before-property": [
       0,
     ],
     "no-with": [
-      2,
+      0,
     ],
     "no-wrap-func": [
       0,
@@ -16868,7 +16912,20 @@ exports[`snapshot (addons/react) > should match snapshot (d.mts) 1`] = `
         "type": "natural",
       },
     ],
+    "prefer-const": [
+      2,
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false,
+      },
+    ],
     "prefer-destructuring": [
+      2,
+    ],
+    "prefer-rest-params": [
+      2,
+    ],
+    "prefer-spread": [
       2,
     ],
     "quote-props": [
@@ -19666,7 +19723,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       0,
     ],
     "constructor-super": [
-      2,
+      0,
     ],
     "curly": [
       0,
@@ -19737,7 +19794,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       0,
     ],
     "getter-return": [
-      2,
+      0,
       {
         "allowImplicit": false,
       },
@@ -19840,7 +19897,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       2,
     ],
     "no-class-assign": [
-      2,
+      0,
     ],
     "no-comma-dangle": [
       0,
@@ -19865,7 +19922,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       },
     ],
     "no-const-assign": [
-      2,
+      0,
     ],
     "no-constant-binary-expression": [
       2,
@@ -19886,16 +19943,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       2,
     ],
     "no-dupe-args": [
-      2,
+      0,
     ],
     "no-dupe-class-members": [
-      2,
+      0,
     ],
     "no-dupe-else-if": [
       2,
     ],
     "no-dupe-keys": [
-      2,
+      0,
     ],
     "no-duplicate-case": [
       2,
@@ -19942,7 +19999,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       0,
     ],
     "no-func-assign": [
-      2,
+      0,
     ],
     "no-global-assign": [
       2,
@@ -19951,7 +20008,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       },
     ],
     "no-import-assign": [
-      2,
+      0,
     ],
     "no-invalid-regexp": [
       2,
@@ -20004,13 +20061,16 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       0,
     ],
     "no-new-native-nonconstructor": [
-      2,
+      0,
+    ],
+    "no-new-symbol": [
+      0,
     ],
     "no-nonoctal-decimal-escape": [
       2,
     ],
     "no-obj-calls": [
-      2,
+      0,
     ],
     "no-octal": [
       2,
@@ -20022,7 +20082,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       2,
     ],
     "no-redeclare": [
-      2,
+      0,
       {
         "builtinGlobals": true,
       },
@@ -20054,7 +20114,7 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       },
     ],
     "no-setter-return": [
-      2,
+      0,
     ],
     "no-shadow-restricted-names": [
       2,
@@ -20075,13 +20135,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       0,
     ],
     "no-this-before-super": [
-      2,
+      0,
     ],
     "no-trailing-spaces": [
       0,
     ],
     "no-undef": [
-      2,
+      0,
       {
         "typeof": false,
       },
@@ -20090,13 +20150,13 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
       0,
     ],
     "no-unreachable": [
-      2,
+      0,
     ],
     "no-unsafe-finally": [
       2,
     ],
     "no-unsafe-negation": [
-      2,
+      0,
       {
         "enforceForOrderingRelations": false,
       },
@@ -20136,11 +20196,14 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
         "ignoreImport": false,
       },
     ],
+    "no-var": [
+      2,
+    ],
     "no-whitespace-before-property": [
       0,
     ],
     "no-with": [
-      2,
+      0,
     ],
     "no-wrap-func": [
       0,
@@ -20209,7 +20272,20 @@ exports[`snapshot (addons/react) > should match snapshot (d.ts) 1`] = `
         "type": "natural",
       },
     ],
+    "prefer-const": [
+      2,
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": false,
+      },
+    ],
     "prefer-destructuring": [
+      2,
+    ],
+    "prefer-rest-params": [
+      2,
+    ],
+    "prefer-spread": [
       2,
     ],
     "quote-props": [
