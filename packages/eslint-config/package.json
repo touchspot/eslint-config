@@ -26,7 +26,10 @@
 	"files": [
 		"dist",
 		"package.json",
-		"README.md"
+		"README.md",
+		"!**/__snapshots__/",
+		"!**/*.tsbuildinfo",
+		"!**/*.test.*"
 	],
 	"scripts": {
 		"build": "tspc --build tsconfig.build.json",
