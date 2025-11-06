@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.4](https://github.com/touchspot/eslint-config/compare/v4.0.3...v4.0.4) (2025-11-06)
+
+
+### Bug Fixes
+
+* disable redundant ESLint rules in TypeScript files ([9fb68be](https://github.com/touchspot/eslint-config/commit/9fb68beb9e27a1d70f06ccee27078283837d06b3))
+
 ## [4.0.3](https://github.com/touchspot/eslint-config/compare/v4.0.2...v4.0.3) (2025-11-06)
 
 
