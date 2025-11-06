@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.1](https://github.com/touchspot/eslint-config/compare/v4.0.0...v4.0.1) (2025-11-06)
+
+
+### Bug Fixes
+
+* disable `react/prop-types` rule ([0e66ea0](https://github.com/touchspot/eslint-config/commit/0e66ea03f4e3a4b2ee65a6d2496b19d3df9b60a0))
+
 ## [4.0.0](https://github.com/touchspot/eslint-config/compare/v3.0.5...v4.0.0) (2025-11-05)
 
 
