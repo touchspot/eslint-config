@@ -1,0 +1,17 @@
+{
+	"extends": ["@tsconfig/node22/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+	"compilerOptions": {
+		"noEmit": true,
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"verbatimModuleSyntax": true,
+		"paths": {
+			"@touchspot/eslint-config": ["./lib/default.ts"],
+			"@touchspot/eslint-config/addons/*": ["./lib/addons/*.ts"],
+			"@touchspot/eslint-config/package.json": ["./package.json"],
+			"#src/*.js": ["./src/*.ts"],
+			"#test/*.js": ["./test/*.ts"]
+		}
+	},
+	"include": ["lib", "src", "test", "*.ts"]
+}

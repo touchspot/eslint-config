@@ -1,20 +1,11 @@
 {
-	"extends": ["@tsconfig/node22/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+	"extends": ["@tsconfig/strictest/tsconfig.json"],
 	"compilerOptions": {
-		"outDir": "dist",
-		"sourceMap": true,
-		"declaration": true,
-		"declarationMap": true,
-		"target": "ES2023",
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext",
-		"paths": {
-			"#pkg/*": ["./src/*"]
-		},
-		"plugins": [
-			{ "transform": "typescript-transform-paths" },
-			{ "transform": "typescript-transform-paths", "afterDeclarations": true }
-		]
+		"noEmit": true,
+		"module": "nodenext",
+		"moduleResolution": "nodenext",
+		"verbatimModuleSyntax": true
 	},
-	"include": ["lib", "src"]
+	"include": ["*.ts"],
+	"exclude": ["packages", "playgrounds"]
 }

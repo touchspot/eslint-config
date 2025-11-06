@@ -1,0 +1,8 @@
+{
+	"enabled": true,
+	"allowCompoundWords": true,
+	"ignorePaths": [".github/**", ".vscode/**", "pnpm-workspace.yaml", "*.code-workspace", "*-lock.*"],
+	"ignoreRandomStrings": true,
+	"words": ["commitizen", "jotai", "knip", "turborepo", "vite", "vitest"],
+	"ignoreWords": ["mozisan", "tspc"]
+}

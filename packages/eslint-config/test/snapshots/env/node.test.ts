@@ -1,0 +1,12 @@
+import config, { env } from "@touchspot/eslint-config";
+
+import { runSnapshotTest } from "#test/helpers.js";
+
+runSnapshotTest(import.meta.filename)(
+	config(
+		{
+			tsconfigRootDir: "/path/to/dir",
+		},
+		env.node(),
+	),
+);

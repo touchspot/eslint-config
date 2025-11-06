@@ -1,7 +1,6 @@
 .claude/settings.local.json
 .turbo/
-dist/
-tests/
+packages/
+playgrounds/
 *-lock.*
 .release-please-manifest.json
-CHANGELOG.md
