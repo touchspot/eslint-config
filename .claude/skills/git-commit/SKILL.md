@@ -3,7 +3,7 @@ name: git-commit
 description: Create git commits with Conventional Commits format. Analyzes changes to write meaningful messages. Use when committing changes, committing staged files, creating commits, making commits, or writing git commit messages.
 ---
 
-# Git Committer
+# Git Commit Skill
 
 ## Overview
 
@@ -116,9 +116,9 @@ Each rule is an array: `[level, applicability, value]`
 
 **Critical: Distinguish between END USER features vs DEVELOPER tools**
 
-- ✅ `feat`: Add new ESLint rule for async/await patterns (affects users of this config)
-- ❌ `feat`: Add git-commit skill (only affects developers of this project)
-- ✅ `chore`: Add git-commit skill for commit automation
+- ✅ "feat: Add new ESLint rule for async/await patterns (affects users of this config)"
+- ❌ "feat: Add git-commit skill (only affects developers of this project)"
+- ✅ "chore: Add git-commit skill for commit automation"
 
 **The subject line must answer "why", not "what" or "how".**
 
@@ -326,8 +326,8 @@ git status
     - File changes and implementation details go in the body, not subject
 
 6. **Don't use `feat` for developer-only changes**
-    - ❌ `feat`: add `git-commit` skill for commit automation
-    - ✅ `chore`: add `git-commit` skill for commit automation
-    - ❌ `feat`: add GitHub Actions workflow for CI
-    - ✅ `ci`: add GitHub Actions workflow for CI
+    - ❌ "feat: add `git-commit` skill for commit automation"
+    - ✅ "chore: add `git-commit` skill for commit automation"
+    - ❌ "feat: add GitHub Actions workflow for CI"
+    - ✅ "ci: add GitHub Actions workflow for CI"
     - Ask: "Does this change what END USERS can do with this ESLint config?"
