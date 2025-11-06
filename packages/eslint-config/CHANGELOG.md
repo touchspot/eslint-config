@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.0.2](https://github.com/touchspot/eslint-config/compare/v4.0.1...v4.0.2) (2025-11-06)
+
+
+### Bug Fixes
+
+* disable type-checked rules for JavaScript files in functional ruleset ([d205cd2](https://github.com/touchspot/eslint-config/commit/d205cd25f56b0cbb7ff71baf50a966b247d8f896))
+* prevent test files and build artifacts from npm package ([7866585](https://github.com/touchspot/eslint-config/commit/7866585e7916a277a3e0a1a3a7f9a74cf53aa5f5))
+
 ## [4.0.1](https://github.com/touchspot/eslint-config/compare/v4.0.0...v4.0.1) (2025-11-06)
 
 
