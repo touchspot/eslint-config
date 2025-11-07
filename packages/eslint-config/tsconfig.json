@@ -7,8 +7,8 @@
 		"verbatimModuleSyntax": true,
 		"paths": {
 			"@touchspot/eslint-config": ["./lib/default.ts"],
-			"@touchspot/eslint-config/addons/*": ["./lib/addons/*.ts"],
 			"@touchspot/eslint-config/package.json": ["./package.json"],
+			"@touchspot/eslint-config/*": ["./lib/frameworks/*.ts"],
 			"#src/*.js": ["./src/*.ts"],
 			"#test/*.js": ["./test/*.ts"]
 		}
