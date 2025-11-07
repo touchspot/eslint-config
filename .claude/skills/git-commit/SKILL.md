@@ -189,6 +189,30 @@ Always enclose the following in backticks:
 - Constants/naming conventions: `KEBAB_CASE`, `UPPER_CASE`, `camelCase`
 - Environment variables: `NODE_ENV`, `PATH`
 
+**Special Characters and Arrows (both Subject and Body):**
+
+**CRITICAL: Only use basic ASCII characters for arrows and symbols. Never use Unicode alternatives.**
+
+For arrows, ALWAYS use the two-character ASCII sequence:
+
+- ✅ Use `->` (hyphen + greater-than, ASCII 0x2D 0x3E)
+- ❌ DO NOT use → (U+2192, rightwards arrow)
+- ❌ DO NOT use any Unicode arrow characters (U+2190-U+21FF)
+- ❌ DO NOT use any control characters or special quotation marks
+
+Examples of correct usage:
+
+- "`oldName` -> `newName`"
+- "`entryPoint` -> `entry`"
+- "Change A -> B for consistency"
+
+**Why this matters:**
+
+- Unicode arrows and special characters can be corrupted during git operations
+- Some terminal/editor combinations display them as control character codes like `<U+0092>`
+- ASCII `->` is universally supported and displays correctly everywhere
+- Git commit messages should use only ASCII characters for maximum compatibility
+
 **Subject (required):**
 
 - **MUST describe the outcome/purpose, NEVER describe file changes**
