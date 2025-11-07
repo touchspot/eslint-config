@@ -1,35 +1,9 @@
 import BetterTailwindCSS from "eslint-plugin-better-tailwindcss";
-import type { Matcher } from "eslint-plugin-better-tailwindcss/api/types";
 import { defineConfig } from "eslint/config";
 
-export declare namespace betterTailwindCSSRulesets {
-	type CommonOptions = {
-		readonly attributes?: readonly Matcher[] | undefined;
-		readonly callees?: readonly Matcher[] | undefined;
-		readonly variables?: readonly Matcher[] | undefined;
-		readonly tags?: readonly Matcher[] | undefined;
-	};
+import type { tailwindcss } from "#src/frameworks/tailwindcss.js";
 
-	type V4Options = {
-		readonly version?: 4;
-		readonly entryPoint: string;
-	};
-
-	type V3Options = {
-		readonly version: 3;
-		readonly tailwindConfig?: string;
-	};
-
-	type Options = CommonOptions & (V3Options | V4Options);
-}
-
-export const betterTailwindCSSRulesets = ({
-	attributes,
-	callees,
-	variables,
-	tags,
-	...options
-}: betterTailwindCSSRulesets.Options) =>
+export const betterTailwindCSSRulesets = ({ attributes, callees, variables, tags, ...options }: tailwindcss.Options) =>
 	defineConfig({
 		name: "@touchspot/eslint-config/rulesets/better-tailwindcss",
 		files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
@@ -39,8 +13,8 @@ export const betterTailwindCSSRulesets = ({
 		settings: {
 			"better-tailwindcss": {
 				...(options.version === 3
-					? { tailwindConfig: options.tailwindConfig ?? "tailwind.config.js" }
-					: { entryPoint: options.entryPoint }),
+					? { tailwindConfig: options.config ?? "tailwind.config.js" }
+					: { entryPoint: options.entry }),
 				...(attributes == null ? null : { attributes }),
 				...(callees == null ? null : { callees }),
 				...(variables == null ? null : { variables }),

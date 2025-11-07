@@ -7,5 +7,5 @@ export default config(
 		rootDir: import.meta.dirname,
 	},
 	next(),
-	tailwindcss({ entryPoint: "tailwind.css" }),
+	tailwindcss({ entry: "tailwind.css" }),
 );

@@ -8,6 +8,6 @@ runSnapshotTest(import.meta.filename)(
 		{
 			rootDir: "/path/to/dir",
 		},
-		tailwindcss({ entryPoint: "tailwind.css" }),
+		tailwindcss({ entry: "tailwind.css" }),
 	),
 );
