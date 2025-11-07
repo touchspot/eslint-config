@@ -1,5 +1,5 @@
 import config from "@touchspot/eslint-config";
-import tailwindcss from "@touchspot/eslint-config/addons/tailwindcss";
+import react from "@touchspot/eslint-config/react";
 
 import { runSnapshotTest } from "#test/helpers.js";
 
@@ -8,6 +8,6 @@ runSnapshotTest(import.meta.filename)(
 		{
 			tsconfigRootDir: "/path/to/dir",
 		},
-		tailwindcss({ version: 3 }),
+		react(),
 	),
 );

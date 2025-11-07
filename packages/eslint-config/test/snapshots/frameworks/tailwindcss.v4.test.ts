@@ -1,5 +1,5 @@
 import config from "@touchspot/eslint-config";
-import next from "@touchspot/eslint-config/addons/next";
+import tailwindcss from "@touchspot/eslint-config/tailwindcss";
 
 import { runSnapshotTest } from "#test/helpers.js";
 
@@ -8,6 +8,6 @@ runSnapshotTest(import.meta.filename)(
 		{
 			tsconfigRootDir: "/path/to/dir",
 		},
-		next(),
+		tailwindcss({ entryPoint: "tailwind.css" }),
 	),
 );

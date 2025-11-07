@@ -4,7 +4,7 @@
 	"tasks": {
 		"check:lint": {
 			"dependsOn": ["^build", "build"],
-			"inputs": ["lib/", "src/", "test/", "*.js", "tsconfig.json", "!**/__snapshots__/"],
+			"inputs": ["lib/", "src/", "test/", "*.ts", "*.js", "tsconfig.json", "!**/__snapshots__/"],
 			"outputs": []
 		},
 		"check:type": {
@@ -18,8 +18,13 @@
 		},
 		"test": {
 			"dependsOn": ["^build"],
-			"inputs": ["lib/", "src/", "test/", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
-			"outputs": []
+			"inputs": ["src/", "test/", "tsconfig.json", "vitest.*"],
+			"outputs": ["coverage/**"]
+		},
+		"test:update": {
+			"dependsOn": ["^build"],
+			"inputs": ["src/", "test/", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
+			"outputs": ["**/__snapshots__/**"]
 		}
 	}
 }

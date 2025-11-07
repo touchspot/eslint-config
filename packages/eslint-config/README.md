@@ -22,7 +22,7 @@ export default config({
 
 ```js
 import config from "@touchspot/eslint-config";
-import react from "@touchspot/eslint-config/addons/react";
+import react from "@touchspot/eslint-config/react";
 
 export default config(
     {
@@ -36,7 +36,7 @@ export default config(
 
 ```js
 import config from "@touchspot/eslint-config";
-import next from "@touchspot/eslint-config/addons/next";
+import next from "@touchspot/eslint-config/next";
 
 export default config(
     {
@@ -50,7 +50,7 @@ export default config(
 
 ```js
 import config from "@touchspot/eslint-config";
-import tailwindcss from "@touchspot/eslint-config/addons/tailwindcss";
+import tailwindcss from "@touchspot/eslint-config/tailwindcss";
 
 export default config(
     {
@@ -66,7 +66,7 @@ export default config(
 
 ```js
 import config from "@touchspot/eslint-config";
-import tailwindcss from "@touchspot/eslint-config/addons/tailwindcss";
+import tailwindcss from "@touchspot/eslint-config/tailwindcss";
 
 export default config(
     {

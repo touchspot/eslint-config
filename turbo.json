@@ -23,17 +23,17 @@
 		},
 		"//#check:lint": {
 			"dependsOn": ["^build"],
-			"inputs": ["*.js", "*.ts", "tsconfig.json"],
+			"inputs": [".claude/**", "*.ts", "*.js", "tsconfig.json"],
 			"outputs": []
 		},
 		"check:lint": {
 			"dependsOn": ["^build"],
-			"inputs": ["lib/", "src/", "test/", "*.js", "*.ts", "tsconfig.json", "!**/__snapshots__/"],
+			"inputs": ["lib/", "src/", "test/", "*.ts", "*.js", "tsconfig.json", "!**/__snapshots__/"],
 			"outputs": []
 		},
 		"check:type": {
 			"dependsOn": ["^build"],
-			"inputs": ["lib/", "src/", "test/", "*.ts", "tsconfig.json", "!**/__snapshots__/"],
+			"inputs": ["lib/", "src/", "test/", "*.ts", "*.js", "tsconfig.json", "!**/__snapshots__/"],
 			"outputs": []
 		},
 		"//#check:unused": {
@@ -75,13 +75,7 @@
 		},
 		"test": {
 			"dependsOn": ["^build"],
-			"inputs": ["lib/", "src/", "test/", "*.ts", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
-			"outputs": []
-		},
-		"test:update": {
-			"dependsOn": ["^build"],
-			"inputs": ["lib/", "src/", "test/", "*.ts", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
-			"outputs": ["**/__snapshots__/**"]
+			"inputs": ["src/", "*.ts", "*.js", "tsconfig.json", "vitest.*"]
 		}
 	}
 }
