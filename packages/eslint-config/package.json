@@ -27,9 +27,9 @@
 		"dist",
 		"package.json",
 		"README.md",
-		"!**/__snapshots__/",
 		"!**/*.tsbuildinfo",
-		"!**/*.test.*"
+		"!**/*.test.*",
+		"!**/__snapshots__/"
 	],
 	"scripts": {
 		"build": "tspc --build tsconfig.build.json",
@@ -64,7 +64,6 @@
 	},
 	"devDependencies": {
 		"@eslint/config-helpers": "catalog:",
-		"@eslint/config-inspector": "catalog:",
 		"@eslint/core": "catalog:",
 		"eslint": "catalog:",
 		"next": "catalog:",

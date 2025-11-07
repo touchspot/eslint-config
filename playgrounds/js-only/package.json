@@ -1,0 +1,18 @@
+{
+	"name": "playground-js-only",
+	"private": true,
+	"type": "module",
+	"imports": {
+		"#src/*.js": "./src/*.ts"
+	},
+	"scripts": {
+		"check:format": "prettier --check --log-level=warn .",
+		"check:type": "tsc --noEmit",
+		"fix:format": "prettier --write --log-level=warn .",
+		"test": "eslint ."
+	},
+	"prettier": "@touchspot/prettier-config",
+	"devDependencies": {
+		"@touchspot/eslint-config": "workspace:^"
+	}
+}

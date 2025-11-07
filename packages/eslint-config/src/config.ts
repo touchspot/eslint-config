@@ -1,19 +1,24 @@
+import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
 import Prettier from "eslint-config-prettier";
 import { defineConfig, globalIgnores } from "eslint/config";
 
 import { checkFileRuleset } from "#src/rulesets/check-file.js";
 import { eslintRuleset } from "#src/rulesets/eslint.js";
-import { functionalRuleset } from "#src/rulesets/functional.js";
+import { autoDisableTypeAwareFunctionalRules, functionalRuleset } from "#src/rulesets/functional.js";
 import { importXRuleset } from "#src/rulesets/import-x.js";
 import { noRelativeImportPathsRuleset } from "#src/rulesets/no-relative-import-paths.js";
 import { perfectionistRuleset } from "#src/rulesets/perfectionist.js";
-import { tseslintRuleset } from "#src/rulesets/tseslint.js";
+import { autoDisableTypeAwareTseslintRules, tseslintRuleset } from "#src/rulesets/tseslint.js";
 import { unicornRuleset } from "#src/rulesets/unicorn.js";
 import { unusedImportsRuleset } from "#src/rulesets/unused-imports.js";
 
-type Options = tseslintRuleset.Options;
+export type Options = {
+	readonly rootDir: string;
+	readonly tsconfig?: string;
+	readonly enableTypeAwareRules?: { readonly js?: "all" | "auto" } | false;
+};
 
-export const config = (options: Options, ...addons: Parameters<typeof defineConfig>) =>
+export const config = (options: Options, ...addons: ConfigWithExtendsArray) =>
 	defineConfig(
 		globalIgnores([".cache/", ".turbo/", "coverage/", "dist/"]),
 		{
@@ -53,5 +58,7 @@ export const config = (options: Options, ...addons: Parameters<typeof defineConf
 		perfectionistRuleset(),
 		checkFileRuleset(),
 		addons,
+		autoDisableTypeAwareTseslintRules(options),
+		autoDisableTypeAwareFunctionalRules(options),
 		Prettier,
 	);

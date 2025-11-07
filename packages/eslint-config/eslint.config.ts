@@ -2,7 +2,7 @@ import config from "@touchspot/eslint-config";
 
 export default config(
 	{
-		tsconfigRootDir: import.meta.dirname,
+		rootDir: import.meta.dirname,
 	},
 	{
 		files: ["lib/**"],
