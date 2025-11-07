@@ -12,13 +12,15 @@ import { autoDisableTypeAwareTseslintRules, tseslintRuleset } from "#src/ruleset
 import { unicornRuleset } from "#src/rulesets/unicorn.js";
 import { unusedImportsRuleset } from "#src/rulesets/unused-imports.js";
 
-export type Options = {
-	readonly rootDir: string;
-	readonly tsconfig?: string;
-	readonly enableTypeAwareRules?: { readonly js?: "all" | "auto" } | false;
-};
+export declare namespace config {
+	type Options = {
+		readonly rootDir: string;
+		readonly tsconfig?: string;
+		readonly enableTypeAwareRules?: { readonly js?: "all" | "auto" } | false;
+	};
+}
 
-export const config = (options: Options, ...addons: ConfigWithExtendsArray) =>
+export const config = (options: config.Options, ...addons: ConfigWithExtendsArray) =>
 	defineConfig(
 		globalIgnores([".cache/", ".turbo/", "coverage/", "dist/"]),
 		{

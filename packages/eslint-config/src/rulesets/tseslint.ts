@@ -1,9 +1,9 @@
 import { defineConfig } from "eslint/config";
 import * as TSESLint from "typescript-eslint";
 
-import type { Options } from "#src/config.js";
+import type { config } from "#src/config.js";
 
-export const tseslintRuleset = (options: Options) =>
+export const tseslintRuleset = (options: config.Options) =>
 	defineConfig(
 		{
 			name: "@touchspot/eslint-config/rulesets/tseslint",
@@ -88,7 +88,7 @@ export const tseslintRuleset = (options: Options) =>
 		},
 	);
 
-export const autoDisableTypeAwareTseslintRules = (options: Options) => {
+export const autoDisableTypeAwareTseslintRules = (options: config.Options) => {
 	if (options.enableTypeAwareRules === false) {
 		return defineConfig({
 			name: "@touchspot/eslint-config/rulesets/tseslint/disable-type-aware/all",

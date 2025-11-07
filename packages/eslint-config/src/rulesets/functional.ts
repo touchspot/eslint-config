@@ -3,7 +3,7 @@ import type { Plugin } from "@eslint/core";
 import Functional from "eslint-plugin-functional";
 import { defineConfig } from "eslint/config";
 
-import type { Options } from "#src/config.js";
+import type { config } from "#src/config.js";
 
 export const functionalRuleset = () =>
 	defineConfig({
@@ -43,7 +43,7 @@ export const functionalRulesetReact = () =>
 		},
 	});
 
-export const autoDisableTypeAwareFunctionalRules = (options: Options) => {
+export const autoDisableTypeAwareFunctionalRules = (options: config.Options) => {
 	if (options.enableTypeAwareRules === false) {
 		return defineConfig({
 			name: "@touchspot/eslint-config/rulesets/functional/disable-type-aware/all",
