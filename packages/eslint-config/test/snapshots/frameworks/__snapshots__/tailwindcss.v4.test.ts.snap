@@ -10738,7 +10738,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:cts] > shou
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -13404,7 +13407,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.css.ts] >
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -15571,7 +15577,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.cts] > sh
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -17741,7 +17750,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.mts] > sh
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -19908,7 +19920,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.ts] > sho
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -22075,7 +22090,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:mts] > shou
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -24738,7 +24756,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:ts] > shoul
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -27401,7 +27422,10 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:tsx] > shou
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",

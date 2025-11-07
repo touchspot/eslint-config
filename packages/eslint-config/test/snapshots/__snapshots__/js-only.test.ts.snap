@@ -1,50 +1,28 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:js][ext:cjs] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -54,53 +32,22 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -108,46 +55,17 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
@@ -2720,51 +2638,29 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:js][ext:js] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -2774,53 +2670,22 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -2828,46 +2693,17 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
@@ -5437,51 +5273,29 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:js][ext:jsx] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -5491,53 +5305,22 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -5545,46 +5328,17 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
@@ -8154,51 +7908,29 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:js][ext:mjs] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -8208,53 +7940,22 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -8262,46 +7963,17 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
@@ -10871,51 +10543,29 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:cts] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -10925,53 +10575,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -10979,55 +10598,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -11601,7 +11190,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/await-thenable": [
-      2,
+      0,
     ],
     "@typescript-eslint/ban-ts-comment": [
       2,
@@ -11633,6 +11222,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     "@typescript-eslint/consistent-indexed-object-style": [
       2,
     ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
     "@typescript-eslint/consistent-type-assertions": [
       2,
     ],
@@ -11641,13 +11236,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       "type",
     ],
     "@typescript-eslint/consistent-type-exports": [
-      2,
+      0,
     ],
     "@typescript-eslint/consistent-type-imports": [
       2,
     ],
     "@typescript-eslint/dot-notation": [
-      2,
+      0,
       {
         "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
@@ -11681,7 +11276,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       0,
     ],
     "@typescript-eslint/naming-convention": [
-      2,
+      0,
       {
         "format": [
           "camelCase",
@@ -11734,25 +11329,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-array-delete": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-base-to-string": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-confusing-non-null-assertion": [
       2,
     ],
     "@typescript-eslint/no-confusing-void-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-deprecated": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
     "@typescript-eslint/no-duplicate-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-dynamic-delete": [
       2,
@@ -11782,13 +11377,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-floating-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-for-in-array": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-implied-eval": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-import-type-side-effects": [
       2,
@@ -11800,19 +11395,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-meaningless-void-operator": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-new": [
       2,
     ],
     "@typescript-eslint/no-misused-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-spread": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-mixed-enums": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-namespace": [
       2,
@@ -11830,7 +11425,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-redundant-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-require-imports": [
       2,
@@ -11847,61 +11442,64 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-condition": [
-      2,
+      0,
       {
         "allowConstantLoopConditions": true,
       },
     ],
     "@typescript-eslint/no-unnecessary-qualifier": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-template-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-assertion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-conversion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-parameters": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-argument": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-assignment": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-call": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-declaration-merging": [
       2,
     ],
     "@typescript-eslint/no-unsafe-enum-comparison": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-function-type": [
       2,
     ],
     "@typescript-eslint/no-unsafe-member-access": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-return": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
     ],
     "@typescript-eslint/no-unsafe-unary-minus": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unused-expressions": [
       2,
@@ -11924,13 +11522,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
-      2,
+      0,
     ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
     "@typescript-eslint/only-throw-error": [
-      2,
+      0,
     ],
     "@typescript-eslint/parameter-properties": [
       2,
@@ -11938,8 +11536,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     "@typescript-eslint/prefer-as-const": [
       2,
     ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
     "@typescript-eslint/prefer-find": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-for-of": [
       2,
@@ -11948,7 +11549,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/prefer-includes": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
       2,
@@ -11957,43 +11558,52 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
-      2,
+      0,
       {
         "ignoreTernaryTests": true,
       },
     ],
     "@typescript-eslint/prefer-optional-chain": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-promise-reject-errors": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-readonly": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-regexp-exec": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-return-this-type": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
     ],
     "@typescript-eslint/quotes": [
       0,
     ],
     "@typescript-eslint/related-getter-setter-pairs": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
     ],
     "@typescript-eslint/require-await": [
-      2,
+      0,
     ],
     "@typescript-eslint/restrict-plus-operands": [
-      2,
+      0,
       {
         "allowAny": false,
         "allowBoolean": false,
@@ -12003,13 +11613,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       },
     ],
     "@typescript-eslint/restrict-template-expressions": [
-      2,
+      0,
       {
         "allowNumber": true,
       },
     ],
     "@typescript-eslint/return-await": [
-      2,
+      0,
       "always",
     ],
     "@typescript-eslint/semi": [
@@ -12025,7 +11635,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
-      2,
+      0,
       {
         "allowNullableObject": false,
         "allowNumber": false,
@@ -12033,7 +11643,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       },
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
-      2,
+      0,
     ],
     "@typescript-eslint/triple-slash-reference": [
       2,
@@ -12042,13 +11652,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       0,
     ],
     "@typescript-eslint/unbound-method": [
-      2,
+      0,
     ],
     "@typescript-eslint/unified-signatures": [
       2,
     ],
     "@typescript-eslint/use-unknown-in-catch-callback-variable": [
-      2,
+      0,
     ],
     "array-bracket-newline": [
       0,
@@ -12183,8 +11793,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreImmediateMutation": true,
         "ignoreNonConstDeclarations": {
@@ -12192,11 +11805,38 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,
@@ -13591,51 +13231,29 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:d.css.ts] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -13645,53 +13263,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -13699,55 +13286,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -13762,6 +13319,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@4.15.1",
+    "functional:eslint-plugin-functional@9.0.2",
   ],
   "processor": undefined,
   "rules": {
@@ -14311,6 +13869,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "@stylistic/yield-star-spacing": [
       0,
     ],
+    "@typescript-eslint/await-thenable": [
+      0,
+    ],
     "@typescript-eslint/block-spacing": [
       0,
     ],
@@ -14322,6 +13883,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "@typescript-eslint/comma-spacing": [
       0,
+    ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
+    "@typescript-eslint/consistent-type-exports": [
+      0,
+    ],
+    "@typescript-eslint/dot-notation": [
+      0,
+      {
+        "allowIndexSignaturePropertyAccess": false,
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
+      },
     ],
     "@typescript-eslint/func-call-spacing": [
       0,
@@ -14341,16 +13921,169 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "@typescript-eslint/member-delimiter-style": [
       0,
     ],
+    "@typescript-eslint/naming-convention": [
+      0,
+    ],
+    "@typescript-eslint/no-array-delete": [
+      0,
+    ],
+    "@typescript-eslint/no-base-to-string": [
+      0,
+    ],
+    "@typescript-eslint/no-confusing-void-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-deprecated": [
+      0,
+    ],
+    "@typescript-eslint/no-duplicate-type-constituents": [
+      0,
+    ],
     "@typescript-eslint/no-extra-parens": [
       0,
     ],
     "@typescript-eslint/no-extra-semi": [
       0,
     ],
+    "@typescript-eslint/no-floating-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-for-in-array": [
+      0,
+    ],
+    "@typescript-eslint/no-implied-eval": [
+      0,
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-spread": [
+      0,
+    ],
+    "@typescript-eslint/no-mixed-enums": [
+      0,
+    ],
+    "@typescript-eslint/no-redundant-type-constituents": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-condition": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-qualifier": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-arguments": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-conversion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-argument": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-assignment": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-call": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-enum-comparison": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-member-access": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-return": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
+      0,
+    ],
+    "@typescript-eslint/non-nullable-type-assertion-style": [
+      0,
+    ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
+    "@typescript-eslint/only-throw-error": [
+      0,
+    ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
+    "@typescript-eslint/prefer-find": [
+      0,
+    ],
+    "@typescript-eslint/prefer-includes": [
+      0,
+    ],
+    "@typescript-eslint/prefer-nullish-coalescing": [
+      0,
+    ],
+    "@typescript-eslint/prefer-optional-chain": [
+      0,
+    ],
+    "@typescript-eslint/prefer-promise-reject-errors": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
+    ],
+    "@typescript-eslint/prefer-reduce-type-parameter": [
+      0,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
+      0,
+    ],
+    "@typescript-eslint/prefer-return-this-type": [
+      0,
+    ],
+    "@typescript-eslint/prefer-string-starts-ends-with": [
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
+    ],
     "@typescript-eslint/quotes": [
+      0,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
+    ],
+    "@typescript-eslint/require-await": [
+      0,
+    ],
+    "@typescript-eslint/restrict-plus-operands": [
+      0,
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      0,
+    ],
+    "@typescript-eslint/return-await": [
       0,
     ],
     "@typescript-eslint/semi": [
@@ -14365,7 +14098,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "@typescript-eslint/space-infix-ops": [
       0,
     ],
+    "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/switch-exhaustiveness-check": [
+      0,
+    ],
     "@typescript-eslint/type-annotation-spacing": [
+      0,
+    ],
+    "@typescript-eslint/unbound-method": [
+      0,
+    ],
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": [
       0,
     ],
     "array-bracket-newline": [
@@ -14477,6 +14222,45 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
       0,
     ],
     "function-paren-newline": [
+      0,
+    ],
+    "functional/functional-parameters": [
+      0,
+    ],
+    "functional/immutable-data": [
+      0,
+    ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
+    "functional/prefer-property-signatures": [
+      0,
+    ],
+    "functional/prefer-readonly-type": [
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
       0,
     ],
     "generator-star": [
@@ -15812,51 +15596,29 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:d.cts] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -15866,53 +15628,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -15920,55 +15651,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -15983,6 +15684,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@4.15.1",
+    "functional:eslint-plugin-functional@9.0.2",
   ],
   "processor": undefined,
   "rules": {
@@ -16532,6 +16234,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "@stylistic/yield-star-spacing": [
       0,
     ],
+    "@typescript-eslint/await-thenable": [
+      0,
+    ],
     "@typescript-eslint/block-spacing": [
       0,
     ],
@@ -16543,6 +16248,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "@typescript-eslint/comma-spacing": [
       0,
+    ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
+    "@typescript-eslint/consistent-type-exports": [
+      0,
+    ],
+    "@typescript-eslint/dot-notation": [
+      0,
+      {
+        "allowIndexSignaturePropertyAccess": false,
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
+      },
     ],
     "@typescript-eslint/func-call-spacing": [
       0,
@@ -16562,16 +16286,169 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "@typescript-eslint/member-delimiter-style": [
       0,
     ],
+    "@typescript-eslint/naming-convention": [
+      0,
+    ],
+    "@typescript-eslint/no-array-delete": [
+      0,
+    ],
+    "@typescript-eslint/no-base-to-string": [
+      0,
+    ],
+    "@typescript-eslint/no-confusing-void-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-deprecated": [
+      0,
+    ],
+    "@typescript-eslint/no-duplicate-type-constituents": [
+      0,
+    ],
     "@typescript-eslint/no-extra-parens": [
       0,
     ],
     "@typescript-eslint/no-extra-semi": [
       0,
     ],
+    "@typescript-eslint/no-floating-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-for-in-array": [
+      0,
+    ],
+    "@typescript-eslint/no-implied-eval": [
+      0,
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-spread": [
+      0,
+    ],
+    "@typescript-eslint/no-mixed-enums": [
+      0,
+    ],
+    "@typescript-eslint/no-redundant-type-constituents": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-condition": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-qualifier": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-arguments": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-conversion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-argument": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-assignment": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-call": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-enum-comparison": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-member-access": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-return": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
+      0,
+    ],
+    "@typescript-eslint/non-nullable-type-assertion-style": [
+      0,
+    ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
+    "@typescript-eslint/only-throw-error": [
+      0,
+    ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
+    "@typescript-eslint/prefer-find": [
+      0,
+    ],
+    "@typescript-eslint/prefer-includes": [
+      0,
+    ],
+    "@typescript-eslint/prefer-nullish-coalescing": [
+      0,
+    ],
+    "@typescript-eslint/prefer-optional-chain": [
+      0,
+    ],
+    "@typescript-eslint/prefer-promise-reject-errors": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
+    ],
+    "@typescript-eslint/prefer-reduce-type-parameter": [
+      0,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
+      0,
+    ],
+    "@typescript-eslint/prefer-return-this-type": [
+      0,
+    ],
+    "@typescript-eslint/prefer-string-starts-ends-with": [
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
+    ],
     "@typescript-eslint/quotes": [
+      0,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
+    ],
+    "@typescript-eslint/require-await": [
+      0,
+    ],
+    "@typescript-eslint/restrict-plus-operands": [
+      0,
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      0,
+    ],
+    "@typescript-eslint/return-await": [
       0,
     ],
     "@typescript-eslint/semi": [
@@ -16586,7 +16463,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "@typescript-eslint/space-infix-ops": [
       0,
     ],
+    "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/switch-exhaustiveness-check": [
+      0,
+    ],
     "@typescript-eslint/type-annotation-spacing": [
+      0,
+    ],
+    "@typescript-eslint/unbound-method": [
+      0,
+    ],
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": [
       0,
     ],
     "array-bracket-newline": [
@@ -16698,6 +16587,45 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
       0,
     ],
     "function-paren-newline": [
+      0,
+    ],
+    "functional/functional-parameters": [
+      0,
+    ],
+    "functional/immutable-data": [
+      0,
+    ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
+    "functional/prefer-property-signatures": [
+      0,
+    ],
+    "functional/prefer-readonly-type": [
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
       0,
     ],
     "generator-star": [
@@ -18036,51 +17964,29 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:d.mts] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -18090,53 +17996,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -18144,55 +18019,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -18207,6 +18052,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@4.15.1",
+    "functional:eslint-plugin-functional@9.0.2",
   ],
   "processor": undefined,
   "rules": {
@@ -18756,6 +18602,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "@stylistic/yield-star-spacing": [
       0,
     ],
+    "@typescript-eslint/await-thenable": [
+      0,
+    ],
     "@typescript-eslint/block-spacing": [
       0,
     ],
@@ -18767,6 +18616,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "@typescript-eslint/comma-spacing": [
       0,
+    ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
+    "@typescript-eslint/consistent-type-exports": [
+      0,
+    ],
+    "@typescript-eslint/dot-notation": [
+      0,
+      {
+        "allowIndexSignaturePropertyAccess": false,
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
+      },
     ],
     "@typescript-eslint/func-call-spacing": [
       0,
@@ -18786,16 +18654,169 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "@typescript-eslint/member-delimiter-style": [
       0,
     ],
+    "@typescript-eslint/naming-convention": [
+      0,
+    ],
+    "@typescript-eslint/no-array-delete": [
+      0,
+    ],
+    "@typescript-eslint/no-base-to-string": [
+      0,
+    ],
+    "@typescript-eslint/no-confusing-void-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-deprecated": [
+      0,
+    ],
+    "@typescript-eslint/no-duplicate-type-constituents": [
+      0,
+    ],
     "@typescript-eslint/no-extra-parens": [
       0,
     ],
     "@typescript-eslint/no-extra-semi": [
       0,
     ],
+    "@typescript-eslint/no-floating-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-for-in-array": [
+      0,
+    ],
+    "@typescript-eslint/no-implied-eval": [
+      0,
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-spread": [
+      0,
+    ],
+    "@typescript-eslint/no-mixed-enums": [
+      0,
+    ],
+    "@typescript-eslint/no-redundant-type-constituents": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-condition": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-qualifier": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-arguments": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-conversion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-argument": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-assignment": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-call": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-enum-comparison": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-member-access": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-return": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
+      0,
+    ],
+    "@typescript-eslint/non-nullable-type-assertion-style": [
+      0,
+    ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
+    "@typescript-eslint/only-throw-error": [
+      0,
+    ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
+    "@typescript-eslint/prefer-find": [
+      0,
+    ],
+    "@typescript-eslint/prefer-includes": [
+      0,
+    ],
+    "@typescript-eslint/prefer-nullish-coalescing": [
+      0,
+    ],
+    "@typescript-eslint/prefer-optional-chain": [
+      0,
+    ],
+    "@typescript-eslint/prefer-promise-reject-errors": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
+    ],
+    "@typescript-eslint/prefer-reduce-type-parameter": [
+      0,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
+      0,
+    ],
+    "@typescript-eslint/prefer-return-this-type": [
+      0,
+    ],
+    "@typescript-eslint/prefer-string-starts-ends-with": [
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
+    ],
     "@typescript-eslint/quotes": [
+      0,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
+    ],
+    "@typescript-eslint/require-await": [
+      0,
+    ],
+    "@typescript-eslint/restrict-plus-operands": [
+      0,
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      0,
+    ],
+    "@typescript-eslint/return-await": [
       0,
     ],
     "@typescript-eslint/semi": [
@@ -18810,7 +18831,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "@typescript-eslint/space-infix-ops": [
       0,
     ],
+    "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/switch-exhaustiveness-check": [
+      0,
+    ],
     "@typescript-eslint/type-annotation-spacing": [
+      0,
+    ],
+    "@typescript-eslint/unbound-method": [
+      0,
+    ],
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": [
       0,
     ],
     "array-bracket-newline": [
@@ -18922,6 +18955,45 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
       0,
     ],
     "function-paren-newline": [
+      0,
+    ],
+    "functional/functional-parameters": [
+      0,
+    ],
+    "functional/immutable-data": [
+      0,
+    ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
+    "functional/prefer-property-signatures": [
+      0,
+    ],
+    "functional/prefer-readonly-type": [
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
       0,
     ],
     "generator-star": [
@@ -20257,51 +20329,29 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:d.ts] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -20311,53 +20361,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -20365,55 +20384,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -20428,6 +20417,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@4.15.1",
+    "functional:eslint-plugin-functional@9.0.2",
   ],
   "processor": undefined,
   "rules": {
@@ -20977,6 +20967,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "@stylistic/yield-star-spacing": [
       0,
     ],
+    "@typescript-eslint/await-thenable": [
+      0,
+    ],
     "@typescript-eslint/block-spacing": [
       0,
     ],
@@ -20988,6 +20981,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "@typescript-eslint/comma-spacing": [
       0,
+    ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
+    "@typescript-eslint/consistent-type-exports": [
+      0,
+    ],
+    "@typescript-eslint/dot-notation": [
+      0,
+      {
+        "allowIndexSignaturePropertyAccess": false,
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
+      },
     ],
     "@typescript-eslint/func-call-spacing": [
       0,
@@ -21007,16 +21019,169 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "@typescript-eslint/member-delimiter-style": [
       0,
     ],
+    "@typescript-eslint/naming-convention": [
+      0,
+    ],
+    "@typescript-eslint/no-array-delete": [
+      0,
+    ],
+    "@typescript-eslint/no-base-to-string": [
+      0,
+    ],
+    "@typescript-eslint/no-confusing-void-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-deprecated": [
+      0,
+    ],
+    "@typescript-eslint/no-duplicate-type-constituents": [
+      0,
+    ],
     "@typescript-eslint/no-extra-parens": [
       0,
     ],
     "@typescript-eslint/no-extra-semi": [
       0,
     ],
+    "@typescript-eslint/no-floating-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-for-in-array": [
+      0,
+    ],
+    "@typescript-eslint/no-implied-eval": [
+      0,
+    ],
+    "@typescript-eslint/no-meaningless-void-operator": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-promises": [
+      0,
+    ],
+    "@typescript-eslint/no-misused-spread": [
+      0,
+    ],
+    "@typescript-eslint/no-mixed-enums": [
+      0,
+    ],
+    "@typescript-eslint/no-redundant-type-constituents": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-condition": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-qualifier": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-arguments": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-conversion": [
+      0,
+    ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-argument": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-assignment": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-call": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-enum-comparison": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-member-access": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-return": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
+      0,
+    ],
+    "@typescript-eslint/non-nullable-type-assertion-style": [
+      0,
+    ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
+    "@typescript-eslint/only-throw-error": [
+      0,
+    ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
+    "@typescript-eslint/prefer-find": [
+      0,
+    ],
+    "@typescript-eslint/prefer-includes": [
+      0,
+    ],
+    "@typescript-eslint/prefer-nullish-coalescing": [
+      0,
+    ],
+    "@typescript-eslint/prefer-optional-chain": [
+      0,
+    ],
+    "@typescript-eslint/prefer-promise-reject-errors": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly": [
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
+    ],
+    "@typescript-eslint/prefer-reduce-type-parameter": [
+      0,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
+      0,
+    ],
+    "@typescript-eslint/prefer-return-this-type": [
+      0,
+    ],
+    "@typescript-eslint/prefer-string-starts-ends-with": [
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
+    ],
     "@typescript-eslint/quotes": [
+      0,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
+    ],
+    "@typescript-eslint/require-await": [
+      0,
+    ],
+    "@typescript-eslint/restrict-plus-operands": [
+      0,
+    ],
+    "@typescript-eslint/restrict-template-expressions": [
+      0,
+    ],
+    "@typescript-eslint/return-await": [
       0,
     ],
     "@typescript-eslint/semi": [
@@ -21031,7 +21196,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "@typescript-eslint/space-infix-ops": [
       0,
     ],
+    "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/switch-exhaustiveness-check": [
+      0,
+    ],
     "@typescript-eslint/type-annotation-spacing": [
+      0,
+    ],
+    "@typescript-eslint/unbound-method": [
+      0,
+    ],
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": [
       0,
     ],
     "array-bracket-newline": [
@@ -21143,6 +21320,45 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
       0,
     ],
     "function-paren-newline": [
+      0,
+    ],
+    "functional/functional-parameters": [
+      0,
+    ],
+    "functional/immutable-data": [
+      0,
+    ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
+    "functional/prefer-property-signatures": [
+      0,
+    ],
+    "functional/prefer-readonly-type": [
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
       0,
     ],
     "generator-star": [
@@ -22478,51 +22694,29 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:mts] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -22532,53 +22726,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -22586,55 +22749,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -23208,7 +23341,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/await-thenable": [
-      2,
+      0,
     ],
     "@typescript-eslint/ban-ts-comment": [
       2,
@@ -23240,6 +23373,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     "@typescript-eslint/consistent-indexed-object-style": [
       2,
     ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
     "@typescript-eslint/consistent-type-assertions": [
       2,
     ],
@@ -23248,13 +23387,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       "type",
     ],
     "@typescript-eslint/consistent-type-exports": [
-      2,
+      0,
     ],
     "@typescript-eslint/consistent-type-imports": [
       2,
     ],
     "@typescript-eslint/dot-notation": [
-      2,
+      0,
       {
         "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
@@ -23288,7 +23427,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       0,
     ],
     "@typescript-eslint/naming-convention": [
-      2,
+      0,
       {
         "format": [
           "camelCase",
@@ -23341,25 +23480,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-array-delete": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-base-to-string": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-confusing-non-null-assertion": [
       2,
     ],
     "@typescript-eslint/no-confusing-void-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-deprecated": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
     "@typescript-eslint/no-duplicate-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-dynamic-delete": [
       2,
@@ -23389,13 +23528,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-floating-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-for-in-array": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-implied-eval": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-import-type-side-effects": [
       2,
@@ -23407,19 +23546,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-meaningless-void-operator": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-new": [
       2,
     ],
     "@typescript-eslint/no-misused-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-spread": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-mixed-enums": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-namespace": [
       2,
@@ -23437,7 +23576,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-redundant-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-require-imports": [
       2,
@@ -23454,61 +23593,64 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-condition": [
-      2,
+      0,
       {
         "allowConstantLoopConditions": true,
       },
     ],
     "@typescript-eslint/no-unnecessary-qualifier": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-template-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-assertion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-conversion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-parameters": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-argument": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-assignment": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-call": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-declaration-merging": [
       2,
     ],
     "@typescript-eslint/no-unsafe-enum-comparison": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-function-type": [
       2,
     ],
     "@typescript-eslint/no-unsafe-member-access": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-return": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
     ],
     "@typescript-eslint/no-unsafe-unary-minus": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unused-expressions": [
       2,
@@ -23531,13 +23673,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
-      2,
+      0,
     ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
     "@typescript-eslint/only-throw-error": [
-      2,
+      0,
     ],
     "@typescript-eslint/parameter-properties": [
       2,
@@ -23545,8 +23687,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     "@typescript-eslint/prefer-as-const": [
       2,
     ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
     "@typescript-eslint/prefer-find": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-for-of": [
       2,
@@ -23555,7 +23700,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/prefer-includes": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
       2,
@@ -23564,43 +23709,52 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
-      2,
+      0,
       {
         "ignoreTernaryTests": true,
       },
     ],
     "@typescript-eslint/prefer-optional-chain": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-promise-reject-errors": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-readonly": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-regexp-exec": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-return-this-type": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
     ],
     "@typescript-eslint/quotes": [
       0,
     ],
     "@typescript-eslint/related-getter-setter-pairs": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
     ],
     "@typescript-eslint/require-await": [
-      2,
+      0,
     ],
     "@typescript-eslint/restrict-plus-operands": [
-      2,
+      0,
       {
         "allowAny": false,
         "allowBoolean": false,
@@ -23610,13 +23764,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       },
     ],
     "@typescript-eslint/restrict-template-expressions": [
-      2,
+      0,
       {
         "allowNumber": true,
       },
     ],
     "@typescript-eslint/return-await": [
-      2,
+      0,
       "always",
     ],
     "@typescript-eslint/semi": [
@@ -23632,7 +23786,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
-      2,
+      0,
       {
         "allowNullableObject": false,
         "allowNumber": false,
@@ -23640,7 +23794,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       },
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
-      2,
+      0,
     ],
     "@typescript-eslint/triple-slash-reference": [
       2,
@@ -23649,13 +23803,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       0,
     ],
     "@typescript-eslint/unbound-method": [
-      2,
+      0,
     ],
     "@typescript-eslint/unified-signatures": [
       2,
     ],
     "@typescript-eslint/use-unknown-in-catch-callback-variable": [
-      2,
+      0,
     ],
     "array-bracket-newline": [
       0,
@@ -23790,8 +23944,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreImmediateMutation": true,
         "ignoreNonConstDeclarations": {
@@ -23799,11 +23956,38 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,
@@ -25195,51 +25379,29 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:ts] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -25249,53 +25411,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -25303,55 +25434,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -25925,7 +26026,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/await-thenable": [
-      2,
+      0,
     ],
     "@typescript-eslint/ban-ts-comment": [
       2,
@@ -25957,6 +26058,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     "@typescript-eslint/consistent-indexed-object-style": [
       2,
     ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
     "@typescript-eslint/consistent-type-assertions": [
       2,
     ],
@@ -25965,13 +26072,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       "type",
     ],
     "@typescript-eslint/consistent-type-exports": [
-      2,
+      0,
     ],
     "@typescript-eslint/consistent-type-imports": [
       2,
     ],
     "@typescript-eslint/dot-notation": [
-      2,
+      0,
       {
         "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
@@ -26005,7 +26112,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       0,
     ],
     "@typescript-eslint/naming-convention": [
-      2,
+      0,
       {
         "format": [
           "camelCase",
@@ -26058,25 +26165,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/no-array-delete": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-base-to-string": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-confusing-non-null-assertion": [
       2,
     ],
     "@typescript-eslint/no-confusing-void-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-deprecated": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
     "@typescript-eslint/no-duplicate-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-dynamic-delete": [
       2,
@@ -26106,13 +26213,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/no-floating-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-for-in-array": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-implied-eval": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-import-type-side-effects": [
       2,
@@ -26124,19 +26231,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/no-meaningless-void-operator": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-new": [
       2,
     ],
     "@typescript-eslint/no-misused-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-spread": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-mixed-enums": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-namespace": [
       2,
@@ -26154,7 +26261,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/no-redundant-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-require-imports": [
       2,
@@ -26171,61 +26278,64 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-condition": [
-      2,
+      0,
       {
         "allowConstantLoopConditions": true,
       },
     ],
     "@typescript-eslint/no-unnecessary-qualifier": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-template-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-assertion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-conversion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-parameters": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-argument": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-assignment": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-call": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-declaration-merging": [
       2,
     ],
     "@typescript-eslint/no-unsafe-enum-comparison": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-function-type": [
       2,
     ],
     "@typescript-eslint/no-unsafe-member-access": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-return": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
     ],
     "@typescript-eslint/no-unsafe-unary-minus": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unused-expressions": [
       2,
@@ -26248,13 +26358,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
-      2,
+      0,
     ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
     "@typescript-eslint/only-throw-error": [
-      2,
+      0,
     ],
     "@typescript-eslint/parameter-properties": [
       2,
@@ -26262,8 +26372,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     "@typescript-eslint/prefer-as-const": [
       2,
     ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
     "@typescript-eslint/prefer-find": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-for-of": [
       2,
@@ -26272,7 +26385,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/prefer-includes": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
       2,
@@ -26281,43 +26394,52 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
-      2,
+      0,
       {
         "ignoreTernaryTests": true,
       },
     ],
     "@typescript-eslint/prefer-optional-chain": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-promise-reject-errors": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-readonly": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-regexp-exec": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-return-this-type": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
     ],
     "@typescript-eslint/quotes": [
       0,
     ],
     "@typescript-eslint/related-getter-setter-pairs": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
     ],
     "@typescript-eslint/require-await": [
-      2,
+      0,
     ],
     "@typescript-eslint/restrict-plus-operands": [
-      2,
+      0,
       {
         "allowAny": false,
         "allowBoolean": false,
@@ -26327,13 +26449,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       },
     ],
     "@typescript-eslint/restrict-template-expressions": [
-      2,
+      0,
       {
         "allowNumber": true,
       },
     ],
     "@typescript-eslint/return-await": [
-      2,
+      0,
       "always",
     ],
     "@typescript-eslint/semi": [
@@ -26349,7 +26471,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
-      2,
+      0,
       {
         "allowNullableObject": false,
         "allowNumber": false,
@@ -26357,7 +26479,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       },
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
-      2,
+      0,
     ],
     "@typescript-eslint/triple-slash-reference": [
       2,
@@ -26366,13 +26488,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       0,
     ],
     "@typescript-eslint/unbound-method": [
-      2,
+      0,
     ],
     "@typescript-eslint/unified-signatures": [
       2,
     ],
     "@typescript-eslint/use-unknown-in-catch-callback-variable": [
-      2,
+      0,
     ],
     "array-bracket-newline": [
       0,
@@ -26507,8 +26629,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreImmediateMutation": true,
         "ignoreNonConstDeclarations": {
@@ -26516,11 +26641,38 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,
@@ -27912,51 +28064,29 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
 }
 `;
 
-exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot 1`] = `
+exports[`Snapshot testing > [js-only][lang:ts][ext:tsx] > should match snapshot 1`] = `
 {
   "language": "@/js",
   "languageOptions": {
     "ecmaVersion": 2026,
     "globals": {
-      "AbortController": false,
-      "AbortSignal": false,
       "AggregateError": false,
       "Array": false,
       "ArrayBuffer": false,
-      "AsyncDisposableStack": false,
       "Atomics": false,
       "BigInt": false,
       "BigInt64Array": false,
       "BigUint64Array": false,
-      "Blob": false,
       "Boolean": false,
-      "BroadcastChannel": false,
-      "Buffer": false,
-      "ByteLengthQueuingStrategy": false,
-      "CloseEvent": false,
-      "CompressionStream": false,
-      "CountQueuingStrategy": false,
-      "Crypto": false,
-      "CryptoKey": false,
-      "CustomEvent": false,
-      "DOMException": false,
       "DataView": false,
       "Date": false,
-      "DecompressionStream": false,
-      "DisposableStack": false,
       "Error": false,
-      "ErrorEvent": false,
       "EvalError": false,
-      "Event": false,
-      "EventTarget": false,
-      "File": false,
       "FinalizationRegistry": false,
       "Float16Array": false,
       "Float32Array": false,
       "Float64Array": false,
-      "FormData": false,
       "Function": false,
-      "Headers": false,
       "Infinity": false,
       "Int16Array": false,
       "Int32Array": false,
@@ -27966,53 +28096,22 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       "JSON": false,
       "Map": false,
       "Math": false,
-      "MessageChannel": false,
-      "MessageEvent": false,
-      "MessagePort": false,
       "NaN": false,
-      "Navigator": false,
       "Number": false,
       "Object": false,
-      "Performance": false,
-      "PerformanceEntry": false,
-      "PerformanceMark": false,
-      "PerformanceMeasure": false,
-      "PerformanceObserver": false,
-      "PerformanceObserverEntryList": false,
-      "PerformanceResourceTiming": false,
       "Promise": false,
       "Proxy": false,
       "RangeError": false,
-      "ReadableByteStreamController": false,
-      "ReadableStream": false,
-      "ReadableStreamBYOBReader": false,
-      "ReadableStreamBYOBRequest": false,
-      "ReadableStreamDefaultController": false,
-      "ReadableStreamDefaultReader": false,
       "ReferenceError": false,
       "Reflect": false,
       "RegExp": false,
-      "Request": false,
-      "Response": false,
       "Set": false,
       "SharedArrayBuffer": false,
-      "Storage": false,
       "String": false,
-      "SubtleCrypto": false,
-      "SuppressedError": false,
       "Symbol": false,
       "SyntaxError": false,
-      "TextDecoder": false,
-      "TextDecoderStream": false,
-      "TextEncoder": false,
-      "TextEncoderStream": false,
-      "TransformStream": false,
-      "TransformStreamDefaultController": false,
       "TypeError": false,
       "URIError": false,
-      "URL": false,
-      "URLPattern": false,
-      "URLSearchParams": false,
       "Uint16Array": false,
       "Uint32Array": false,
       "Uint8Array": false,
@@ -28020,55 +28119,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       "WeakMap": false,
       "WeakRef": false,
       "WeakSet": false,
-      "WebAssembly": false,
-      "WebSocket": false,
-      "WritableStream": false,
-      "WritableStreamDefaultController": false,
-      "WritableStreamDefaultWriter": false,
-      "__dirname": false,
-      "__filename": false,
-      "atob": false,
-      "btoa": false,
-      "clearImmediate": false,
-      "clearInterval": false,
-      "clearTimeout": false,
-      "console": false,
-      "crypto": false,
       "decodeURI": false,
       "decodeURIComponent": false,
       "encodeURI": false,
       "encodeURIComponent": false,
       "escape": false,
       "eval": false,
-      "exports": true,
-      "fetch": false,
-      "global": false,
       "globalThis": false,
       "isFinite": false,
       "isNaN": false,
-      "localStorage": false,
-      "module": false,
-      "navigator": false,
       "parseFloat": false,
       "parseInt": false,
-      "performance": false,
-      "process": false,
-      "queueMicrotask": false,
-      "require": false,
-      "sessionStorage": false,
-      "setImmediate": false,
-      "setInterval": false,
-      "setTimeout": false,
-      "structuredClone": false,
       "undefined": false,
       "unescape": false,
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": {
-        "allowDefaultProject": {},
-        "defaultProject": "tsconfig.json",
-      },
+      "program": null,
+      "project": false,
+      "projectService": false,
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -28642,7 +28711,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/await-thenable": [
-      2,
+      0,
     ],
     "@typescript-eslint/ban-ts-comment": [
       2,
@@ -28674,6 +28743,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     "@typescript-eslint/consistent-indexed-object-style": [
       2,
     ],
+    "@typescript-eslint/consistent-return": [
+      0,
+      {
+        "treatUndefinedAsUnspecified": false,
+      },
+    ],
     "@typescript-eslint/consistent-type-assertions": [
       2,
     ],
@@ -28682,13 +28757,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       "type",
     ],
     "@typescript-eslint/consistent-type-exports": [
-      2,
+      0,
     ],
     "@typescript-eslint/consistent-type-imports": [
       2,
     ],
     "@typescript-eslint/dot-notation": [
-      2,
+      0,
       {
         "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
@@ -28722,7 +28797,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       0,
     ],
     "@typescript-eslint/naming-convention": [
-      2,
+      0,
       {
         "format": [
           "camelCase",
@@ -28775,25 +28850,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-array-delete": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-base-to-string": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-confusing-non-null-assertion": [
       2,
     ],
     "@typescript-eslint/no-confusing-void-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-deprecated": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
     "@typescript-eslint/no-duplicate-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-dynamic-delete": [
       2,
@@ -28823,13 +28898,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-floating-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-for-in-array": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-implied-eval": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-import-type-side-effects": [
       2,
@@ -28841,19 +28916,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-meaningless-void-operator": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-new": [
       2,
     ],
     "@typescript-eslint/no-misused-promises": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-misused-spread": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-mixed-enums": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-namespace": [
       2,
@@ -28871,7 +28946,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-redundant-type-constituents": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-require-imports": [
       2,
@@ -28888,61 +28963,64 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-condition": [
-      2,
+      0,
       {
         "allowConstantLoopConditions": true,
       },
     ],
     "@typescript-eslint/no-unnecessary-qualifier": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-template-expression": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-assertion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
     "@typescript-eslint/no-unnecessary-type-conversion": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unnecessary-type-parameters": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-argument": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-assignment": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-call": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-declaration-merging": [
       2,
     ],
     "@typescript-eslint/no-unsafe-enum-comparison": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-function-type": [
       2,
     ],
     "@typescript-eslint/no-unsafe-member-access": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unsafe-return": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/no-unsafe-type-assertion": [
+      0,
     ],
     "@typescript-eslint/no-unsafe-unary-minus": [
-      2,
+      0,
     ],
     "@typescript-eslint/no-unused-expressions": [
       2,
@@ -28965,13 +29043,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
-      2,
+      0,
     ],
     "@typescript-eslint/object-curly-spacing": [
       0,
     ],
     "@typescript-eslint/only-throw-error": [
-      2,
+      0,
     ],
     "@typescript-eslint/parameter-properties": [
       2,
@@ -28979,8 +29057,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     "@typescript-eslint/prefer-as-const": [
       2,
     ],
+    "@typescript-eslint/prefer-destructuring": [
+      0,
+    ],
     "@typescript-eslint/prefer-find": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-for-of": [
       2,
@@ -28989,7 +29070,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/prefer-includes": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-literal-enum-member": [
       2,
@@ -28998,43 +29079,52 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
-      2,
+      0,
       {
         "ignoreTernaryTests": true,
       },
     ],
     "@typescript-eslint/prefer-optional-chain": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-promise-reject-errors": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-readonly": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      0,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-regexp-exec": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-return-this-type": [
-      2,
+      0,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/promise-function-async": [
+      0,
     ],
     "@typescript-eslint/quotes": [
       0,
     ],
     "@typescript-eslint/related-getter-setter-pairs": [
-      2,
+      0,
+    ],
+    "@typescript-eslint/require-array-sort-compare": [
+      0,
     ],
     "@typescript-eslint/require-await": [
-      2,
+      0,
     ],
     "@typescript-eslint/restrict-plus-operands": [
-      2,
+      0,
       {
         "allowAny": false,
         "allowBoolean": false,
@@ -29044,13 +29134,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       },
     ],
     "@typescript-eslint/restrict-template-expressions": [
-      2,
+      0,
       {
         "allowNumber": true,
       },
     ],
     "@typescript-eslint/return-await": [
-      2,
+      0,
       "always",
     ],
     "@typescript-eslint/semi": [
@@ -29066,7 +29156,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
-      2,
+      0,
       {
         "allowNullableObject": false,
         "allowNumber": false,
@@ -29074,7 +29164,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       },
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
-      2,
+      0,
     ],
     "@typescript-eslint/triple-slash-reference": [
       2,
@@ -29083,13 +29173,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       0,
     ],
     "@typescript-eslint/unbound-method": [
-      2,
+      0,
     ],
     "@typescript-eslint/unified-signatures": [
       2,
     ],
     "@typescript-eslint/use-unknown-in-catch-callback-variable": [
-      2,
+      0,
     ],
     "array-bracket-newline": [
       0,
@@ -29224,8 +29314,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     "function-paren-newline": [
       0,
     ],
+    "functional/functional-parameters": [
+      0,
+    ],
     "functional/immutable-data": [
-      2,
+      0,
       {
         "ignoreImmediateMutation": true,
         "ignoreNonConstDeclarations": {
@@ -29233,11 +29326,38 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
         },
       },
     ],
+    "functional/no-conditional-statements": [
+      0,
+    ],
+    "functional/no-expression-statements": [
+      0,
+    ],
+    "functional/no-mixed-types": [
+      0,
+    ],
+    "functional/no-return-void": [
+      0,
+    ],
+    "functional/no-throw-statements": [
+      0,
+    ],
+    "functional/prefer-immutable-types": [
+      0,
+    ],
     "functional/prefer-property-signatures": [
-      2,
+      0,
     ],
     "functional/prefer-readonly-type": [
-      2,
+      0,
+    ],
+    "functional/prefer-tacit": [
+      0,
+    ],
+    "functional/readonly-type": [
+      0,
+    ],
+    "functional/type-declaration-immutability": [
+      0,
     ],
     "generator-star": [
       0,

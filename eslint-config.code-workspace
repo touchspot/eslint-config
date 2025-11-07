@@ -19,6 +19,10 @@
 			"path": "packages/eslint-config",
 		},
 		{
+			"name": "playgrounds/js-only",
+			"path": "playgrounds/js-only",
+		},
+		{
 			"name": "playgrounds/next",
 			"path": "playgrounds/next",
 		},

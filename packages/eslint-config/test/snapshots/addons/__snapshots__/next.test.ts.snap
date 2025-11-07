@@ -17110,7 +17110,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:cts] > should match snaps
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -21048,7 +21051,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:d.css.ts] > should match 
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -24482,7 +24488,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:d.cts] > should match sna
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -27919,7 +27928,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:d.mts] > should match sna
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -31353,7 +31365,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:d.ts] > should match snap
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -34787,7 +34802,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:mts] > should match snaps
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -38722,7 +38740,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:ts] > should match snapsh
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -42661,7 +42682,10 @@ exports[`Snapshot testing > [addons/next][lang:ts][ext:tsx] > should match snaps
         "jsx": true,
       },
       "jsxPragma": null,
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",

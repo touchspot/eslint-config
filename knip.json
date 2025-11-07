@@ -4,6 +4,7 @@
 	"workspaces": {
 		".": {
 			"ignoreDependencies": [
+				"@eslint/config-inspector",
 				"@types/fs-extra",
 				"better-typescript-lib",
 				"commitizen",
@@ -15,7 +16,7 @@
 		"packages/eslint-config": {
 			"entry": ["lib/**", "test/**/*.test.*"],
 			"project": ["src/**", "test/**"],
-			"ignoreDependencies": ["@eslint/config-inspector", "next", "react", "react-dom", "tailwindcss"]
+			"ignoreDependencies": ["next", "react", "react-dom", "tailwindcss"]
 		},
 		"playgrounds/*": {
 			"entry": ["src/**", "*.ts"]

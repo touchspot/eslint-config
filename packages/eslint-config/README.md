@@ -12,11 +12,11 @@ pnpm add -D @touchspot/eslint-config eslint typescript
 import config from "@touchspot/eslint-config";
 
 export default config({
-    tsconfigRootDir: import.meta.dirname,
+    rootDir: import.meta.dirname,
 });
 ```
 
-### Addons
+### Frameworks
 
 #### React
 
@@ -26,7 +26,7 @@ import react from "@touchspot/eslint-config/react";
 
 export default config(
     {
-        tsconfigRootDir: import.meta.dirname,
+        rootDir: import.meta.dirname,
     },
     react(),
 );
@@ -40,7 +40,7 @@ import next from "@touchspot/eslint-config/next";
 
 export default config(
     {
-        tsconfigRootDir: import.meta.dirname,
+        rootDir: import.meta.dirname,
     },
     next(),
 );
@@ -54,7 +54,7 @@ import tailwindcss from "@touchspot/eslint-config/tailwindcss";
 
 export default config(
     {
-        tsconfigRootDir: import.meta.dirname,
+        rootDir: import.meta.dirname,
     },
     tailwindcss({
         entryPoint: "path/to/css",
@@ -70,7 +70,7 @@ import tailwindcss from "@touchspot/eslint-config/tailwindcss";
 
 export default config(
     {
-        tsconfigRootDir: import.meta.dirname,
+        rootDir: import.meta.dirname,
     },
     tailwindcss({
         version: 3,
@@ -79,14 +79,14 @@ export default config(
 );
 ```
 
-#### Environment helpers
+### Environment helpers
 
 ```js
 import config, { env } from "@touchspot/eslint-config";
 
 export default config(
     {
-        tsconfigRootDir: import.meta.dirname,
+        rootDir: import.meta.dirname,
     },
     env.node(),
     env.browser(),

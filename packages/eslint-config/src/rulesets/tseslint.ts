@@ -1,13 +1,9 @@
 import { defineConfig } from "eslint/config";
 import * as TSESLint from "typescript-eslint";
 
-export declare namespace tseslintRuleset {
-	type Options = {
-		readonly tsconfigRootDir: string;
-	};
-}
+import type { Options } from "#src/config.js";
 
-export const tseslintRuleset = (options: tseslintRuleset.Options) =>
+export const tseslintRuleset = (options: Options) =>
 	defineConfig(
 		{
 			name: "@touchspot/eslint-config/rulesets/tseslint",
@@ -15,8 +11,14 @@ export const tseslintRuleset = (options: tseslintRuleset.Options) =>
 			extends: [TSESLint.configs.base, TSESLint.configs.eslintRecommended],
 			languageOptions: {
 				parserOptions: {
-					tsconfigRootDir: options.tsconfigRootDir,
-					projectService: true,
+					tsconfigRootDir: options.rootDir,
+					projectService:
+						options.enableTypeAwareRules === false
+							? false
+							: {
+									defaultProject: options.tsconfig ?? "tsconfig.json",
+									allowDefaultProject: options.enableTypeAwareRules?.js === "auto" ? ["*.{js,jsx,mjs,cjs}"] : [],
+								},
 				},
 			},
 		},
@@ -84,9 +86,22 @@ export const tseslintRuleset = (options: tseslintRuleset.Options) =>
 				"@typescript-eslint/switch-exhaustiveness-check": "error",
 			},
 		},
-		{
-			name: "@touchspot/eslint-config/rulesets/tseslint/disable-type-checked",
+	);
+
+export const autoDisableTypeAwareTseslintRules = (options: Options) => {
+	if (options.enableTypeAwareRules === false) {
+		return defineConfig({
+			name: "@touchspot/eslint-config/rulesets/tseslint/disable-type-aware/all",
+			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
+			extends: [TSESLint.configs.disableTypeChecked],
+		});
+	}
+	if (options.enableTypeAwareRules?.js == null) {
+		return defineConfig({
+			name: "@touchspot/eslint-config/rulesets/tseslint/disable-type-aware/js",
 			files: ["**/*.{js,jsx,mjs,cjs}"],
 			extends: [TSESLint.configs.disableTypeChecked],
-		},
-	);
+		});
+	}
+	return [];
+};

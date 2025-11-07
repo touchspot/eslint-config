@@ -5,7 +5,8 @@ export default defineConfig(
 	globalIgnores(["packages/", "playgrounds/"]),
 	config(
 		{
-			tsconfigRootDir: import.meta.dirname,
+			rootDir: import.meta.dirname,
+			enableTypeAwareRules: false,
 		},
 		env.node(),
 		{

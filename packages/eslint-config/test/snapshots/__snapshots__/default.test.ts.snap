@@ -10614,7 +10614,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:cts] > should match snapshot 
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -13249,7 +13252,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.css.ts] > should match snap
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -15385,7 +15391,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.cts] > should match snapsho
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -17524,7 +17533,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.mts] > should match snapsho
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -19660,7 +19672,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.ts] > should match snapshot
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -21796,7 +21811,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:mts] > should match snapshot 
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -24428,7 +24446,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:ts] > should match snapshot 1
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",
@@ -27060,7 +27081,10 @@ exports[`Snapshot testing > [default][lang:ts][ext:tsx] > should match snapshot 
     },
     "parser": "typescript-eslint/parser@8.46.3",
     "parserOptions": {
-      "projectService": true,
+      "projectService": {
+        "allowDefaultProject": {},
+        "defaultProject": "tsconfig.json",
+      },
       "tsconfigRootDir": "/path/to/dir",
     },
     "sourceType": "module",

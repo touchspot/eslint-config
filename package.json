@@ -16,6 +16,7 @@
 		"@commitlint/config-conventional": "catalog:",
 		"@commitlint/config-pnpm-scopes": "catalog:",
 		"@commitlint/types": "catalog:",
+		"@eslint/config-inspector": "catalog:",
 		"@touchspot/eslint-config": "workspace:^",
 		"@touchspot/prettier-config": "catalog:",
 		"@tsconfig/next": "catalog:",
