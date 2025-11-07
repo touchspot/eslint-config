@@ -57,7 +57,7 @@ export default config(
         rootDir: import.meta.dirname,
     },
     tailwindcss({
-        entryPoint: "path/to/css",
+        entry: "path/to/css",
     }),
 );
 ```
@@ -74,7 +74,7 @@ export default config(
     },
     tailwindcss({
         version: 3,
-        tailwindConfig: "path/to/config", // default: "tailwind.config.js"
+        config: "path/to/config", // default: "tailwind.config.js"
     }),
 );
 ```
