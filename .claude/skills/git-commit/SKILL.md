@@ -38,7 +38,9 @@ git log -3
 
 This project uses commitlint with Conventional Commits. Run the helper script to extract all rules:
 
-!`"${PROJECT_DIR}/.claude/skills/git-commit/scripts/get-rules.js"`
+```bash
+"${PROJECT_DIR}/.claude/skills/git-commit/scripts/get-rules.js"
+```
 
 This outputs a JSON object containing all commitlint rules.
 
@@ -260,29 +262,61 @@ git add -u
 
 ### Step 7: Execute the Commit
 
-**Use the provided script for sandbox environments:**
+**Use the `Write` tool and temporary file approach for sandbox environments:**
 
-```bash
-"${PROJECT_DIR}/.claude/skills/git-commit/scripts/commit.js" 'type: subject
+Follow this workflow to commit safely in sandbox environments:
 
-Body paragraph explaining what changed.
+1. **Create a temporary file with a unique random path:**
 
-- Bullet point 1
-- Bullet point 2
+    ```bash
+    mktemp -p ${PROJECT_DIR}/.claude/skills/git-commit/drafts
+    ```
 
-Footer with issue references'
-```
+    This command:
+    - Creates a new temporary file with a unique random name
+    - Returns the full path to the created file in the standard output
+    - Ensures the file is fresh and empty
+    - Guarantees no conflicts with previous temporary files
 
-**Important: Use single quotes around the commit message** to prevent shell interpretation of special characters like backticks.
+    The output will be the full path to the temporary file.
+    Use this path in the following steps.
 
-**Why use a script?**
+2. **Read the temporary file using the `Read` tool:**
 
-In sandbox environments, heredoc syntax is unavailable. The script:
+    ```
+    Read tool with file_path: /path/to/the/temporary/file
+    ```
 
-1. Writes the commit message to a temporary file
-2. Executes `git commit -F <temp-file>`
-3. Cleans up the temporary file
-4. Preserves all newlines and formatting correctly
+    This step is required before using the `Write` tool on a newly created file.
+    The file will be empty at this point, which is expected.
+
+3. **Write commit message to the temporary file using the `Write` tool:**
+
+4. **Execute the commit using the temporary file:**
+
+    ```bash
+    git commit -F /path/to/the/temporary/file
+    ```
+
+5. **Clean up the temporary file:**
+
+    ```bash
+    rm /path/to/the/temporary/file
+    ```
+
+**Why use this approach?**
+
+In Claude Code's sandbox environment:
+
+- Heredoc syntax (`cat <<'EOF'`) is not available
+- Direct command-line commit messages with newlines fail or get corrupted
+- Special characters get escaped incorrectly when passed as command arguments
+- The Write tool + `git commit -F` approach:
+    - Writes the commit message exactly as-is to a file
+    - Uses git's `-F` (file) option to read the message
+    - Avoids shell escaping issues entirely
+    - Preserves all newlines, special characters, and formatting correctly
+- The Read tool must be used before Write tool for newly created files (Claude Code requirement)
 
 ### Step 8: Verify the Commit
 
