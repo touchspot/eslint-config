@@ -1,5 +1,23 @@
 # Changelog
 
+## [5.0.0](https://github.com/touchspot/eslint-config/compare/v4.0.4...v5.0.0) (2025-11-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* The `tailwindcss()` addon now uses `entry` instead of `entryPoint` and `config` instead of `tailwindConfig`. Update your configuration: `tailwindcss({ entry: "..." })` for v4 or `tailwindcss({ version: 3, config: "..." })` for v3.
+* The `tsconfigRootDir` option has been renamed to `rootDir`. Update your configuration from `config({ tsconfigRootDir: ... })` to `config({ rootDir: ... })`.
+
+### Features
+
+* add support for JavaScript-only projects ([5c164bf](https://github.com/touchspot/eslint-config/commit/5c164bf2fab318c834f7de9d100016a096ff9e35))
+* simplify `tailwindcss()` addon option names ([820f91c](https://github.com/touchspot/eslint-config/commit/820f91ca420de6d87816695be8fa8398cdd6ba75))
+
+
+### Bug Fixes
+
+* simplify framework addon import paths by removing `/addons/` prefix ([8c6fb85](https://github.com/touchspot/eslint-config/commit/8c6fb858d27f20139c0d11532dd45020ad329bea))
+
 ## [4.0.4](https://github.com/touchspot/eslint-config/compare/v4.0.3...v4.0.4) (2025-11-06)
 
 
