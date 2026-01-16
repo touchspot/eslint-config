@@ -69,7 +69,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:cjs] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -83,7 +83,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:cjs] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -972,6 +972,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:cjs] > should match snapshot 
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -1098,6 +1101,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:cjs] > should match snapshot 
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
@@ -2703,7 +2709,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:js] > should match snapshot 1
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -2717,7 +2723,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:js] > should match snapshot 1
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -3606,6 +3612,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:js] > should match snapshot 1
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -3732,6 +3741,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:js] > should match snapshot 1
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
@@ -5334,7 +5346,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:jsx] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -5348,7 +5360,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:jsx] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -6237,6 +6249,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:jsx] > should match snapshot 
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -6363,6 +6378,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:jsx] > should match snapshot 
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
@@ -7965,7 +7983,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:mjs] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -7979,7 +7997,7 @@ exports[`Snapshot testing > [js-only][lang:js][ext:mjs] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -8868,6 +8886,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:mjs] > should match snapshot 
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -8994,6 +9015,9 @@ exports[`Snapshot testing > [js-only][lang:js][ext:mjs] > should match snapshot 
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
@@ -10596,7 +10620,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:cts] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -10610,7 +10634,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:cts] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -11499,6 +11523,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:cts] > should match snapshot 
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -11625,6 +11652,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:cts] > should match snapshot 
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
@@ -13280,7 +13310,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.css.ts] > should match snap
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -13294,7 +13324,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.css.ts] > should match snap
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -13997,6 +14027,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.css.ts] > should match snap
     "@typescript-eslint/no-unsafe-unary-minus": [
       0,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
       0,
     ],
@@ -14079,6 +14112,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.css.ts] > should match snap
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/strict-void-return": [
       0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
@@ -15641,7 +15677,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.cts] > should match snapsho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -15655,7 +15691,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.cts] > should match snapsho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -16358,6 +16394,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.cts] > should match snapsho
     "@typescript-eslint/no-unsafe-unary-minus": [
       0,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
       0,
     ],
@@ -16440,6 +16479,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.cts] > should match snapsho
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/strict-void-return": [
       0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
@@ -18005,7 +18047,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.mts] > should match snapsho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -18019,7 +18061,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.mts] > should match snapsho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -18722,6 +18764,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.mts] > should match snapsho
     "@typescript-eslint/no-unsafe-unary-minus": [
       0,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
       0,
     ],
@@ -18804,6 +18849,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.mts] > should match snapsho
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/strict-void-return": [
       0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
@@ -20366,7 +20414,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.ts] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -20380,7 +20428,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.ts] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -21083,6 +21131,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.ts] > should match snapshot
     "@typescript-eslint/no-unsafe-unary-minus": [
       0,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
       0,
     ],
@@ -21165,6 +21216,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:d.ts] > should match snapshot
       0,
     ],
     "@typescript-eslint/strict-boolean-expressions": [
+      0,
+    ],
+    "@typescript-eslint/strict-void-return": [
       0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
@@ -22727,7 +22781,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:mts] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -22741,7 +22795,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:mts] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -23630,6 +23684,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:mts] > should match snapshot 
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -23756,6 +23813,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:mts] > should match snapshot 
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
@@ -25408,7 +25468,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:ts] > should match snapshot 1
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -25422,7 +25482,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:ts] > should match snapshot 1
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -26311,6 +26371,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:ts] > should match snapshot 1
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -26437,6 +26500,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:ts] > should match snapshot 1
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
@@ -28089,7 +28155,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:tsx] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.46.3",
+    "parser": "typescript-eslint/parser@8.53.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -28103,7 +28169,7 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:tsx] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.46.3",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
     "unicorn:eslint-plugin-unicorn@62.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
@@ -28992,6 +29058,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:tsx] > should match snapshot 
     "@typescript-eslint/no-useless-constructor": [
       2,
     ],
+    "@typescript-eslint/no-useless-default-assignment": [
+      0,
+    ],
     "@typescript-eslint/no-useless-empty-export": [
       2,
     ],
@@ -29118,6 +29187,9 @@ exports[`Snapshot testing > [js-only][lang:ts][ext:tsx] > should match snapshot 
         "allowNumber": false,
         "allowString": false,
       },
+    ],
+    "@typescript-eslint/strict-void-return": [
+      0,
     ],
     "@typescript-eslint/switch-exhaustiveness-check": [
       0,
