@@ -14,15 +14,13 @@
 		"test": "eslint ."
 	},
 	"prettier": "@touchspot/prettier-config",
-	"dependencies": {
+	"devDependencies": {
+		"@touchspot/eslint-config": "workspace:^",
+		"@types/react": "catalog:",
 		"jotai": "catalog:",
 		"next": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:",
 		"tailwindcss": "catalog:"
-	},
-	"devDependencies": {
-		"@touchspot/eslint-config": "workspace:^",
-		"@types/react": "catalog:"
 	}
 }
