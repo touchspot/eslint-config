@@ -1,5 +1,14 @@
 # Changelog
 
+## [5.0.1](https://github.com/touchspot/eslint-config/compare/v5.0.0...v5.0.1) (2026-01-16)
+
+
+### Dependency updates
+
+* **eslint-config,global:** upgrade `eslint-plugin-perfectionist` to v5 ([5938180](https://github.com/touchspot/eslint-config/commit/5938180a58ab605d3fddd990de3869ce3bc395ab))
+* **eslint-config,global:** upgrade `typescript-eslint` to v8.53.0 ([da8b775](https://github.com/touchspot/eslint-config/commit/da8b7757bac2ce122e0696fc898c36ac46ff237c))
+* **eslint-config,playground-next,global:** upgrade `eslint-plugin-better-tailwindcss` to v4 ([b2b562f](https://github.com/touchspot/eslint-config/commit/b2b562f0150b53fd6a225922dd3bf734937829b8))
+
 ## [5.0.0](https://github.com/touchspot/eslint-config/compare/v4.0.4...v5.0.0) (2025-11-07)
 
 
