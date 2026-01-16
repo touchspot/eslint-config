@@ -40,8 +40,8 @@
 		"fix:format": "prettier --write --log-level=warn .",
 		"fix:lint": "eslint --fix .",
 		"inspect": "config-inspector",
-		"test": "vitest run --coverage",
-		"test:update": "vitest run --update"
+		"test": "vitest run --configLoader=runner --coverage",
+		"test:update": "vitest run --configLoader=runner --update"
 	},
 	"prettier": "@touchspot/prettier-config",
 	"dependencies": {

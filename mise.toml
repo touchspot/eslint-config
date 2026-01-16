@@ -7,9 +7,6 @@ idiomatic_version_file_enable_tools = ["node"]
 [tools]
 "npm:ccusage" = "18.0.5"
 
-[env]
-PROJECT_DIR = "{{config_root}}"
-
 [env._]
 path = ["{{cwd}}/node_modules/.bin", "{{config_root}}/node_modules/.bin"]
 
