@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.2](https://github.com/touchspot/eslint-config/compare/v5.0.1...v5.0.2) (2026-01-16)
+
+
+### Bug Fixes
+
+* **eslint-config,playground-next:** apply version-specific rules for Tailwind CSS ([b0e2705](https://github.com/touchspot/eslint-config/commit/b0e270581f444d6bc486cb24e8f5fad0c5e98e3f))
+
 ## [5.0.1](https://github.com/touchspot/eslint-config/compare/v5.0.0...v5.0.1) (2026-01-16)
 
 

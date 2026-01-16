@@ -1,6 +1,6 @@
 {
 	"name": "@touchspot/eslint-config",
-	"version": "5.0.1",
+	"version": "5.0.2",
 	"description": "TOUCHSPOT ESLint config",
 	"keywords": [
 		"eslint",
