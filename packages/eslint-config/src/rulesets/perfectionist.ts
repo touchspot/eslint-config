@@ -14,16 +14,7 @@ export const perfectionistRuleset = () =>
 				"error",
 				{
 					type: "natural",
-					internalPattern: ["^#.+"],
-					groups: [
-						"side-effect",
-						"builtin",
-						"external",
-						"internal",
-						["parent", "sibling", "index"],
-						"object",
-						"unknown",
-					],
+					groups: ["side-effect", "builtin", "external", "subpath", ["parent", "sibling", "index"], "unknown"],
 				},
 			],
 			"perfectionist/sort-named-exports": ["error", { type: "natural" }],
