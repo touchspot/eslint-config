@@ -34,7 +34,7 @@ export const Incorrect: FC = () => (
 			className=" text-black    underline  hover:opacity-10   " // eslint-disable-line better-tailwindcss/no-unnecessary-whitespace
 		/>
 		<div
-			className="foo" // eslint-disable-line better-tailwindcss/no-unregistered-classes
+			className="foo" // eslint-disable-line better-tailwindcss/no-unknown-classes
 		/>
 	</>
 );

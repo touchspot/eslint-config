@@ -1164,14 +1164,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:cjs] > shou
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -3829,14 +3829,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:js] > shoul
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -6491,14 +6491,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:jsx] > shou
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -9153,14 +9153,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:mjs] > shou
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -11795,14 +11795,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:cts] > shou
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -14058,14 +14058,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.css.ts] >
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -16224,14 +16224,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.cts] > sh
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -18393,14 +18393,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.mts] > sh
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -20559,14 +20559,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.ts] > sho
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -23127,14 +23127,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:mts] > shou
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -25789,14 +25789,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:ts] > shoul
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,
@@ -28451,14 +28451,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:tsx] > shou
     "better-tailwindcss/no-duplicate-classes": [
       2,
     ],
+    "better-tailwindcss/no-unknown-classes": [
+      2,
+    ],
     "better-tailwindcss/no-unnecessary-whitespace": [
       2,
       {
         "allowMultiline": false,
       },
-    ],
-    "better-tailwindcss/no-unregistered-classes": [
-      2,
     ],
     "block-spacing": [
       0,

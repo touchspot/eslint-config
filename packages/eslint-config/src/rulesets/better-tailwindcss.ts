@@ -28,7 +28,7 @@ export const betterTailwindCSSRulesets = ({ attributes, callees, variables, tags
 			"better-tailwindcss/no-conflicting-classes": "error",
 			"better-tailwindcss/no-deprecated-classes": "error",
 			"better-tailwindcss/no-duplicate-classes": "error",
+			"better-tailwindcss/no-unknown-classes": "error",
 			"better-tailwindcss/no-unnecessary-whitespace": ["error", { allowMultiline: false }],
-			"better-tailwindcss/no-unregistered-classes": "error",
 		},
 	});
