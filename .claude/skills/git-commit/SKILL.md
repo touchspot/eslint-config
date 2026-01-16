@@ -25,7 +25,7 @@ git status
 git diff
 
 # View staged changes
-git diff --cached
+git diff --staged
 
 # View recent commit history to understand commit message style
 git log --oneline -10
@@ -36,13 +36,13 @@ git log -3
 
 ### Step 2: Retrieve Commitlint Configuration
 
-This project uses commitlint with Conventional Commits. Run the helper script to extract all rules:
+This project uses commitlint with Conventional Commits. The configuration is automatically retrieved and shown below:
 
 ```bash
-"${PROJECT_DIR}/.claude/skills/git-commit/scripts/get-rules.js"
+node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/get-commitlint-rules.ts
 ```
 
-This outputs a JSON object containing all commitlint rules.
+Use the JSON object above to understand the commitlint rules. **Do not run this script manually** - the output is already included.
 
 **Commitlint rule structure (common to all rules):**
 
@@ -70,89 +70,157 @@ Each rule is an array: `[level, applicability, value]`
 
 - Extract the third element (array of allowed scopes)
 
-### Step 3: Understand What Changed (Not Just Which Files)
+### Step 3: Analyze Changes
 
-**THIS IS THE MOST CRITICAL STEP.** Before writing any commit message, you MUST answer: **"Why was this change necessary?"**
+**Always run this step** to analyze both file changes and dependency updates in a single unified output.
 
-**ALWAYS start by identifying the problem or goal:**
+Run the helper script:
+
+```bash
+node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/analyze-changes.ts
+```
+
+**Output format:**
+
+```json
+{
+    "scopes": ["eslint-config", "playground-next"],
+    "hasProductionDependencyUpdates": true
+}
+```
+
+- `scopes`: Array of affected workspace names (e.g., `["eslint-config"]`), `["global"]` for root-only changes, or `[]` if empty
+- `hasProductionDependencyUpdates`: `true` if any production dependency (`dependencies` in package.json) was updated
+
+**Use this output in subsequent steps:**
+
+1. **For scope selection (Step 5):** Use the `scopes` array directly
+    - `["eslint-config", "playground-next"]` → `type(eslint-config,playground-next): subject`
+    - `["eslint-config"]` → `type(eslint-config): subject`
+    - `["global"]` → `type(global): subject`
+    - `[]` → `type: subject` (no scope)
+
+2. **For type selection (Step 4):** Consider `hasProductionDependencyUpdates`
+    - If `true` and no source code changes: likely `deps` type
+    - If `true` with source code changes: source code purpose takes precedence
+
+### Step 4: Integrated Judgment (MOST CRITICAL STEP)
+
+**THIS IS THE MOST CRITICAL STEP.** You must make an **integrated judgment** considering BOTH source code changes AND dependency updates together. The commit type should reflect the **PRIMARY PURPOSE** of the change.
+
+#### Priority Rule: `feat` > `fix` > `deps` > others
+
+When source code changes and dependency updates coexist, apply this priority to determine the commit type:
+
+| Source Code Change      | Dependency Change                   | Commit Type      | Rationale                               |
+| ----------------------- | ----------------------------------- | ---------------- | --------------------------------------- |
+| New feature (`feat`)    | Any                                 | `feat`           | Dependency is incidental to the feature |
+| Bug fix (`fix`)         | Any                                 | `fix`            | Dependency is incidental to the fix     |
+| None                    | `dependencies` (production)         | `deps`           | Pure production dependency update       |
+| None                    | `devDependencies` (build tools)     | `build`          | Pure build tool update                  |
+| None                    | `devDependencies` (test frameworks) | `test`           | Pure test framework update              |
+| None                    | `devDependencies` (linters, etc.)   | `chore`          | Pure development tool update            |
+| Refactor/perf/docs/test | None                                | Appropriate type | Based on source code purpose            |
+
+#### Judgment Process
+
+**A) First, assess source code changes:**
+
+Ask: **"Why was this change necessary?"**
 
 - What problem existed before this change?
 - What new capability is being added?
 - What behavior was wrong and is now fixed?
 
-**Focus on the OUTCOME and PURPOSE, never the implementation details:**
+Focus on the **OUTCOME and PURPOSE**, never the implementation details:
 
-❌ **Bad**: "Update `auth.ts` and add `validation.ts`"
-✅ **Good**: "add password reset functionality"
+❌ **Bad**: "update `eslint.ts` and add `react.ts`"
+✅ **Good**: "add React hooks linting support"
 
-❌ **Bad**: "Modify config files"
-✅ **Good**: "enable TypeScript strict mode"
+❌ **Bad**: "modify config files"
+✅ **Good**: "enable TypeScript strict mode checking"
 
-❌ **Bad**: "Change button styles in multiple components"
-✅ **Good**: "improve button accessibility with ARIA labels"
+❌ **Bad**: "add new ruleset and update exports"
+✅ **Good**: "add Tailwind CSS class sorting rules"
 
-❌ **Bad**: "Move `.npmignore` and update tsconfig"
-✅ **Good**: "prevent test files from being published to npm"
+**B) Then, integrate dependency information from Step 3:**
 
-❌ **Bad**: "Add new API endpoint and update routes"
-✅ **Good**: "enable users to delete their account"
+- **Source code changes exist + `hasProductionDependencyUpdates: true`** → The source code purpose determines the type
+- **ONLY dependencies updated (no source code changes)** → Classify by dependency type using the table above
 
-**Required questions to answer BEFORE writing the subject:**
+#### Examples of Integrated Judgment
 
-1. **For `feat`**: What new capability can END USERS of this project now use?
-    - For this ESLint config project: New rules, new addons, new configuration options
-    - NOT for: Development tools, CI improvements, documentation tooling
-2. **For `fix`**: What was broken for END USERS? What problem did they face?
-    - For this ESLint config project: Broken rules, incorrect linting behavior
-    - NOT for: Build process issues, development workflow problems
-3. **For `deps`**: What production dependency was updated?
+| Change Description                                  | Priority Judgment | Result                                                        |
+| --------------------------------------------------- | ----------------- | ------------------------------------------------------------- |
+| New feature implementation + new library added      | feat > deps       | feat(eslint-config): add import sorting rules                 |
+| New feature implementation + library version update | feat > deps       | feat(eslint-config): add React Server Components support      |
+| Bug fix + library version update needed for fix     | fix > deps        | fix(eslint-config): resolve false positives in unused imports |
+| Library update only (to fix a known bug)            | deps (no source)  | deps(eslint-config): update `eslint-plugin-react` to 7.37.0   |
+| Test framework update only                          | test (dev dep)    | test: update `vitest` to 4.0.0                                |
+| TypeScript update only                              | build (dev dep)   | build: update `typescript` to 5.8.0                           |
+| Linter config update only                           | chore (dev dep)   | chore: update `eslint` to 9.0                                 |
+
+#### Type Classification Guide
+
+**End User Impact Types (Releasable):**
+
+1. **`feat`**: What new capability can END USERS of this ESLint config now use?
+    - For this project: New ESLint rules, new addons (react, next, tailwindcss), new configuration options
+    - NOT for: Development tools, CI improvements, documentation tooling, internal refactoring
+2. **`fix`**: What was broken for END USERS? What problem did they face?
+    - For this project: Broken ESLint rules, incorrect linting behavior, false positives/negatives
+    - NOT for: Build process issues, development workflow problems, test failures
+3. **`deps`**: What production dependency was updated?
     - `dependencies` or `peerDependencies` in `package.json` that affect library behavior
-    - NOT for: `devDependencies` (use `chore` instead)
-4. **For `chore`**: What development/maintenance task was done?
-    - Development tools (e.g., tools in `mise.toml`), updates to `devDependencies`
-    - Repository maintenance, tooling improvements
-5. **For `build`**: What changed in the build system or dependencies?
-    - Build configuration, `package.json` scripts, build tools
-6. **For `docs`**: What documentation was improved for end users?
-7. **For `refactor` / `perf`**: What code behavior improved without adding features?
+    - NOT for: `devDependencies` (use `chore`, `build`, or `test` instead)
+
+**Developer/Internal Types:**
+
+4. **`chore`**: What development/maintenance task was done?
+    - Development tools (e.g., tools in `mise.toml`), updates to `devDependencies` (linters, formatters)
+    - Repository maintenance, tooling improvements, configuration updates
+5. **`build`**: What changed in the build system?
+    - Build configuration, `package.json` scripts, build tools (`typescript`, bundlers), monorepo setup
+6. **`test`**: Test additions or test framework updates
+7. **`docs`**: What documentation was improved for end users or developers?
+8. **`refactor` / `perf`**: What code behavior improved without adding features?
 
 **Critical: Distinguish between END USER features vs DEVELOPER tools**
 
-- ✅ "feat: Add new ESLint rule for async/await patterns (affects users of this config)"
-- ❌ "feat: Add git-commit skill (only affects developers of this project)"
-- ✅ "chore: Add git-commit skill for commit automation"
+- ✅ "feat: add React hooks linting rules (affects users of this config)"
+- ❌ "feat: add `git-commit` skill (only affects developers of this project)"
+- ✅ "chore: add `git-commit` skill for commit automation"
 
 **The subject line must answer "why", not "what" or "how".**
 
 Read the actual code changes to understand their purpose, not just which files were modified.
 
-### Step 4: Choose Type and Scope
+### Step 5: Choose Type and Scope
+
+Based on the integrated judgment from Step 4, choose the appropriate type and scope.
 
 **Type Selection:**
 
-Choose a type from the allowed types in `rules.type-enum` (retrieved in Step 2). **Always consider: Is this change for END USERS or only for DEVELOPERS?**
-
-Common types for this ESLint config project:
-
-- `feat`: New ESLint rules, new addons (`react`, `next`, etc.), new configuration options
-- `fix`: Fix broken ESLint rules, incorrect linting behavior
-- `deps`: Production dependency updates (`dependencies`, `peerDependencies` in `package.json`)
-- `chore`: Development dependency updates (`devDependencies`), development tools, repository maintenance
-- `build`: Build system changes (Turborepo, TypeScript config)
-- `docs`: User-facing documentation (README, usage guides)
-- `refactor`: Code restructuring without behavior change
-- `test`: Test additions or modifications
+Choose a type from the allowed types in `rules.type-enum` (retrieved in Step 2). Use the priority rule and type classification from Step 4.
 
 **Scope Selection:**
 
-**Scope can always be omitted in this project.** While scopes are validated via `rules.scope-enum`, omitting the scope is acceptable:
+**This project uses a monorepo structure.** Use the `scopes` array from Step 3 directly:
 
-- Format with scope: `type(scope): subject`
-- Format without scope: `type: subject`
+- `scopes: ["eslint-config", "playground-next"]` → `type(eslint-config,playground-next): subject`
+- `scopes: ["eslint-config"]` → `type(eslint-config): subject`
+- `scopes: ["global"]` → `type(global): subject`
+- `scopes: []` → `type: subject` (no scope)
 
-When in doubt, omit the scope.
+**CRITICAL: Do NOT manually filter or exclude scopes.** Even if a package has only minor changes (e.g., a single import update), it MUST be included in the scope. The Step 3 script's output is authoritative.
 
-### Step 5: Craft the Commit Message
+**Format examples:**
+
+- With single scope: "feat(eslint-config): add React hooks linting rules"
+- With multiple scopes: "refactor(eslint-config,playground-next): update import patterns"
+- Without scope: "chore: upgrade to Node.js 22"
+
+### Step 6: Craft the Commit Message
 
 Follow Conventional Commits format:
 
@@ -180,38 +248,14 @@ Or with optional scope:
 
 Always enclose the following in backticks:
 
-- File names: `auth.ts`, `package.json`, `mise.toml`, `.npmignore`
-- Directory names: `src/`, `__snapshots__/`
-- Library/package names: `react`, `zx`, `eslint`, `@touchspot/eslint-config`
-- Tool/command names: `git-commit`, `commitlint`, `pnpm`, `jq`
-- Function/method names: `useState()`, `commit.js`, `Skill(git-commit)`
-- Code identifiers: `mcp__ide`, `PROJECT_DIR`, `type-enum`
-- Constants/naming conventions: `KEBAB_CASE`, `UPPER_CASE`, `camelCase`
-- Environment variables: `NODE_ENV`, `PATH`
-
-**Special Characters and Arrows (both Subject and Body):**
-
-**CRITICAL: Only use basic ASCII characters for arrows and symbols. Never use Unicode alternatives.**
-
-For arrows, ALWAYS use the two-character ASCII sequence:
-
-- ✅ Use `->` (hyphen + greater-than, ASCII 0x2D 0x3E)
-- ❌ DO NOT use → (U+2192, rightwards arrow)
-- ❌ DO NOT use any Unicode arrow characters (U+2190-U+21FF)
-- ❌ DO NOT use any control characters or special quotation marks
-
-Examples of correct usage:
-
-- "`oldName` -> `newName`"
-- "`entryPoint` -> `entry`"
-- "Change A -> B for consistency"
-
-**Why this matters:**
-
-- Unicode arrows and special characters can be corrupted during git operations
-- Some terminal/editor combinations display them as control character codes like `<U+0092>`
-- ASCII `->` is universally supported and displays correctly everywhere
-- Git commit messages should use only ASCII characters for maximum compatibility
+- File names: `eslint.ts`, `package.json`, `tsconfig.json`, `config.ts`
+- Directory names: `src/rulesets/`, `lib/addons/`, `packages/eslint-config/`
+- Library/package names: `eslint`, `typescript-eslint`, `@touchspot/eslint-config`, `eslint-plugin-react`
+- Tool/command names: `git-commit`, `commitlint`, `pnpm`, `turbo`
+- Function/method names: `config()`, `react()`, `next()`, `tailwindcss()`
+- Code identifiers: `tsconfigRootDir`, `FlatConfig`, `RulesetOptions`
+- Constants/naming conventions: `KEBAB_CASE`, `UPPER_CASE`, `camelCase`, `PascalCase`
+- Environment variables: `NODE_ENV`, `ESLINT_USE_FLAT_CONFIG`
 
 **Subject (required):**
 
@@ -225,13 +269,16 @@ Examples of correct usage:
 
 Examples:
 
-- ✅ "prevent test files from being published to npm"
-- ❌ "move `.npmignore` to root and update tsconfig"
+- ✅ "feat(eslint-config): add React hooks exhaustive-deps rule"
+- ❌ "feat(eslint-config): add react-hooks.ts file and update exports"
+- ✅ "fix(eslint-config): prevent false positives in unused imports detection"
+- ❌ "fix(eslint-config): update rule options and add ignorePattern config"
 
 **Body (recommended for non-trivial changes):**
 
 - **Explain WHY the change was necessary (the problem/motivation)**
 - Explain WHAT was changed in detail (implementation details belong here, not in subject)
+- **When dependencies were updated as part of the change, mention them in the body**
 - List specific files, components, or modules modified
 - Apply backtick rules above consistently
 - Use bullet points for multiple changes
@@ -240,8 +287,8 @@ Examples:
 
 **Role separation:**
 
-- **Subject**: WHY (the purpose/outcome) - "prevent test files from being published"
-- **Body**: WHAT (the implementation) - "Move `.npmignore` to root, exclude `__snapshots__/`"
+- **Subject**: WHY (the purpose/outcome) - "add React hooks exhaustive-deps rule"
+- **Body**: WHAT (the implementation) - "Add `react-hooks.ts` ruleset, configure exhaustive-deps with recommended settings, export from `react()` addon"
 
 **Footer (optional):**
 
@@ -249,98 +296,83 @@ Examples:
 - Document breaking changes: "BREAKING CHANGE: description"
 - Leave a blank line after the body
 
-**Example commit message:**
+**Example commit message (with incidental dependency update):**
 
 ```
-fix: prevent form submission with empty required fields
+feat(eslint-config): add Tailwind CSS class sorting rules
 
-Previously, the FormInput component allowed forms to be submitted
-even when required fields were empty due to missing client-side
-validation.
+Add automatic class sorting to improve consistency
+and reduce merge conflicts in Tailwind projects.
 
 Changes:
-- Add validation logic to FormInput component (`src/components/FormInput.tsx`)
-- Display inline error messages for invalid inputs
-- Disable submit button when validation fails
-- Add validation tests (`test/FormInput.test.ts`)
-
-Fixes #234
+- Add `better-tailwindcss.ts` ruleset with recommended settings
+- Export `tailwindcss()` addon from `lib/addons/`
+- Add `eslint-plugin-better-tailwindcss` as peer dependency
 ```
 
-### Step 6: Stage Files (if needed)
+**Example commit message (dependency-only update):**
 
-If files are not yet staged, stage them appropriately:
-
-```bash
-# Stage specific files
-git add path/to/file1 path/to/file2
-
-# Stage all changes (use carefully)
-git add .
-
-# Stage only modified files (not new/deleted)
-git add -u
 ```
+deps(eslint-config): update `eslint-plugin-react` to 7.37.0
 
-**Important:** Be selective about what to stage. Related changes should be committed together, but unrelated changes should be separate commits.
+Update to fix false positives in jsx-no-target-blank rule
+that were flagging legitimate rel="noopener" usage.
+```
 
 ### Step 7: Execute the Commit
 
-**Use the `Write` tool and temporary file approach for sandbox environments:**
+**Use the Write tool and `git commit -F` for multi-line commit messages:**
 
-Follow this workflow to commit safely in sandbox environments:
+In sandbox environments, heredoc syntax is unavailable. Follow these steps to create properly formatted multi-line commits:
 
-1. **Create a temporary file with a unique random path:**
-
-    ```bash
-    mktemp -p ${PROJECT_DIR}/.claude/skills/git-commit/drafts
-    ```
-
-    This command:
-    - Creates a new temporary file with a unique random name
-    - Returns the full path to the created file in the standard output
-    - Ensures the file is fresh and empty
-    - Guarantees no conflicts with previous temporary files
-
-    The output will be the full path to the temporary file.
-    Use this path in the following steps.
-
-2. **Read the temporary file using the `Read` tool:**
-
-    ```
-    Read tool with file_path: /path/to/the/temporary/file
-    ```
-
-    This step is required before using the `Write` tool on a newly created file.
-    The file will be empty at this point, which is expected.
-
-3. **Write commit message to the temporary file using the `Write` tool:**
-
-4. **Execute the commit using the temporary file:**
+1. **Get a temporary file path** by running the helper script:
 
     ```bash
-    git commit -F /path/to/the/temporary/file
+    node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/get-message-file-path.ts
     ```
 
-5. **Clean up the temporary file:**
+    This outputs the path to a temporary file (e.g., `/tmp/claude/xxxxx/commit-message.txt`).
+
+2. **Write the commit message to the temporary file** using the Write tool:
+    - Path: Use the path returned from step 1
+    - Content: The full commit message with proper newlines
+
+3. **Execute git commit** using the temporary file:
 
     ```bash
-    rm /path/to/the/temporary/file
+    git commit -F <temp-file-path>
     ```
 
-**Why use this approach?**
+4. **Clean up** by removing the temporary file:
 
-In Claude Code's sandbox environment:
+    ```bash
+    rm <temp-file-path>
+    ```
 
-- Heredoc syntax (`cat <<'EOF'`) is not available
-- Direct command-line commit messages with newlines fail or get corrupted
-- Special characters get escaped incorrectly when passed as command arguments
-- The Write tool + `git commit -F` approach:
-    - Writes the commit message exactly as-is to a file
-    - Uses git's `-F` (file) option to read the message
-    - Avoids shell escaping issues entirely
-    - Preserves all newlines, special characters, and formatting correctly
-- The Read tool must be used before Write tool for newly created files (Claude Code requirement)
+**Example:**
+
+First, run the helper script to get a temporary file path:
+
+```bash
+node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/get-message-file-path.ts
+# Output: /tmp/claude/xxxxx/commit-message.txt
+```
+
+Then, use the Write tool to create the file at that path with content:
+
+```
+fix(eslint-config): prevent false positives in no-unused-vars rule
+
+Previously, variables used only in type annotations were being
+flagged as unused, causing unnecessary lint errors in TypeScript
+projects with strict type imports.
+
+Changes:
+- Configure `varsIgnorePattern` to exclude type-only usages
+- Update `@typescript-eslint/no-unused-vars` rule options
+```
+
+Then execute: `git commit -F <temp-file-path> && rm <temp-file-path>`
 
 ### Step 8: Verify the Commit
 
@@ -360,15 +392,15 @@ git status
 ## Common Pitfalls to Avoid
 
 1. **Don't describe implementation/files in subject - describe the purpose**
-    - ❌ "move `.npmignore` to root and update tsconfig"
-    - ✅ "prevent test files from being published to npm"
-    - ❌ "add new API endpoint and update routes"
-    - ✅ "enable users to delete their account"
-    - ❌ "update `auth.ts` and `validation.ts`"
-    - ✅ "add password reset functionality"
+    - ❌ "feat(eslint-config): add react-hooks.ts file and update exports"
+    - ✅ "feat(eslint-config): add React hooks exhaustive-deps rule"
+    - ❌ "fix(eslint-config): update rule options and add ignorePattern config"
+    - ✅ "fix(eslint-config): prevent false positives in unused imports detection"
+    - ❌ "refactor(eslint-config): update `tseslint.ts` and `config.ts`"
+    - ✅ "refactor(eslint-config): simplify TypeScript ruleset configuration"
 
 2. **Don't use past tense**
-    - ❌ "Added feature" or "Fixed bug"
+    - ❌ "added feature" or "fixed bug"
     - ✅ "add feature" or "fix bug"
 
 3. **Don't exceed length limits**
@@ -377,6 +409,7 @@ git status
 4. **Don't omit the body for complex changes**
     - Simple one-line changes: subject only is fine
     - Multi-file or complex changes: include body explaining WHY and WHAT
+    - **When dependencies are updated incidentally, always mention them in the body**
 
 5. **Don't write the subject before understanding WHY**
     - ALWAYS answer "why was this change necessary?" first
@@ -389,3 +422,25 @@ git status
     - ❌ "feat: add GitHub Actions workflow for CI"
     - ✅ "ci: add GitHub Actions workflow for CI"
     - Ask: "Does this change what END USERS can do with this ESLint config?"
+
+7. **Don't forget to apply the priority rule for mixed changes**
+    - When source code change + dependency update coexist, source code purpose takes precedence
+    - `feat` > `fix` > `deps` > others
+    - Mention incidental dependency updates in the commit body
+
+## Breaking Changes
+
+When there are breaking changes, include `BREAKING CHANGE:` in the footer:
+
+```
+feat(eslint-config): require ESLint 9.x flat config format
+
+BREAKING CHANGE: Legacy eslintrc format is no longer supported.
+Users must migrate to the flat config format (eslint.config.js).
+```
+
+For header notation, use "!" after the type/scope:
+
+```
+feat(eslint-config)!: require ESLint 9.x flat config format
+```
