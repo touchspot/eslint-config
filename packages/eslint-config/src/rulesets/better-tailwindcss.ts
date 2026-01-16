@@ -22,13 +22,19 @@ export const betterTailwindCSSRulesets = ({ attributes, callees, variables, tags
 			},
 		},
 		rules: {
-			"better-tailwindcss/enforce-consistent-important-position": "error",
-			"better-tailwindcss/enforce-consistent-variable-syntax": "error",
-			"better-tailwindcss/enforce-shorthand-classes": "error",
-			"better-tailwindcss/no-conflicting-classes": "error",
-			"better-tailwindcss/no-deprecated-classes": "error",
 			"better-tailwindcss/no-duplicate-classes": "error",
 			"better-tailwindcss/no-unknown-classes": "error",
 			"better-tailwindcss/no-unnecessary-whitespace": ["error", { allowMultiline: false }],
+			...(options.version === 3
+				? {
+						"better-tailwindcss/enforce-consistent-important-position": "error",
+						"better-tailwindcss/enforce-consistent-variable-syntax": "error",
+						"better-tailwindcss/enforce-shorthand-classes": "error",
+					}
+				: {
+						"better-tailwindcss/enforce-canonical-classes": "error",
+						"better-tailwindcss/no-conflicting-classes": "error",
+						"better-tailwindcss/no-deprecated-classes": "error",
+					}),
 		},
 	});

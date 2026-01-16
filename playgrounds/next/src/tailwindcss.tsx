@@ -11,13 +11,16 @@ export const Correct: FC = () => (
 export const Incorrect: FC = () => (
 	<>
 		<div
-			className="!text-red-500" // eslint-disable-line better-tailwindcss/enforce-consistent-important-position
+			className="!text-red-500" // eslint-disable-line better-tailwindcss/enforce-canonical-classes
 		/>
 		<div
-			className="font-[var(--display)]" // eslint-disable-line better-tailwindcss/enforce-consistent-variable-syntax
+			className="font-[var(--display)]" // eslint-disable-line better-tailwindcss/enforce-canonical-classes
 		/>
 		<div
-			className="pt-4 pr-4 pb-4 pl-4" // eslint-disable-line better-tailwindcss/enforce-shorthand-classes
+			className="pt-4 pr-4 pb-4 pl-4" // eslint-disable-line better-tailwindcss/enforce-canonical-classes
+		/>
+		<div
+			className="data-[is-selected]:opacity-100" // eslint-disable-line better-tailwindcss/enforce-canonical-classes
 		/>
 		<div
 			className="flex grid" // eslint-disable-line better-tailwindcss/no-conflicting-classes
@@ -26,7 +29,6 @@ export const Incorrect: FC = () => (
 			className="rounded" // eslint-disable-line better-tailwindcss/no-deprecated-classes
 		/>
 		<div
-			// prettier-ignore
 			className="rounded-sm rounded-sm" // eslint-disable-line better-tailwindcss/no-duplicate-classes
 		/>
 		<div

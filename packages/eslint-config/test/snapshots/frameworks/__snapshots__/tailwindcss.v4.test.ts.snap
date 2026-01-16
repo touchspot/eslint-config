@@ -1152,13 +1152,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:cjs] > shou
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -3823,13 +3817,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:js] > shoul
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -6491,13 +6479,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:jsx] > shou
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -9159,13 +9141,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:mjs] > shou
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -11804,13 +11780,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:cts] > shou
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -14067,13 +14037,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.css.ts] >
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -16233,13 +16197,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.cts] > sh
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -18402,13 +18360,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.mts] > sh
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -20568,13 +20520,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.ts] > sho
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -23139,13 +23085,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:mts] > shou
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -25804,13 +25744,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:ts] > shoul
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -28469,13 +28403,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:tsx] > shou
     "babel/semi": [
       0,
     ],
-    "better-tailwindcss/enforce-consistent-important-position": [
-      2,
-    ],
-    "better-tailwindcss/enforce-consistent-variable-syntax": [
-      2,
-    ],
-    "better-tailwindcss/enforce-shorthand-classes": [
+    "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
