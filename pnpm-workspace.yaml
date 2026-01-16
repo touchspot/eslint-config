@@ -14,10 +14,10 @@ catalog:
   "@next/eslint-plugin-next": ^16.0.1
   "@touchspot/prettier-config": ^3.0.3
   "@tsconfig/next": ^2.0.3
-  "@tsconfig/node22": ^22.0.2
+  "@tsconfig/node24": ^24.0.4
   "@tsconfig/strictest": ^2.0.7
   "@types/fs-extra": ^11.0.4
-  "@types/node": ^22.19.0
+  "@types/node": ^25.0.9
   "@types/react": ^19.2.2
   "@vitest/coverage-v8": ^4.0.8
   better-typescript-lib: ^2.12.0
@@ -74,7 +74,3 @@ publicHoistPattern:
   - "@typescript/*"
 
 strictPeerDependencies: true
-
-updateConfig:
-  ignoreDependencies:
-    - "@types/node"

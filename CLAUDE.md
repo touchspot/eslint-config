@@ -8,7 +8,7 @@ This is a monorepo for `@touchspot/eslint-config`, a shareable ESLint configurat
 
 ## Environment Requirements
 
-- **Node.js**: 22.x (exact version specified in `.node-version`)
+- **Node.js**: 24.x (exact version specified in `.node-version`)
 - **pnpm**: 10.20.0 (exact version required by `packageManager` field)
 - Package manager is strictly enforced; do not use npm or yarn
 
@@ -147,7 +147,7 @@ test/
 
 ### TypeScript Configuration
 
-- **Base**: Extends `@tsconfig/node22` and `@tsconfig/strictest`
+- **Base**: Extends `@tsconfig/node24` and `@tsconfig/strictest`
 - **Build**: Uses `ts-patch` with `typescript-transform-paths` to transform path aliases in output
 - **Module System**: `nodenext` (strict ESM with `.js` extensions in imports)
 - **Build Output**: Compiled to `dist/` with source maps and declaration maps
