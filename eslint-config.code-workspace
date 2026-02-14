@@ -4,7 +4,7 @@
 			"bradlc.vscode-tailwindcss",
 			"dbaeumer.vscode-eslint",
 			"editorconfig.editorconfig",
-			"prettier.prettier-vscode",
+			"esbenp.prettier-vscode",
 			"richie5um2.vscode-sort-json",
 			"streetsidesoftware.code-spell-checker",
 		],
@@ -39,7 +39,7 @@
 		"editor.codeActionsOnSave": {
 			"source.fixAll.eslint": "explicit",
 		},
-		"editor.defaultFormatter": "prettier.prettier-vscode",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
 		"editor.quickSuggestions": {
 			"strings": "on",
