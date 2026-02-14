@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.3](https://github.com/touchspot/eslint-config/compare/v5.0.2...v5.0.3) (2026-02-14)
+
+
+### Dependency updates
+
+* **eslint-config,global:** upgrade eslint plugins and adapt to type changes ([779c25e](https://github.com/touchspot/eslint-config/commit/779c25edd73de366f8de8ed032d88e4063cb1b40))
+
 ## [5.0.2](https://github.com/touchspot/eslint-config/compare/v5.0.1...v5.0.2) (2026-01-16)
 
 
