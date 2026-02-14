@@ -3,56 +3,56 @@ packages:
   - playgrounds/*
 
 catalog:
-  "@commitlint/cli": ^20.3.1
-  "@commitlint/config-conventional": ^20.3.1
-  "@commitlint/config-pnpm-scopes": ^20.1.0
-  "@commitlint/types": ^20.3.1
-  "@eslint/config-helpers": ^0.5.1
+  "@commitlint/cli": ^20.4.1
+  "@commitlint/config-conventional": ^20.4.1
+  "@commitlint/config-pnpm-scopes": ^20.4.0
+  "@commitlint/types": ^20.4.0
+  "@eslint/config-helpers": ^0.5.2
   "@eslint/config-inspector": ^1.4.2
-  "@eslint/core": ^1.0.1
+  "@eslint/core": ^1.1.0
   "@eslint/js": ^9.39.2
-  "@next/eslint-plugin-next": ^16.1.2
-  "@touchspot/prettier-config": ^3.0.3
+  "@next/eslint-plugin-next": ^16.1.6
+  "@touchspot/prettier-config": ^4.0.0
   "@tsconfig/next": ^2.0.5
   "@tsconfig/node24": ^24.0.4
   "@tsconfig/strictest": ^2.0.8
   "@types/fs-extra": ^11.0.4
-  "@types/node": ^25.0.9
-  "@types/react": ^19.2.8
-  "@vitest/coverage-v8": ^4.0.17
+  "@types/node": ^24.10.13
+  "@types/react": ^19.2.14
+  "@vitest/coverage-v8": ^4.0.18
   better-typescript-lib: ^2.12.0
   commitizen: ^4.3.1
   cz-git: ^1.12.0
   eslint: ^9.39.2
   eslint-config-prettier: ^10.1.8
   eslint-import-resolver-typescript: ^4.4.4
-  eslint-plugin-better-tailwindcss: ^4.0.1
+  eslint-plugin-better-tailwindcss: ^4.2.0
   eslint-plugin-check-file: ^3.3.1
   eslint-plugin-functional: ^9.0.2
   eslint-plugin-import-x: ^4.16.1
   eslint-plugin-no-relative-import-paths: ^1.6.1
-  eslint-plugin-perfectionist: ^5.3.1
+  eslint-plugin-perfectionist: ^5.5.0
   eslint-plugin-react: ^7.37.5
   eslint-plugin-react-hooks: ^7.0.1
-  eslint-plugin-unicorn: ^62.0.0
-  eslint-plugin-unused-imports: ^4.3.0
-  globals: ^17.0.0
+  eslint-plugin-unicorn: ^63.0.0
+  eslint-plugin-unused-imports: ^4.4.1
+  globals: ^17.3.0
   husky: ^9.1.7
-  jotai: ^2.16.2
-  knip: ^5.81.0
+  jotai: ^2.17.1
+  knip: ^5.83.1
   lint-staged: ^16.2.7
-  next: ^16.1.2
-  prettier: ^3.8.0
-  react: ^19.2.3
-  react-dom: ^19.2.3
+  next: ^16.1.6
+  prettier: ^3.8.1
+  react: ^19.2.4
+  react-dom: ^19.2.4
   tailwindcss: ^4.1.18
   ts-patch: ^3.3.0
-  turbo: ^2.7.4
+  turbo: ^2.8.8
   typescript: ^5.9.3
-  typescript-eslint: ^8.53.0
+  typescript-eslint: ^8.55.0
   typescript-transform-paths: ^3.5.6
-  vite-tsconfig-paths: ^6.0.4
-  vitest: ^4.0.17
+  vite-tsconfig-paths: ^6.1.1
+  vitest: ^4.0.18
   zx: ^8.8.5
 
 catalogMode: strict
@@ -66,11 +66,11 @@ ignoredBuiltDependencies:
 
 linkWorkspacePackages: true
 
-peerDependencyRules:
-  allowedVersions:
-    typescript: "*"
-
 publicHoistPattern:
   - "@typescript/*"
 
 strictPeerDependencies: true
+
+updateConfig:
+  ignoreDependencies:
+    - "@types/node"

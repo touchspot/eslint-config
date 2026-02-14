@@ -1,9 +1,11 @@
-import type { Matcher } from "eslint-plugin-better-tailwindcss/api/types";
+import type { ObjectKeyMatcher, ObjectValueMatcher, StringMatcher } from "eslint-plugin-better-tailwindcss/api/types";
 import { defineConfig } from "eslint/config";
 
 import { betterTailwindCSSRulesets } from "#src/rulesets/better-tailwindcss.js";
 
 export declare namespace tailwindcss {
+	type Matcher = ObjectKeyMatcher | ObjectValueMatcher | StringMatcher;
+
 	type CommonOptions = {
 		readonly attributes?: readonly Matcher[] | undefined;
 		readonly callees?: readonly Matcher[] | undefined;

@@ -151,7 +151,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -165,13 +165,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -2046,7 +2046,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -2097,6 +2100,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -2104,6 +2110,19 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -2288,7 +2307,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -2323,7 +2345,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -2333,7 +2360,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -2444,7 +2473,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -2472,7 +2503,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -2494,7 +2527,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -2538,7 +2573,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -2546,7 +2583,25 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -2873,7 +2928,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -2887,13 +2942,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -4765,7 +4820,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -4816,6 +4874,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -4823,6 +4884,19 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -5007,7 +5081,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -5042,7 +5119,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -5052,7 +5134,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -5163,7 +5247,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -5191,7 +5277,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -5213,7 +5301,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -5257,7 +5347,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -5265,7 +5357,25 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -5592,7 +5702,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -5606,13 +5716,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -7484,7 +7594,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -7535,6 +7648,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -7542,6 +7658,19 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -7726,7 +7855,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -7761,7 +7893,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -7771,7 +7908,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -7882,7 +8021,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -7910,7 +8051,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -7932,7 +8075,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -7976,7 +8121,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -7984,7 +8131,25 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -8311,7 +8476,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -8325,13 +8490,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -10203,7 +10368,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -10254,6 +10422,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -10261,6 +10432,19 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -10445,7 +10629,10 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -10480,7 +10667,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -10490,7 +10682,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -10601,7 +10795,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -10629,7 +10825,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -10651,7 +10849,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -10695,7 +10895,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -10703,7 +10905,25 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -11030,7 +11250,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -11045,13 +11265,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -12897,7 +13117,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -12948,6 +13171,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -12955,6 +13181,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -13139,7 +13378,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -13174,7 +13416,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -13184,7 +13431,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -13295,7 +13544,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -13323,7 +13574,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -13345,7 +13598,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -13389,7 +13644,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -13397,7 +13654,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -13749,7 +14024,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -13764,11 +14039,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -15114,7 +15389,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -15165,6 +15443,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -15172,6 +15453,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -15356,7 +15650,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -15391,7 +15688,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -15401,7 +15703,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -15512,7 +15816,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -15540,7 +15846,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -15562,7 +15870,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -15606,7 +15916,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -15614,7 +15926,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -15966,7 +16296,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -15981,11 +16311,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -17334,7 +17664,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -17385,6 +17718,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -17392,6 +17728,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -17576,7 +17925,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -17611,7 +17963,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -17621,7 +17978,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -17732,7 +18091,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -17760,7 +18121,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -17782,7 +18145,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -17826,7 +18191,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -17834,7 +18201,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -18186,7 +18571,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -18201,11 +18586,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -19551,7 +19936,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -19602,6 +19990,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -19609,6 +20000,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -19793,7 +20197,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -19828,7 +20235,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -19838,7 +20250,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -19949,7 +20363,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -19977,7 +20393,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -19999,7 +20417,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -20043,7 +20463,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -20051,7 +20473,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -20403,7 +20843,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -20418,11 +20858,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -21768,7 +22208,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -21819,6 +22262,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -21826,6 +22272,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -22010,7 +22469,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -22045,7 +22507,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -22055,7 +22522,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -22166,7 +22635,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -22194,7 +22665,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -22216,7 +22689,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -22260,7 +22735,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -22268,7 +22745,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -22620,7 +23115,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -22635,13 +23130,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -24484,7 +24979,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -24535,6 +25033,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -24542,6 +25043,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -24726,7 +25240,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -24761,7 +25278,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -24771,7 +25293,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -24882,7 +25406,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -24910,7 +25436,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -24932,7 +25460,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -24976,7 +25506,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -24984,7 +25516,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -25336,7 +25886,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -25351,13 +25901,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -27200,7 +27750,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -27251,6 +27804,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -27258,6 +27814,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -27442,7 +28011,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -27477,7 +28049,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -27487,7 +28064,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -27598,7 +28177,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -27626,7 +28207,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -27648,7 +28231,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -27692,7 +28277,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -27700,7 +28287,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -28052,7 +28657,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -28067,13 +28672,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -29916,7 +30521,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -29967,6 +30575,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -29974,6 +30585,19 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -30158,7 +30782,10 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -30193,7 +30820,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -30203,7 +30835,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -30314,7 +30948,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -30342,7 +30978,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -30364,7 +31002,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -30408,7 +31048,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -30416,7 +31058,25 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,

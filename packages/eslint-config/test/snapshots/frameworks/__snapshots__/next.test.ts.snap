@@ -348,6 +348,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -980,6 +981,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -1243,7 +1245,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -1257,13 +1259,13 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
@@ -3262,7 +3264,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -3313,6 +3318,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -3320,6 +3328,19 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -3504,7 +3525,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -3539,7 +3563,12 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -3549,7 +3578,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -3660,7 +3691,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -3688,7 +3721,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -3710,7 +3745,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -3754,7 +3791,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -3762,7 +3801,25 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -4286,6 +4343,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -4918,6 +4976,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -5181,7 +5240,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -5195,13 +5254,13 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
@@ -7197,7 +7256,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -7248,6 +7310,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -7255,6 +7320,19 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -7439,7 +7517,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -7474,7 +7555,12 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -7484,7 +7570,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -7595,7 +7683,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -7623,7 +7713,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -7645,7 +7737,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -7689,7 +7783,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -7697,7 +7793,25 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -8221,6 +8335,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -8853,6 +8968,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -9116,7 +9232,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -9134,13 +9250,13 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
@@ -11234,7 +11350,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -11285,6 +11404,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -11292,6 +11414,19 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -11476,7 +11611,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -11511,7 +11649,12 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -11521,7 +11664,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -11632,7 +11777,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -11660,7 +11807,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -11682,7 +11831,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -11726,7 +11877,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -11734,7 +11887,25 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -12261,6 +12432,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -12893,6 +13065,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -13156,7 +13329,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -13170,13 +13343,13 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
@@ -15172,7 +15345,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -15223,6 +15399,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -15230,6 +15409,19 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -15414,7 +15606,10 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -15449,7 +15644,12 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -15459,7 +15659,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -15570,7 +15772,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -15598,7 +15802,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -15620,7 +15826,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -15664,7 +15872,9 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -15672,7 +15882,25 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -16196,6 +16424,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -16828,6 +17057,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -17091,7 +17321,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -17106,13 +17336,13 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
@@ -19082,7 +19312,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -19133,6 +19366,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -19140,6 +19376,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -19324,7 +19573,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -19359,7 +19611,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -19369,7 +19626,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -19480,7 +19739,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -19508,7 +19769,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -19530,7 +19793,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -19574,7 +19839,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -19582,7 +19849,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -20131,6 +20416,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -20763,6 +21049,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -21026,7 +21313,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -21041,11 +21328,11 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
   ],
@@ -22510,7 +22797,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -22561,6 +22851,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -22568,6 +22861,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -22752,7 +23058,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -22787,7 +23096,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -22797,7 +23111,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -22908,7 +23224,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -22936,7 +23254,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -22958,7 +23278,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -23002,7 +23324,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -23010,7 +23334,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.css.ts] > should ma
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -23559,6 +23901,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -24191,6 +24534,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -24454,7 +24798,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -24469,11 +24813,11 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
   ],
@@ -25941,7 +26285,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -25992,6 +26339,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -25999,6 +26349,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -26183,7 +26546,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -26218,7 +26584,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -26228,7 +26599,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -26339,7 +26712,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -26367,7 +26742,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -26389,7 +26766,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -26433,7 +26812,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -26441,7 +26822,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.cts] > should match
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -26990,6 +27389,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -27622,6 +28022,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -27885,7 +28286,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -27900,11 +28301,11 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
   ],
@@ -29369,7 +29770,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -29420,6 +29824,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -29427,6 +29834,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -29611,7 +30031,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -29646,7 +30069,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -29656,7 +30084,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -29767,7 +30197,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -29795,7 +30227,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -29817,7 +30251,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -29861,7 +30297,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -29869,7 +30307,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.mts] > should match
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -30418,6 +30874,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -31050,6 +31507,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -31313,7 +31771,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -31328,11 +31786,11 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
   ],
@@ -32797,7 +33255,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -32848,6 +33309,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -32855,6 +33319,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -33039,7 +33516,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -33074,7 +33554,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -33084,7 +33569,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -33195,7 +33682,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -33223,7 +33712,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -33245,7 +33736,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -33289,7 +33782,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -33297,7 +33792,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:d.ts] > should match 
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -33846,6 +34359,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -34478,6 +34992,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -34741,7 +35256,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -34756,13 +35271,13 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
@@ -36729,7 +37244,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -36780,6 +37298,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -36787,6 +37308,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -36971,7 +37505,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -37006,7 +37543,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -37016,7 +37558,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -37127,7 +37671,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -37155,7 +37701,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -37177,7 +37725,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -37221,7 +37771,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -37229,7 +37781,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -37778,6 +38348,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -38410,6 +38981,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -38673,7 +39245,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -38688,13 +39260,13 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
     "@next/next:@next/eslint-plugin-next",
@@ -40661,7 +41233,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -40712,6 +41287,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -40719,6 +41297,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -40903,7 +41494,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -40938,7 +41532,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -40948,7 +41547,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -41059,7 +41660,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -41087,7 +41690,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -41109,7 +41714,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -41153,7 +41760,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -41161,7 +41770,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -41710,6 +42337,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -42342,6 +42970,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -42605,7 +43234,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -42624,13 +43253,13 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
@@ -44695,7 +45324,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -44746,6 +45378,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -44753,6 +45388,19 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -44937,7 +45585,10 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -44972,7 +45623,12 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -44982,7 +45638,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -45093,7 +45751,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -45121,7 +45781,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -45143,7 +45805,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -45187,7 +45851,9 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -45195,7 +45861,25 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
