@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.4](https://github.com/touchspot/eslint-config/compare/v5.0.3...v5.0.4) (2026-02-14)
+
+
+### Bug Fixes
+
+* **eslint-config:** remove browser environment from react framework config ([a05c576](https://github.com/touchspot/eslint-config/commit/a05c57632c3a5dfc70e4901a4c3dc6518bfc708a))
+
 ## [5.0.3](https://github.com/touchspot/eslint-config/compare/v5.0.2...v5.0.3) (2026-02-14)
 
 
