@@ -347,6 +347,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -979,6 +980,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -1233,7 +1235,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -1247,13 +1249,13 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -3128,7 +3130,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -3179,6 +3184,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -3186,6 +3194,19 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -3370,7 +3391,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -3405,7 +3429,12 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -3415,7 +3444,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -3526,7 +3557,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -3554,7 +3587,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -3576,7 +3611,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -3620,7 +3657,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -3628,7 +3667,25 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -4151,6 +4208,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -4783,6 +4841,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -5037,7 +5096,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -5051,13 +5110,13 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -6929,7 +6988,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -6980,6 +7042,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -6987,6 +7052,19 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -7171,7 +7249,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -7206,7 +7287,12 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -7216,7 +7302,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -7327,7 +7415,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -7355,7 +7445,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -7377,7 +7469,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -7421,7 +7515,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -7429,7 +7525,25 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -7952,6 +8066,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -8584,6 +8699,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -8838,7 +8954,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -8852,13 +8968,13 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -10730,7 +10846,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -10781,6 +10900,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -10788,6 +10910,19 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -10972,7 +11107,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -11007,7 +11145,12 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -11017,7 +11160,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -11128,7 +11273,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -11156,7 +11303,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -11178,7 +11327,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -11222,7 +11373,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -11230,7 +11383,25 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -11753,6 +11924,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -12385,6 +12557,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -12639,7 +12812,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -12653,13 +12826,13 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -14531,7 +14704,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -14582,6 +14758,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -14589,6 +14768,19 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -14773,7 +14965,10 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -14808,7 +15003,12 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -14818,7 +15018,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -14929,7 +15131,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -14957,7 +15161,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -14979,7 +15185,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -15023,7 +15231,9 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -15031,7 +15241,25 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -15554,6 +15782,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -16186,6 +16415,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -16440,7 +16670,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -16455,13 +16685,13 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -18307,7 +18537,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -18358,6 +18591,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -18365,6 +18601,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -18549,7 +18798,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -18584,7 +18836,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -18594,7 +18851,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -18705,7 +18964,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -18733,7 +18994,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -18755,7 +19018,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -18799,7 +19064,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -18807,7 +19074,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -19355,6 +19640,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -19987,6 +20273,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -20241,7 +20528,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -20256,11 +20543,11 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -21606,7 +21893,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -21657,6 +21947,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -21664,6 +21957,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -21848,7 +22154,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -21883,7 +22192,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -21893,7 +22207,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -22004,7 +22320,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -22032,7 +22350,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -22054,7 +22374,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -22098,7 +22420,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -22106,7 +22430,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.css.ts] > should match 
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -22654,6 +22996,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -23286,6 +23629,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -23540,7 +23884,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -23555,11 +23899,11 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -24908,7 +25252,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -24959,6 +25306,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -24966,6 +25316,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -25150,7 +25513,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -25185,7 +25551,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -25195,7 +25566,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -25306,7 +25679,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -25334,7 +25709,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -25356,7 +25733,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -25400,7 +25779,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -25408,7 +25789,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.cts] > should match sna
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -25956,6 +26355,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -26588,6 +26988,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -26842,7 +27243,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -26857,11 +27258,11 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -28207,7 +28608,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -28258,6 +28662,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -28265,6 +28672,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -28449,7 +28869,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -28484,7 +28907,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -28494,7 +28922,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -28605,7 +29035,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -28633,7 +29065,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -28655,7 +29089,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -28699,7 +29135,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -28707,7 +29145,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.mts] > should match sna
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -29255,6 +29711,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -29887,6 +30344,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -30141,7 +30599,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -30156,11 +30614,11 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
   ],
   "processor": undefined,
   "rules": {
@@ -31506,7 +31964,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -31557,6 +32018,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -31564,6 +32028,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -31748,7 +32225,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -31783,7 +32263,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -31793,7 +32278,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -31904,7 +32391,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -31932,7 +32421,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -31954,7 +32445,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -31998,7 +32491,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -32006,7 +32501,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:d.ts] > should match snap
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -32554,6 +33067,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -33186,6 +33700,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -33440,7 +33955,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -33455,13 +33970,13 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -35304,7 +35819,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -35355,6 +35873,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -35362,6 +35883,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -35546,7 +36080,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -35581,7 +36118,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -35591,7 +36133,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -35702,7 +36246,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -35730,7 +36276,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -35752,7 +36300,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -35796,7 +36346,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -35804,7 +36356,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -36352,6 +36922,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -36984,6 +37555,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -37238,7 +37810,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -37253,13 +37825,13 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -39102,7 +39674,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -39153,6 +39728,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -39160,6 +39738,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -39344,7 +39935,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -39379,7 +39973,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -39389,7 +39988,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -39500,7 +40101,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -39528,7 +40131,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -39550,7 +40155,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -39594,7 +40201,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -39602,7 +40211,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
@@ -40150,6 +40777,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
       "HTMLFormElement": false,
       "HTMLFrameElement": false,
       "HTMLFrameSetElement": false,
+      "HTMLGeolocationElement": false,
       "HTMLHRElement": false,
       "HTMLHeadElement": false,
       "HTMLHeadingElement": false,
@@ -40782,6 +41410,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
       "XRView": false,
       "XRViewerPose": false,
       "XRViewport": false,
+      "XRVisibilityMaskChangeEvent": false,
       "XRWebGLBinding": false,
       "XRWebGLDepthInformation": false,
       "XRWebGLLayer": false,
@@ -41036,7 +41665,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
       "when": false,
       "window": false,
     },
-    "parser": "typescript-eslint/parser@8.53.0",
+    "parser": "typescript-eslint/parser@8.55.0",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -41051,13 +41680,13 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.53.0",
-    "unicorn:eslint-plugin-unicorn@62.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.3.1",
+    "perfectionist:eslint-plugin-perfectionist@5.5.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -42900,7 +43529,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/catch-error-name": [
       2,
-      {},
+      {
+        "ignore": [],
+        "name": "error",
+      },
     ],
     "unicorn/consistent-assert": [
       2,
@@ -42951,6 +43583,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/explicit-length-check": [
       2,
+      {
+        "non-zero": "greater-than",
+      },
     ],
     "unicorn/filename-case": [
       0,
@@ -42958,6 +43593,19 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     "unicorn/import-style": [
       2,
       {},
+    ],
+    "unicorn/isolated-functions": [
+      2,
+      {
+        "comments": [
+          "@isolated",
+        ],
+        "functions": [
+          "makeSynchronous",
+        ],
+        "overrideGlobals": {},
+        "selectors": [],
+      },
     ],
     "unicorn/new-for-builtins": [
       2,
@@ -43142,7 +43790,10 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/no-useless-undefined": [
       2,
-      {},
+      {
+        "checkArguments": true,
+        "checkArrowFunctionBody": true,
+      },
     ],
     "unicorn/no-zero-fractions": [
       2,
@@ -43177,7 +43828,12 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/prefer-add-event-listener": [
       2,
-      {},
+      {
+        "excludedPackages": [
+          "koa",
+          "sax",
+        ],
+      },
     ],
     "unicorn/prefer-array-find": [
       2,
@@ -43187,7 +43843,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/prefer-array-flat": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-array-flat-map": [
       2,
@@ -43298,7 +43956,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/prefer-object-from-entries": [
       0,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-optional-catch-binding": [
       2,
@@ -43326,7 +43986,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/prefer-single-call": [
       2,
-      {},
+      {
+        "ignore": [],
+      },
     ],
     "unicorn/prefer-spread": [
       2,
@@ -43348,7 +44010,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/prefer-structured-clone": [
       2,
-      {},
+      {
+        "functions": [],
+      },
     ],
     "unicorn/prefer-switch": [
       2,
@@ -43392,7 +44056,9 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/string-content": [
       0,
-      {},
+      {
+        "patterns": {},
+      },
     ],
     "unicorn/switch-case-braces": [
       2,
@@ -43400,7 +44066,25 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
     ],
     "unicorn/template-indent": [
       0,
-      {},
+      {
+        "comments": [
+          "HTML",
+          "indent",
+        ],
+        "functions": [
+          "dedent",
+          "stripIndent",
+        ],
+        "selectors": [],
+        "tags": [
+          "outdent",
+          "dedent",
+          "gql",
+          "sql",
+          "html",
+          "styled",
+        ],
+      },
     ],
     "unicorn/text-encoding-identifier-case": [
       2,
