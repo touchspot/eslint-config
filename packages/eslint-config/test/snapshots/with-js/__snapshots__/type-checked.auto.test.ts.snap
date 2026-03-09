@@ -69,7 +69,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -86,13 +86,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -2713,7 +2713,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -2730,13 +2730,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -5354,7 +5354,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -5371,13 +5371,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -7995,7 +7995,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -8012,13 +8012,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -10636,7 +10636,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -10653,13 +10653,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -13330,7 +13330,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -13347,11 +13347,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
   "processor": undefined,
   "rules": {
@@ -15522,7 +15522,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -15539,11 +15539,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
   "processor": undefined,
   "rules": {
@@ -17717,7 +17717,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -17734,11 +17734,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
   "processor": undefined,
   "rules": {
@@ -19909,7 +19909,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -19926,11 +19926,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
   "processor": undefined,
   "rules": {
@@ -22101,7 +22101,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -22118,13 +22118,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -24792,7 +24792,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -24809,13 +24809,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -27483,7 +27483,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.55.0",
+    "parser": "typescript-eslint/parser@8.56.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -27500,13 +27500,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.55.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
     "import-x:eslint-plugin-import-x@4.16.1",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.2",
-    "perfectionist:eslint-plugin-perfectionist@5.5.0",
+    "functional:eslint-plugin-functional@9.0.4",
+    "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
