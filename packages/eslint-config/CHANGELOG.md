@@ -1,5 +1,18 @@
 # Changelog
 
+## [5.0.5](https://github.com/touchspot/eslint-config/compare/v5.0.4...v5.0.5) (2026-03-09)
+
+
+### Bug Fixes
+
+* **eslint-config,playground-node:** allow AI agent directories in folder naming rule ([7777798](https://github.com/touchspot/eslint-config/commit/77777980f52c7ed008c5cc855c0741f4fc11caad))
+* **eslint-config:** export `Config` and `ConfigArray` utility types ([e25a216](https://github.com/touchspot/eslint-config/commit/e25a216077e1dc93d1e1212a0e0ca4c901f63348))
+
+
+### Dependency updates
+
+* **eslint-config,global:** upgrade eslint plugins and dev dependencies ([ecf2552](https://github.com/touchspot/eslint-config/commit/ecf2552712e632eb2a42fa6468dae9e0b84f6d88))
+
 ## [5.0.4](https://github.com/touchspot/eslint-config/compare/v5.0.3...v5.0.4) (2026-02-14)
 
 
