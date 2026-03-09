@@ -5,6 +5,7 @@ import { react } from "#src/frameworks/react.js";
 import { checkFileRulesetNext } from "#src/rulesets/check-file.js";
 import { importXRulesetNext } from "#src/rulesets/import-x.js";
 import { nextRuleset } from "#src/rulesets/next.js";
+import type { ConfigArray } from "#src/types.js";
 
-export const next = () =>
+export const next = (): ConfigArray =>
 	defineConfig(env.browser(), env.node(), react(), nextRuleset(), checkFileRulesetNext(), importXRulesetNext());

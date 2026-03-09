@@ -11,6 +11,7 @@ import { perfectionistRuleset } from "#src/rulesets/perfectionist.js";
 import { autoDisableTypeAwareTseslintRules, tseslintRuleset } from "#src/rulesets/tseslint.js";
 import { unicornRuleset } from "#src/rulesets/unicorn.js";
 import { unusedImportsRuleset } from "#src/rulesets/unused-imports.js";
+import type { ConfigArray } from "#src/types.js";
 
 export declare namespace config {
 	type Options = {
@@ -20,7 +21,7 @@ export declare namespace config {
 	};
 }
 
-export const config = (options: config.Options, ...addons: ConfigWithExtendsArray) =>
+export const config = (options: config.Options, ...addons: ConfigWithExtendsArray): ConfigArray =>
 	defineConfig(
 		globalIgnores([".cache/", ".turbo/", "coverage/", "dist/"]),
 		{

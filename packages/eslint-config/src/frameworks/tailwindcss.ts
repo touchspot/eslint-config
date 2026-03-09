@@ -2,6 +2,7 @@ import type { ObjectKeyMatcher, ObjectValueMatcher, StringMatcher } from "eslint
 import { defineConfig } from "eslint/config";
 
 import { betterTailwindCSSRulesets } from "#src/rulesets/better-tailwindcss.js";
+import type { ConfigArray } from "#src/types.js";
 
 export declare namespace tailwindcss {
 	type Matcher = ObjectKeyMatcher | ObjectValueMatcher | StringMatcher;
@@ -26,4 +27,5 @@ export declare namespace tailwindcss {
 	type Options = CommonOptions & (V3Options | V4Options);
 }
 
-export const tailwindcss = (options: tailwindcss.Options) => defineConfig(betterTailwindCSSRulesets(options));
+export const tailwindcss = (options: tailwindcss.Options): ConfigArray =>
+	defineConfig(betterTailwindCSSRulesets(options));
