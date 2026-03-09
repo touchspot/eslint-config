@@ -2341,6 +2341,14 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -6206,6 +6214,14 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -10067,6 +10083,14 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -13930,6 +13954,14 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -17768,6 +17800,14 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -35074,6 +35114,14 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -38933,6 +38981,14 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -42791,6 +42847,14 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [

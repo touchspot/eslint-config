@@ -1172,6 +1172,14 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -3926,6 +3934,14 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -6683,6 +6699,14 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -9536,6 +9560,14 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -12264,6 +12296,14 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -24000,6 +24040,14 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -26748,6 +26796,14 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -29502,6 +29558,14 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [

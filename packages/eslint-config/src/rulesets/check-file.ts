@@ -10,8 +10,24 @@ export const checkFileRuleset = () =>
 			"check-file": CheckFile,
 		},
 		rules: {
-			"check-file/folder-naming-convention": ["error", { "**": "KEBAB_CASE" }],
-			"check-file/filename-naming-convention": ["error", { "**": "KEBAB_CASE" }, { ignoreMiddleExtensions: true }],
+			"check-file/folder-naming-convention": [
+				"error",
+				{
+					"**": "KEBAB_CASE",
+				},
+				{
+					ignoreWords: [".agents", ".claude", ".codex", ".opencode"],
+				},
+			],
+			"check-file/filename-naming-convention": [
+				"error",
+				{
+					"**": "KEBAB_CASE",
+				},
+				{
+					ignoreMiddleExtensions: true,
+				},
+			],
 		},
 	});
 
