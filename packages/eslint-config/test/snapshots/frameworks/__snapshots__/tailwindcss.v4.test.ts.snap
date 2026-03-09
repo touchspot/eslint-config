@@ -1193,6 +1193,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:cjs] > shou
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -3913,6 +3921,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:js] > shoul
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -6629,6 +6645,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:jsx] > shou
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -9347,6 +9371,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:mjs] > shou
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -12040,6 +12072,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:cts] > shou
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -23621,6 +23661,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:mts] > shou
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -26335,6 +26383,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:ts] > shoul
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -29048,6 +29104,14 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:tsx] > shou
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [

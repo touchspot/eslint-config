@@ -1253,6 +1253,14 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -4030,6 +4038,14 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -6803,6 +6819,14 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -9578,6 +9602,14 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -12328,6 +12360,14 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -24194,6 +24234,14 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -26965,6 +27013,14 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -29735,6 +29791,14 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [

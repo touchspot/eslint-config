@@ -19,7 +19,7 @@
 			"ignoreDependencies": ["next", "react", "react-dom", "tailwindcss"]
 		},
 		"playgrounds/*": {
-			"entry": ["src/**", "*.ts"]
+			"entry": [".*/**", "src/**", "*.ts"]
 		}
 	}
 }

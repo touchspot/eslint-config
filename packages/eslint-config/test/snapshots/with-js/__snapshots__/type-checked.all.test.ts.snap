@@ -1148,6 +1148,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:cjs] > shoul
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -3790,6 +3798,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:js] > should
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -6428,6 +6444,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:jsx] > shoul
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -9068,6 +9092,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:mjs] > shoul
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -11706,6 +11738,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:cts] > shoul
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -23162,6 +23202,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:mts] > shoul
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -25851,6 +25899,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:ts] > should
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -28539,6 +28595,14 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:tsx] > shoul
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [

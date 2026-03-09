@@ -2416,6 +2416,14 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -6414,6 +6422,14 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -10415,6 +10431,14 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -14512,6 +14536,14 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -18484,6 +18516,14 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -36440,6 +36480,14 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
       {
         "**": "KEBAB_CASE",
       },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
+      },
     ],
     "comma-dangle": [
       0,
@@ -40432,6 +40480,14 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
@@ -44430,6 +44486,14 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
       2,
       {
         "**": "KEBAB_CASE",
+      },
+      {
+        "ignoreWords": [
+          ".agents",
+          ".claude",
+          ".codex",
+          ".opencode",
+        ],
       },
     ],
     "comma-dangle": [
