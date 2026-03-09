@@ -1,13 +1,13 @@
 ---
-name: git-commit
-description: Create git commits with Conventional Commits format. Analyzes changes to write meaningful messages. Use when committing changes, committing staged files, creating commits, making commits, or writing git commit messages.
+name: commit
+description: Create a commitlint-compliant commit from staged changes. Use when the user says "/commit", "commit this", "make a commit", or asks to commit currently staged work. Focuses on writing commit messages that describe impact and intent, not file-level diffs.
 ---
 
 # Git Commit Skill
 
 ## Overview
 
-This skill enables creating well-structured git commits in sandbox environments where heredoc syntax is unavailable. It provides a workflow for analyzing code changes, understanding what functionality changed (not just which files), and creating Conventional Commits-compliant commit messages with proper multi-line formatting.
+This skill enables creating well-structured git commits. It provides a workflow for analyzing code changes, understanding what functionality changed (not just which files), and creating Conventional Commits-compliant commit messages with proper multi-line formatting.
 
 ## Commit Workflow
 
@@ -39,7 +39,7 @@ git log -3
 This project uses commitlint with Conventional Commits. The configuration is automatically retrieved and shown below:
 
 ```bash
-node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/get-commitlint-rules.ts
+commitlint --print-config=json | jq '{rules: (.rules | with_entries(select(.value[0] | . > 0))), prompt: (.prompt | del(.questions))}'
 ```
 
 Use the JSON object above to understand the commitlint rules. **Do not run this script manually** - the output is already included.
@@ -77,7 +77,7 @@ Each rule is an array: `[level, applicability, value]`
 Run the helper script:
 
 ```bash
-node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/analyze-changes.ts
+node ${CLAUDE_SKILL_DIR}/scripts/analyze-changes.ts
 ```
 
 **Output format:**
@@ -188,8 +188,8 @@ Focus on the **OUTCOME and PURPOSE**, never the implementation details:
 **Critical: Distinguish between END USER features vs DEVELOPER tools**
 
 - ✅ "feat: add React hooks linting rules (affects users of this config)"
-- ❌ "feat: add `git-commit` skill (only affects developers of this project)"
-- ✅ "chore: add `git-commit` skill for commit automation"
+- ❌ "feat: add `commit` skill (only affects developers of this project)"
+- ✅ "chore: add `commit` skill for commit automation"
 
 **The subject line must answer "why", not "what" or "how".**
 
@@ -251,7 +251,7 @@ Always enclose the following in backticks:
 - File names: `eslint.ts`, `package.json`, `tsconfig.json`, `config.ts`
 - Directory names: `src/rulesets/`, `lib/addons/`, `packages/eslint-config/`
 - Library/package names: `eslint`, `typescript-eslint`, `@touchspot/eslint-config`, `eslint-plugin-react`
-- Tool/command names: `git-commit`, `commitlint`, `pnpm`, `turbo`
+- Tool/command names: `commit`, `commitlint`, `pnpm`, `turbo`
 - Function/method names: `config()`, `react()`, `next()`, `tailwindcss()`
 - Code identifiers: `tsconfigRootDir`, `FlatConfig`, `RulesetOptions`
 - Constants/naming conventions: `KEBAB_CASE`, `UPPER_CASE`, `camelCase`, `PascalCase`
@@ -321,46 +321,23 @@ that were flagging legitimate rel="noopener" usage.
 
 ### Step 7: Execute the Commit
 
-**Use the Write tool and `git commit -F` for multi-line commit messages:**
+**Use a heredoc to pass the commit message:**
 
-In sandbox environments, heredoc syntax is unavailable. Follow these steps to create properly formatted multi-line commits:
+```bash
+git commit -m "$(
+    cat << 'EOF'
+<commit message here>
+EOF
+)"
+```
 
-1. **Get a temporary file path** by running the helper script:
-
-    ```bash
-    node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/get-message-file-path.ts
-    ```
-
-    This outputs the path to a temporary file (e.g., `/tmp/claude/xxxxx/commit-message.txt`).
-
-2. **Write the commit message to the temporary file** using the Write tool:
-    - Path: Use the path returned from step 1
-    - Content: The full commit message with proper newlines
-
-3. **Execute git commit** using the temporary file:
-
-    ```bash
-    git commit -F <temp-file-path>
-    ```
-
-4. **Clean up** by removing the temporary file:
-
-    ```bash
-    rm <temp-file-path>
-    ```
+The heredoc preserves multi-line formatting (subject, body, footer) without needing temporary files.
 
 **Example:**
 
-First, run the helper script to get a temporary file path:
-
 ```bash
-node $(pnpm --workspace-root exec pwd)/.claude/skills/git-commit/scripts/get-message-file-path.ts
-# Output: /tmp/claude/xxxxx/commit-message.txt
-```
-
-Then, use the Write tool to create the file at that path with content:
-
-```
+git commit -m "$(
+    cat << 'EOF'
 fix(eslint-config): prevent false positives in no-unused-vars rule
 
 Previously, variables used only in type annotations were being
@@ -370,9 +347,9 @@ projects with strict type imports.
 Changes:
 - Configure `varsIgnorePattern` to exclude type-only usages
 - Update `@typescript-eslint/no-unused-vars` rule options
+EOF
+)"
 ```
-
-Then execute: `git commit -F <temp-file-path> && rm <temp-file-path>`
 
 ### Step 8: Verify the Commit
 
@@ -417,8 +394,8 @@ git status
     - File changes and implementation details go in the body, not subject
 
 6. **Don't use `feat` for developer-only changes**
-    - ❌ "feat: add `git-commit` skill for commit automation"
-    - ✅ "chore: add `git-commit` skill for commit automation"
+    - ❌ "feat: add `commit` skill for commit automation"
+    - ✅ "chore: add `commit` skill for commit automation"
     - ❌ "feat: add GitHub Actions workflow for CI"
     - ✅ "ci: add GitHub Actions workflow for CI"
     - Ask: "Does this change what END USERS can do with this ESLint config?"
