@@ -69,7 +69,7 @@ export const tseslintRuleset = (options: config.Options) =>
 				"@typescript-eslint/no-namespace": ["error", { allowDeclarations: true }],
 				"@typescript-eslint/no-import-type-side-effects": "error",
 				"no-shadow": "off",
-				"@typescript-eslint/no-shadow": ["error", { allow: ["_"] }],
+				"@typescript-eslint/no-shadow": ["error", { allow: ["_", "it"] }],
 				"@typescript-eslint/no-unnecessary-condition": ["error", { allowConstantLoopConditions: true }],
 				"@typescript-eslint/no-unnecessary-qualifier": "error",
 				"@typescript-eslint/no-unused-vars": "off",
