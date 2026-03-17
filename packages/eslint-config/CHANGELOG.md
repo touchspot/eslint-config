@@ -1,5 +1,17 @@
 # Changelog
 
+## [5.0.6](https://github.com/touchspot/eslint-config/compare/v5.0.5...v5.0.6) (2026-03-17)
+
+
+### Bug Fixes
+
+* **eslint-config:** allow `it` variable shadowing in `no-shadow` rule ([0d8e9b9](https://github.com/touchspot/eslint-config/commit/0d8e9b9d57e9fbf4c4f3bb2928e7f97486fe7ccb))
+
+
+### Dependency updates
+
+* upgrade eslint plugins and dev dependencies ([dee997f](https://github.com/touchspot/eslint-config/commit/dee997f31e8ac5898f5288fe935b487b0c65a8f2))
+
 ## [5.0.5](https://github.com/touchspot/eslint-config/compare/v5.0.4...v5.0.5) (2026-03-09)
 
 
