@@ -69,7 +69,7 @@ exports[`Snapshot testing > [default][lang:js][ext:cjs] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -83,9 +83,9 @@ exports[`Snapshot testing > [default][lang:js][ext:cjs] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -2773,7 +2773,7 @@ exports[`Snapshot testing > [default][lang:js][ext:js] > should match snapshot 1
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -2787,9 +2787,9 @@ exports[`Snapshot testing > [default][lang:js][ext:js] > should match snapshot 1
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -5474,7 +5474,7 @@ exports[`Snapshot testing > [default][lang:js][ext:jsx] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -5488,9 +5488,9 @@ exports[`Snapshot testing > [default][lang:js][ext:jsx] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -8175,7 +8175,7 @@ exports[`Snapshot testing > [default][lang:js][ext:mjs] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -8189,9 +8189,9 @@ exports[`Snapshot testing > [default][lang:js][ext:mjs] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -10876,7 +10876,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:cts] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -10891,9 +10891,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:cts] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -13577,7 +13577,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.css.ts] > should match snap
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -13592,9 +13592,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.css.ts] > should match snap
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
@@ -15767,7 +15767,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.cts] > should match snapsho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -15782,9 +15782,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.cts] > should match snapsho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
@@ -17960,7 +17960,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.mts] > should match snapsho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -17975,9 +17975,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.mts] > should match snapsho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
@@ -20150,7 +20150,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.ts] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -20165,9 +20165,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:d.ts] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
   ],
@@ -22340,7 +22340,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:mts] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -22355,9 +22355,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:mts] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -25038,7 +25038,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:ts] > should match snapshot 1
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -25053,9 +25053,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:ts] > should match snapshot 1
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -27736,7 +27736,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:tsx] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -27751,9 +27751,9 @@ exports[`Snapshot testing > [default][lang:ts][ext:tsx] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",

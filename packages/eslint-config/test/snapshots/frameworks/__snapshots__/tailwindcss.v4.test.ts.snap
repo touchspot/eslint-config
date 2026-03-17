@@ -69,7 +69,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:cjs] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -83,9 +83,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:cjs] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -2798,7 +2798,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:js] > shoul
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -2812,9 +2812,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:js] > shoul
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -5524,7 +5524,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:jsx] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -5538,9 +5538,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:jsx] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -8250,7 +8250,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:mjs] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -8264,9 +8264,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:mjs] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -10976,7 +10976,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:cts] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -10991,9 +10991,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:cts] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -13702,7 +13702,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.css.ts] >
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -13717,9 +13717,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.css.ts] >
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "better-tailwindcss:better-tailwindcss",
@@ -15917,7 +15917,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.cts] > sh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -15932,9 +15932,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.cts] > sh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "better-tailwindcss:better-tailwindcss",
@@ -18135,7 +18135,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.mts] > sh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -18150,9 +18150,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.mts] > sh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "better-tailwindcss:better-tailwindcss",
@@ -20350,7 +20350,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.ts] > sho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -20365,9 +20365,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.ts] > sho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "perfectionist:eslint-plugin-perfectionist@5.6.0",
     "better-tailwindcss:better-tailwindcss",
@@ -22565,7 +22565,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:mts] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -22580,9 +22580,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:mts] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -25288,7 +25288,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:ts] > shoul
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -25303,9 +25303,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:ts] > shoul
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
@@ -28011,7 +28011,7 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:tsx] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.56.1",
+    "parser": "typescript-eslint/parser@8.57.1",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -28026,9 +28026,9 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:tsx] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.56.1",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
     "unicorn:eslint-plugin-unicorn@63.0.0",
-    "import-x:eslint-plugin-import-x@4.16.1",
+    "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
     "functional:eslint-plugin-functional@9.0.4",
