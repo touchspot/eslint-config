@@ -887,6 +887,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:cjs] > shoul
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -3537,6 +3538,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:js] > should
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -6184,6 +6186,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:jsx] > shoul
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -8831,6 +8834,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:js][ext:mjs] > shoul
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -11478,6 +11482,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:cts] > shoul
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -22941,6 +22946,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:mts] > shoul
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -25638,6 +25644,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:ts] > should
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -28335,6 +28342,7 @@ exports[`Snapshot testing > [with-js/type-checked.all][lang:ts][ext:tsx] > shoul
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],

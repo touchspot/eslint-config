@@ -893,6 +893,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -3656,6 +3657,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -6421,6 +6423,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -9281,6 +9284,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -12036,6 +12040,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -23779,6 +23784,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -26536,6 +26542,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -29298,6 +29305,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],

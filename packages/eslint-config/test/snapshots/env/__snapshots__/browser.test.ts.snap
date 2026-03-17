@@ -2062,6 +2062,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:cjs] > should match snaps
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -5935,6 +5936,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:js] > should match snapsh
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -9805,6 +9807,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:jsx] > should match snaps
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -13675,6 +13678,7 @@ exports[`Snapshot testing > [env/browser][lang:js][ext:mjs] > should match snaps
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -17540,6 +17544,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:cts] > should match snaps
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -34853,6 +34858,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:mts] > should match snaps
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -38720,6 +38726,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:ts] > should match snapsh
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -42587,6 +42594,7 @@ exports[`Snapshot testing > [env/browser][lang:ts][ext:tsx] > should match snaps
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],

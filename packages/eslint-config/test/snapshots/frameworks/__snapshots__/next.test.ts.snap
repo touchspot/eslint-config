@@ -2137,6 +2137,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:cjs] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -6144,6 +6145,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:js] > should match sn
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -10153,6 +10155,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:jsx] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -14257,6 +14260,7 @@ exports[`Snapshot testing > [frameworks/next][lang:js][ext:mjs] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -18256,6 +18260,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:cts] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -36219,6 +36224,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:mts] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -40220,6 +40226,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:ts] > should match sn
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -44226,6 +44233,7 @@ exports[`Snapshot testing > [frameworks/next][lang:ts][ext:tsx] > should match s
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],

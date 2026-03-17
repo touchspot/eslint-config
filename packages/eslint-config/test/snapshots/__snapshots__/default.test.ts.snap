@@ -892,6 +892,7 @@ exports[`Snapshot testing > [default][lang:js][ext:cjs] > should match snapshot 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -3595,6 +3596,7 @@ exports[`Snapshot testing > [default][lang:js][ext:js] > should match snapshot 1
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -6295,6 +6297,7 @@ exports[`Snapshot testing > [default][lang:js][ext:jsx] > should match snapshot 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -8995,6 +8998,7 @@ exports[`Snapshot testing > [default][lang:js][ext:mjs] > should match snapshot 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -11690,6 +11694,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:cts] > should match snapshot 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -23153,6 +23158,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:mts] > should match snapshot 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -25850,6 +25856,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:ts] > should match snapshot 1
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
@@ -28547,6 +28554,7 @@ exports[`Snapshot testing > [default][lang:ts][ext:tsx] > should match snapshot 
       {
         "allow": [
           "_",
+          "it",
         ],
       },
     ],
