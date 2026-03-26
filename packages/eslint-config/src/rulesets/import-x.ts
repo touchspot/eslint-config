@@ -37,7 +37,7 @@ export const importXRuleset = () =>
 		},
 		{
 			name: "@touchspot/eslint-config/rulesets/import-x/typescript/allow-default-export",
-			files: ["*.config.ts", "*.config.*.ts", "**/*.d.*"],
+			files: ["*.config.ts", "*.config.*.ts", "**/*.d.*", "**/global-setup.ts"],
 			rules: {
 				"import-x/no-default-export": "off",
 			},
