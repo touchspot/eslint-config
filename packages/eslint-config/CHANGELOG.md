@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.7](https://github.com/touchspot/eslint-config/compare/v5.0.6...v5.0.7) (2026-03-26)
+
+
+### Bug Fixes
+
+* **eslint-config:** allow default export in `global-setup.ts` files ([7df9b11](https://github.com/touchspot/eslint-config/commit/7df9b11ebbe05730cc82f33c4205918e4f9ab279))
+
 ## [5.0.6](https://github.com/touchspot/eslint-config/compare/v5.0.5...v5.0.6) (2026-03-17)
 
 
