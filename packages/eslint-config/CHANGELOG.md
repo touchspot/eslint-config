@@ -1,5 +1,12 @@
 # Changelog
 
+## [5.0.8](https://github.com/touchspot/eslint-config/compare/v5.0.7...v5.0.8) (2026-03-30)
+
+
+### Bug Fixes
+
+* **eslint-config:** allow `__tests__` directory in folder naming rule ([917860c](https://github.com/touchspot/eslint-config/commit/917860cf9f8854ba4e3278783a9c241d81f46694))
+
 ## [5.0.7](https://github.com/touchspot/eslint-config/compare/v5.0.6...v5.0.7) (2026-03-26)
 
 
