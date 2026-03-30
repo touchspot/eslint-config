@@ -16,7 +16,7 @@ export const checkFileRuleset = () =>
 					"**": "KEBAB_CASE",
 				},
 				{
-					ignoreWords: [".agents", ".claude", ".codex", ".opencode"],
+					ignoreWords: [".agents", ".claude", ".codex", ".opencode", "__tests__"],
 				},
 			],
 			"check-file/filename-naming-convention": [
