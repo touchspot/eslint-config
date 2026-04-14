@@ -79,7 +79,7 @@
 		},
 		"tailwindCSS.showPixelEquivalents": true,
 		"tailwindCSS.suggestions": true,
-		"tailwindCSS.validate": true,
+		"tailwindCSS.validate": false,
 		"terminal.integrated.tabs.description": "${task}${separator}${workspaceFolderName}${separator}${cwdFolder}",
 	},
 }
