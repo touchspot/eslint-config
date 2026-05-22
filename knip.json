@@ -11,7 +11,7 @@
 				"typescript-transform-paths",
 				"zx"
 			],
-			"ignoreFiles": [".claude/**"]
+			"ignoreFiles": [".agents/**", ".claude/**"]
 		},
 		"packages/eslint-config": {
 			"entry": ["lib/**", "test/**/*.test.*"],

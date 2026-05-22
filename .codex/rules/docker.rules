@@ -1,0 +1,7 @@
+prefix_rule(
+    pattern=["docker", "system"],
+    decision="forbidden",
+    justification="`docker system` commands are destructive. Use targeted Docker commands outside Codex if cleanup is required.",
+    match=["docker system prune", "docker system df"],
+    not_match=["docker ps", "docker compose up"],
+)

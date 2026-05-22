@@ -1,0 +1,113 @@
+prefix_rule(
+    pattern=["git", "push"],
+    decision="forbidden",
+    justification="Do not push from Codex. Keep remote history updates as an explicit manual action.",
+    match=["git push origin HEAD", "git push --force-with-lease origin main"],
+    not_match=["git status", "git pull --rebase"],
+)
+
+prefix_rule(
+    pattern=["git", "merge"],
+    decision="forbidden",
+    justification="`git merge` changes history and branch state. Keep merges as explicit manual actions outside Codex.",
+    match=["git merge main", "git merge --no-ff feature-branch"],
+    not_match=["git status", "git switch main"],
+)
+
+prefix_rule(
+    pattern=["git", "rebase"],
+    decision="forbidden",
+    justification="`git rebase` rewrites commits and is easy to misuse in an automated flow. Ask the user to run it manually if needed.",
+    match=["git rebase main", "git rebase --interactive HEAD~3"],
+    not_match=["git switch main", "git status"],
+)
+
+prefix_rule(
+    pattern=["git", "checkout"],
+    decision="forbidden",
+    justification="`git checkout` can discard or hide in-progress work. Use `git switch` manually outside Codex if needed.",
+    match=["git checkout HEAD -- package.json", "git checkout main"],
+    not_match=["git switch main", "git status"],
+)
+
+prefix_rule(
+    pattern=["git", "reset"],
+    decision="forbidden",
+    justification="`git reset` rewrites local history and discards state. Use non-destructive inspection or ask the user first.",
+    match=["git reset --hard", "git reset HEAD~1"],
+    not_match=["git restore README.md", "git status"],
+)
+
+prefix_rule(
+    pattern=["git", "clean"],
+    decision="forbidden",
+    justification="`git clean` removes untracked files destructively. Ask the user before removing files.",
+    match=["git clean -fd", "git clean -fdx"],
+    not_match=["git status", "git add ."],
+)
+
+prefix_rule(
+    pattern=["git", "stash"],
+    decision="forbidden",
+    justification="Do not use `git stash` from Codex. It can hide in-progress work; ask the user for an explicit manual stash workflow.",
+    match=["git stash", "git stash push -m wip", "git stash pop"],
+    not_match=["git status", "git add ."],
+)
+
+prefix_rule(
+    pattern=["git", "stash", "drop"],
+    decision="forbidden",
+    justification="Dropping stash entries is destructive. Inspect stash contents manually and ask the user before removal.",
+    match=["git stash drop", "git stash drop stash@{1}"],
+    not_match=["git stash list", "git stash show -p"],
+)
+
+prefix_rule(
+    pattern=["git", "stash", "clear"],
+    decision="forbidden",
+    justification="Clearing the stash permanently removes saved work. Ask the user before doing this.",
+    match=["git stash clear"],
+    not_match=["git stash list", "git stash pop"],
+)
+
+prefix_rule(
+    pattern=["git", "config"],
+    decision="forbidden",
+    justification="Do not change git configuration from Codex. Keep repository and global git config changes manual.",
+    match=["git config user.name tendedame", "git config --global pull.rebase true"],
+    not_match=["git status", "git commit -m test"],
+)
+
+prefix_rule(
+    pattern=["git", "filter-branch"],
+    decision="forbidden",
+    justification="`git filter-branch` rewrites history destructively. Use a manual maintenance workflow outside Codex instead.",
+    match=["git filter-branch --tree-filter 'rm -f secret.txt' HEAD"],
+    not_match=["git rev-list HEAD", "git log --oneline"],
+)
+
+prefix_rule(
+    pattern=["git", "gc"],
+    decision="forbidden",
+    justification="`git gc` performs repository maintenance with side effects. Leave it to explicit manual maintenance.",
+    match=["git gc", "git gc --prune=now"],
+    not_match=["git status", "git count-objects -v"],
+)
+
+prefix_rule(
+    pattern=["git", "reflog"],
+    decision="forbidden",
+    justification="Do not inspect or mutate reflog from Codex. Keep recovery-history operations manual.",
+    match=["git reflog", "git reflog show", "git reflog expire --expire=now --all"],
+    not_match=["git log -g", "git status"],
+)
+
+prefix_rule(
+    pattern=["git", "reflog", "expire"],
+    decision="forbidden",
+    justification="`git reflog expire` deletes recovery history. Do not run it from Codex.",
+    match=["git reflog expire --expire=now --all"],
+    not_match=["git reflog", "git log -g"],
+)
+
+prefix_rule(pattern=["git"], decision="allow")

@@ -1,0 +1,7 @@
+prefix_rule(
+    pattern=["sudo"],
+    decision="forbidden",
+    justification="Do not use sudo from Codex. Request explicit user guidance if elevated access is truly required.",
+    match=["sudo rm -rf /tmp/foo", "sudo pnpm install"],
+    not_match=["echo sudo"],
+)

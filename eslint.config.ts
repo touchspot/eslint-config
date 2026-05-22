@@ -10,10 +10,14 @@ export default defineConfig(
 		},
 		env.node(),
 		{
-			files: [".claude/**"],
+			files: [".agents/**", ".claude/**"],
 			rules: {
 				"no-console": "off",
-				"check-file/folder-naming-convention": ["error", { "**": "KEBAB_CASE" }, { ignoreWords: [".claude"] }],
+				"check-file/folder-naming-convention": [
+					"error",
+					{ "**": "KEBAB_CASE" },
+					{ ignoreWords: [".agents", ".claude"] },
+				],
 			},
 		},
 	),
