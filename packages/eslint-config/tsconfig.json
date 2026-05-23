@@ -4,14 +4,7 @@
 		"noEmit": true,
 		"module": "nodenext",
 		"moduleResolution": "nodenext",
-		"verbatimModuleSyntax": true,
-		"paths": {
-			"@touchspot/eslint-config": ["./lib/default.ts"],
-			"@touchspot/eslint-config/package.json": ["./package.json"],
-			"@touchspot/eslint-config/*": ["./lib/frameworks/*.ts"],
-			"#src/*.js": ["./src/*.ts"],
-			"#test/*.js": ["./test/*.ts"]
-		}
+		"verbatimModuleSyntax": true
 	},
 	"include": ["lib", "src", "test", "*.ts"]
 }

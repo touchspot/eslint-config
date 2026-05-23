@@ -131,12 +131,12 @@ test/
 
 1. **Composable Rulesets**: Each ruleset in `src/rulesets/` is a self-contained module that returns ESLint config objects. The main `config()` function in `src/config.ts` composes these rulesets together.
 
-2. **Entry Points via lib/**: The `lib/` directory contains thin re-export files that serve as the package's public API. These use path aliases (`#src/`) to reference the actual implementations in `src/`.
+2. **Entry Points via lib/**: The `lib/` directory contains thin re-export files that serve as the package's public API. These use package imports (`#src/`) to reference the actual implementations in `src/`.
 
-3. **Path Alias System**: The package uses TypeScript path aliases extensively:
+3. **Package Imports**: Internal absolute imports are resolved through `package.json#imports`, not `tsconfig.json#paths`:
     - `#src/*.js` → `./src/*.ts` (source code)
     - `#test/*.js` → `./test/*.ts` (test code)
-    - Build process uses `typescript-transform-paths` to resolve these
+    - `tsdown` resolves and bundles internal `#src` imports during build
 
 4. **Flat ESLint Config**: This package uses ESLint's modern flat config format (not the legacy `.eslintrc` format). Configs are composable arrays of config objects.
 
@@ -148,9 +148,9 @@ test/
 ### TypeScript Configuration
 
 - **Base**: Extends `@tsconfig/node24` and `@tsconfig/strictest`
-- **Build**: Uses `ts-patch` with `typescript-transform-paths` to transform path aliases in output
+- **Build**: Uses `tsdown` to bundle public entry points from `lib/`
 - **Module System**: `nodenext` (strict ESM with `.js` extensions in imports)
-- **Build Output**: Compiled to `dist/` with source maps and declaration maps
+- **Build Output**: Bundled to `dist/` with source maps and declaration maps
 
 ### Testing Strategy
 
@@ -182,6 +182,6 @@ Subject case must not be start-case, pascal-case, or upper-case.
 ## Important Notes
 
 - **Never modify `dist/` directly**: It's a build artifact, edit source in `src/` or `lib/`
-- **Path aliases are build-time**: When adding imports, use `#src/` aliases, not relative paths
+- **Internal absolute imports use package imports**: When adding internal imports, use `#src/*.js`, not relative paths or `tsconfig.json#paths`
 - **Peer dependencies are optional**: React, Next.js, and Tailwind addons have optional peer deps
 - **Global ignores**: `.cache/`, `.turbo/`, `coverage/`, `dist/` are ignored by default in the ESLint config

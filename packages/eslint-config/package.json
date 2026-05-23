@@ -18,10 +18,14 @@
 	"license": "MIT",
 	"author": "mozisan <mozisan@users.noreply.github.com>",
 	"type": "module",
+	"imports": {
+		"#src/*.js": "./src/*.ts",
+		"#test/*.js": "./test/*.ts"
+	},
 	"exports": {
-		".": "./dist/lib/default.js",
 		"./package.json": "./package.json",
-		"./*": "./dist/lib/frameworks/*.js"
+		".": "./dist/index.mjs",
+		"./*": "./dist/frameworks/*.mjs"
 	},
 	"files": [
 		"dist",
@@ -32,11 +36,10 @@
 		"!**/__snapshots__/"
 	],
 	"scripts": {
-		"build": "tspc --build tsconfig.build.json",
+		"build": "tsdown",
 		"check:format": "prettier --check --log-level=warn .",
 		"check:lint": "eslint .",
 		"check:type": "tsc --noEmit",
-		"dev": "tspc --build tsconfig.build.json --watch",
 		"fix:format": "prettier --write --log-level=warn .",
 		"fix:lint": "eslint --fix .",
 		"inspect": "config-inspector",
@@ -46,6 +49,7 @@
 	"prettier": "@touchspot/prettier-config",
 	"dependencies": {
 		"@eslint/compat": "catalog:",
+		"@eslint/config-helpers": "catalog:",
 		"@eslint/js": "catalog:",
 		"@next/eslint-plugin-next": "catalog:",
 		"eslint-config-prettier": "catalog:",
@@ -64,12 +68,12 @@
 		"typescript-eslint": "catalog:"
 	},
 	"devDependencies": {
-		"@eslint/config-helpers": "catalog:",
 		"eslint": "catalog:",
 		"next": "catalog:",
 		"react": "catalog:",
 		"react-dom": "catalog:",
-		"tailwindcss": "catalog:"
+		"tailwindcss": "catalog:",
+		"tsdown": "catalog:"
 	},
 	"peerDependencies": {
 		"eslint": "^10",

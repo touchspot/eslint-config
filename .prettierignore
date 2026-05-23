@@ -1,5 +1,6 @@
 .claude/settings.local.json
 .husky/_/
+.pnpm-store/
 .turbo/
 packages/
 playgrounds/

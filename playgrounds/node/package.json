@@ -13,6 +13,7 @@
 	},
 	"prettier": "@touchspot/prettier-config",
 	"devDependencies": {
-		"@touchspot/eslint-config": "workspace:^"
+		"@touchspot/eslint-config": "workspace:^",
+		"@types/node": "catalog:"
 	}
 }

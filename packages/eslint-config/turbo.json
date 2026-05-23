@@ -8,7 +8,7 @@
 			"outputs": []
 		},
 		"check:type": {
-			"dependsOn": ["^build"],
+			"dependsOn": ["^build", "build"],
 			"inputs": ["lib/", "src/", "test/", "tsconfig.json", "!**/__snapshots__/"],
 			"outputs": []
 		},
@@ -17,13 +17,13 @@
 			"cache": false
 		},
 		"test": {
-			"dependsOn": ["^build"],
-			"inputs": ["src/", "test/", "tsconfig.json", "vitest.*"],
+			"dependsOn": ["^build", "build"],
+			"inputs": ["lib/", "src/", "test/", "tsconfig.json", "tsdown.config.*", "vitest.*"],
 			"outputs": ["coverage/**"]
 		},
 		"test:update": {
-			"dependsOn": ["^build"],
-			"inputs": ["src/", "test/", "tsconfig.json", "vitest.*", "!**/__snapshots__/"],
+			"dependsOn": ["^build", "build"],
+			"inputs": ["lib/", "src/", "test/", "tsconfig.json", "tsdown.config.*", "vitest.*", "!**/__snapshots__/"],
 			"outputs": ["**/__snapshots__/**"]
 		}
 	}

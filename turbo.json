@@ -4,7 +4,7 @@
 	"ui": "tui",
 	"tasks": {
 		"build": {
-			"inputs": ["lib/", "src/", "tsconfig*.json"],
+			"inputs": ["lib/", "src/", "package.json", "tsconfig.json", "tsdown.config.*"],
 			"outputs": ["dist/"]
 		},
 		"//#check": {
@@ -45,9 +45,6 @@
 		},
 		"ci": {
 			"dependsOn": ["check", "test"]
-		},
-		"dev": {
-			"persistent": true
 		},
 		"//#fix": {
 			"dependsOn": ["fix:format", "fix:lint"]

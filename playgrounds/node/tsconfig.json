@@ -4,6 +4,7 @@
 		"noEmit": true,
 		"module": "nodenext",
 		"moduleResolution": "nodenext",
+		"types": ["node"],
 		"verbatimModuleSyntax": true
 	},
 	"include": [".*/**/*.ts", "src/**/*.ts", "*.ts"]

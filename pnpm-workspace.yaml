@@ -46,12 +46,10 @@ catalog:
   react: ^19.2.6
   react-dom: ^19.2.6
   tailwindcss: ^4.3.0
-  ts-patch: ^3.3.0
+  tsdown: ^0.22.0
   turbo: ^2.9.14
-  typescript: ^5.9.3
+  typescript: ^6.0.3
   typescript-eslint: ^8.59.4
-  typescript-transform-paths: ^3.5.6
-  vite-tsconfig-paths: ^6.1.1
   vitest: ^4.1.7
   zx: ^8.8.5
 

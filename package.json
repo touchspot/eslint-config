@@ -33,11 +33,8 @@
 		"knip": "catalog:",
 		"lint-staged": "catalog:",
 		"prettier": "catalog:",
-		"ts-patch": "catalog:",
 		"turbo": "catalog:",
 		"typescript": "catalog:",
-		"typescript-transform-paths": "catalog:",
-		"vite-tsconfig-paths": "catalog:",
 		"vitest": "catalog:",
 		"zx": "catalog:"
 	},

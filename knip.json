@@ -8,7 +8,6 @@
 				"@types/fs-extra",
 				"better-typescript-lib",
 				"commitizen",
-				"typescript-transform-paths",
 				"zx"
 			],
 			"ignoreFiles": [".agents/**", ".claude/**"]
