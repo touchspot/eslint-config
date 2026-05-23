@@ -1,5 +1,21 @@
 # Changelog
 
+## [6.0.0](https://github.com/touchspot/eslint-config/compare/v5.0.8...v6.0.0) (2026-05-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* `@touchspot/eslint-config` now requires `eslint` 10.
+
+### Bug Fixes
+
+* **eslint-config,playground-next:** avoid duplicate Tailwind CSS v4 rule reports ([6672583](https://github.com/touchspot/eslint-config/commit/6672583c4b3040ce4343dd4fff231c00207e7c15))
+
+
+### Dependency updates
+
+* require `eslint` 10 ([e28b53a](https://github.com/touchspot/eslint-config/commit/e28b53ac29c42210d50b087c7d10d7411399b6a0))
+
 ## [5.0.8](https://github.com/touchspot/eslint-config/compare/v5.0.7...v5.0.8) (2026-03-30)
 
 
