@@ -1159,7 +1159,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:js][ext:cjs] > shou
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -3925,7 +3931,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:js][ext:js] > shoul
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -6688,7 +6700,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:js][ext:jsx] > shou
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -9451,7 +9469,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:js][ext:mjs] > shou
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -12191,7 +12215,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:cts] > shou
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -14548,7 +14578,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:d.css.ts] >
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -16799,7 +16835,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:d.cts] > sh
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -19053,7 +19095,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:d.mts] > sh
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -21304,7 +21352,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:d.ts] > sho
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -23961,7 +24015,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:mts] > shou
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -26721,7 +26781,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:ts] > shoul
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [
@@ -29481,7 +29547,13 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v3][lang:ts][ext:tsx] > shou
     "better-tailwindcss/enforce-consistent-variable-syntax": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
     "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
+    "better-tailwindcss/no-deprecated-classes": [
       2,
     ],
     "better-tailwindcss/no-duplicate-classes": [

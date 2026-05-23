@@ -1156,6 +1156,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:cjs] > shou
     "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
     "better-tailwindcss/no-conflicting-classes": [
       2,
     ],
@@ -3922,6 +3928,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:js] > shoul
     "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
     "better-tailwindcss/no-conflicting-classes": [
       2,
     ],
@@ -6683,6 +6695,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:jsx] > shou
       0,
     ],
     "better-tailwindcss/enforce-canonical-classes": [
+      2,
+    ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -9448,6 +9466,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:js][ext:mjs] > shou
     "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
     "better-tailwindcss/no-conflicting-classes": [
       2,
     ],
@@ -12188,6 +12212,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:cts] > shou
     "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
     "better-tailwindcss/no-conflicting-classes": [
       2,
     ],
@@ -14545,6 +14575,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.css.ts] >
     "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
     "better-tailwindcss/no-conflicting-classes": [
       2,
     ],
@@ -16794,6 +16830,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.cts] > sh
       0,
     ],
     "better-tailwindcss/enforce-canonical-classes": [
+      2,
+    ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -19050,6 +19092,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.mts] > sh
     "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
     "better-tailwindcss/no-conflicting-classes": [
       2,
     ],
@@ -21299,6 +21347,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:d.ts] > sho
       0,
     ],
     "better-tailwindcss/enforce-canonical-classes": [
+      2,
+    ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -23956,6 +24010,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:mts] > shou
       0,
     ],
     "better-tailwindcss/enforce-canonical-classes": [
+      2,
+    ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
@@ -26718,6 +26778,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:ts] > shoul
     "better-tailwindcss/enforce-canonical-classes": [
       2,
     ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
+      2,
+    ],
     "better-tailwindcss/no-conflicting-classes": [
       2,
     ],
@@ -29476,6 +29542,12 @@ exports[`Snapshot testing > [frameworks/tailwindcss.v4][lang:ts][ext:tsx] > shou
       0,
     ],
     "better-tailwindcss/enforce-canonical-classes": [
+      2,
+    ],
+    "better-tailwindcss/enforce-logical-properties": [
+      2,
+    ],
+    "better-tailwindcss/enforce-shorthand-classes": [
       2,
     ],
     "better-tailwindcss/no-conflicting-classes": [
