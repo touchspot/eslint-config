@@ -1,4 +1,3 @@
-import type { ConfigObject } from "@eslint/core";
 import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import ImportX from "eslint-plugin-import-x";
 import { defineConfig } from "eslint/config";
@@ -8,7 +7,7 @@ export const importXRuleset = () =>
 		{
 			name: "@touchspot/eslint-config/rulesets/import-x",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [ImportX.flatConfigs.recommended as ConfigObject],
+			extends: [ImportX.flatConfigs.recommended],
 			settings: {
 				"import-x/internal-regex": "^#.+",
 				"import-x/resolver-next": [createTypeScriptImportResolver()],
@@ -29,7 +28,7 @@ export const importXRuleset = () =>
 		{
 			name: "@touchspot/eslint-config/rulesets/import-x/typescript",
 			files: ["**/*.{ts,tsx,mts,cts}"],
-			extends: [ImportX.flatConfigs.typescript as ConfigObject],
+			extends: [ImportX.flatConfigs.typescript],
 			rules: {
 				"import-x/consistent-type-specifier-style": "error",
 				"import-x/no-default-export": "error",

@@ -69,7 +69,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -86,13 +86,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -1344,6 +1344,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -1618,7 +1619,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -1641,6 +1642,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -1687,6 +1691,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -1734,6 +1750,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -1787,6 +1804,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -1949,6 +1972,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -1967,6 +1993,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -2168,6 +2195,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -2378,6 +2408,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -2457,6 +2490,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:cjs] > shou
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -2723,7 +2759,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -2740,13 +2776,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -3995,6 +4031,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -4269,7 +4306,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -4292,6 +4329,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -4338,6 +4378,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -4385,6 +4437,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -4438,6 +4491,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -4600,6 +4659,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -4618,6 +4680,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -4819,6 +4882,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -5029,6 +5095,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -5108,6 +5177,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:js] > shoul
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -5374,7 +5446,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -5391,13 +5463,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -6646,6 +6718,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -6920,7 +6993,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -6943,6 +7016,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -6989,6 +7065,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -7036,6 +7124,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -7089,6 +7178,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -7251,6 +7346,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -7269,6 +7367,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -7470,6 +7569,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -7680,6 +7782,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -7759,6 +7864,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:jsx] > shou
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -8025,7 +8133,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -8042,13 +8150,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -9297,6 +9405,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -9571,7 +9680,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -9594,6 +9703,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -9640,6 +9752,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -9687,6 +9811,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -9740,6 +9865,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -9902,6 +10033,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -9920,6 +10054,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -10121,6 +10256,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -10331,6 +10469,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -10410,6 +10551,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:js][ext:mjs] > shou
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -10676,7 +10820,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -10693,13 +10837,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -11957,6 +12101,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -12234,7 +12379,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -12257,6 +12402,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -12303,6 +12451,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -12353,6 +12513,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -12420,6 +12581,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -12581,6 +12748,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -12599,6 +12769,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -12800,6 +12971,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -13010,6 +13184,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -13089,6 +13266,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:cts] > shou
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -13380,7 +13560,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -13397,11 +13577,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -14206,6 +14386,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -14451,7 +14632,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -14471,6 +14652,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -14507,6 +14691,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -14554,6 +14750,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -14615,6 +14812,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -14773,6 +14976,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -14791,6 +14997,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -14992,6 +15199,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -15202,6 +15412,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -15281,6 +15494,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.css.ts] >
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -15572,7 +15788,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -15589,11 +15805,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -16401,6 +16617,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -16646,7 +16863,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -16666,6 +16883,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -16702,6 +16922,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -16749,6 +16981,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -16810,6 +17043,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -16968,6 +17207,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -16986,6 +17228,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -17187,6 +17430,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -17397,6 +17643,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -17476,6 +17725,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.cts] > sh
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -17767,7 +18019,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -17784,11 +18036,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -18593,6 +18845,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -18838,7 +19091,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -18858,6 +19111,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -18894,6 +19150,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -18941,6 +19209,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -19002,6 +19271,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -19160,6 +19435,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -19178,6 +19456,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -19379,6 +19658,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -19589,6 +19871,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -19668,6 +19953,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.mts] > sh
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -19959,7 +20247,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -19976,11 +20264,11 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -20785,6 +21073,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -21030,7 +21319,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -21050,6 +21339,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -21086,6 +21378,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -21133,6 +21437,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -21194,6 +21499,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -21352,6 +21663,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -21370,6 +21684,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -21571,6 +21886,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -21781,6 +22099,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -21860,6 +22181,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:d.ts] > sho
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -22151,7 +22475,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -22168,13 +22492,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -23429,6 +23753,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -23706,7 +24031,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -23729,6 +24054,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -23775,6 +24103,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -23825,6 +24165,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -23892,6 +24233,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -24053,6 +24400,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -24071,6 +24421,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -24272,6 +24623,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -24482,6 +24836,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -24561,6 +24918,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:mts] > shou
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -24852,7 +25212,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -24869,13 +25229,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -26130,6 +26490,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -26407,7 +26768,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -26430,6 +26791,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -26476,6 +26840,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -26526,6 +26902,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -26593,6 +26970,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -26754,6 +27137,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -26772,6 +27158,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -26973,6 +27360,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -27183,6 +27573,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -27262,6 +27655,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:ts] > shoul
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -27553,7 +27949,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {
@@ -27570,13 +27966,13 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -28831,6 +29227,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -29108,7 +29505,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -29131,6 +29528,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -29177,6 +29577,18 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -29227,6 +29639,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -29294,6 +29707,12 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -29455,6 +29874,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -29473,6 +29895,7 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -29674,6 +30097,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -29884,6 +30310,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -29963,6 +30392,9 @@ exports[`Snapshot testing > [with-js/type-checked.auto][lang:ts][ext:tsx] > shou
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,

@@ -1,5 +1,3 @@
-import type { ExtendsElement } from "@eslint/config-helpers";
-import type { Plugin } from "@eslint/core";
 import Functional from "eslint-plugin-functional";
 import { defineConfig } from "eslint/config";
 
@@ -11,7 +9,7 @@ export const functionalRuleset = () =>
 		files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
 		ignores: ["**/*.d.*"],
 		plugins: {
-			functional: Functional as Plugin,
+			functional: Functional,
 		},
 		rules: {
 			"functional/immutable-data": [
@@ -48,14 +46,14 @@ export const autoDisableTypeAwareFunctionalRules = (options: config.Options) => 
 		return defineConfig({
 			name: "@touchspot/eslint-config/rulesets/functional/disable-type-aware/all",
 			files: ["**/*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"],
-			extends: [Functional.configs.disableTypeChecked as ExtendsElement],
+			extends: [Functional.configs.disableTypeChecked],
 		});
 	}
 	if (options.enableTypeAwareRules?.js == null) {
 		return defineConfig({
 			name: "@touchspot/eslint-config/rulesets/functional/disable-type-aware/js",
 			files: ["**/*.{js,jsx,mjs,cjs}"],
-			extends: [Functional.configs.disableTypeChecked as ExtendsElement],
+			extends: [Functional.configs.disableTypeChecked],
 		});
 	}
 	return [];

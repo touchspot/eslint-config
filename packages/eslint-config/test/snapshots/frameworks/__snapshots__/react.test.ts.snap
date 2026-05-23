@@ -69,7 +69,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -83,13 +83,13 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
@@ -1401,6 +1401,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -1675,7 +1676,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -1698,6 +1699,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -1744,6 +1748,18 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -1791,6 +1807,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -1846,14 +1863,17 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
         "allowEmptyReject": false,
       },
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -2060,6 +2080,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -2078,6 +2101,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -2279,6 +2303,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -2489,6 +2516,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -2568,6 +2598,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:cjs] > should match 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -2834,7 +2867,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -2848,13 +2881,13 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
@@ -4163,6 +4196,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -4437,7 +4471,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -4460,6 +4494,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -4506,6 +4543,18 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -4553,6 +4602,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -4608,14 +4658,17 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
         "allowEmptyReject": false,
       },
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -4822,6 +4875,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -4840,6 +4896,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -5041,6 +5098,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -5251,6 +5311,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -5330,6 +5393,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:js] > should match s
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -5596,7 +5662,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -5614,13 +5680,13 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
@@ -6930,6 +6996,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -7204,7 +7271,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -7227,6 +7294,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -7273,6 +7343,18 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -7320,6 +7402,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -7375,14 +7458,17 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
         "allowEmptyReject": false,
       },
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -7686,6 +7772,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -7704,6 +7793,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -7905,6 +7995,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -8115,6 +8208,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -8194,6 +8290,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:jsx] > should match 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -8463,7 +8562,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -8477,13 +8576,13 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
@@ -9792,6 +9891,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -10066,7 +10166,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -10089,6 +10189,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -10135,6 +10238,18 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -10182,6 +10297,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -10237,14 +10353,17 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
         "allowEmptyReject": false,
       },
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -10451,6 +10570,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -10469,6 +10591,7 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -10670,6 +10793,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -10880,6 +11006,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -10959,6 +11088,9 @@ exports[`Snapshot testing > [frameworks/react][lang:js][ext:mjs] > should match 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -11225,7 +11357,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -11240,13 +11372,13 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
@@ -12510,6 +12642,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -12787,7 +12920,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -12810,6 +12943,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -12856,6 +12992,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -12906,6 +13054,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -12974,14 +13123,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -13188,6 +13340,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -13206,6 +13361,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -13407,6 +13563,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -13617,6 +13776,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -13696,6 +13858,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:cts] > should match 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -13987,7 +14152,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -14002,11 +14167,11 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
   "processor": undefined,
@@ -14812,6 +14977,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -15057,7 +15223,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -15077,6 +15243,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -15113,6 +15282,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -15160,6 +15341,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -15222,14 +15404,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -15433,6 +15618,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -15451,6 +15639,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -15652,6 +15841,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -15862,6 +16054,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -15941,6 +16136,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.css.ts] > should m
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -16232,7 +16430,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -16247,11 +16445,11 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
   "processor": undefined,
@@ -17060,6 +17258,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -17305,7 +17504,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -17325,6 +17524,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -17361,6 +17563,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -17408,6 +17622,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -17470,14 +17685,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -17681,6 +17899,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -17699,6 +17920,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -17900,6 +18122,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -18110,6 +18335,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -18189,6 +18417,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.cts] > should matc
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -18480,7 +18711,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -18495,11 +18726,11 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
   "processor": undefined,
@@ -19305,6 +19536,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -19550,7 +19782,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -19570,6 +19802,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -19606,6 +19841,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -19653,6 +19900,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -19715,14 +19963,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -19926,6 +20177,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -19944,6 +20198,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -20145,6 +20400,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -20355,6 +20613,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -20434,6 +20695,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.mts] > should matc
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -20725,7 +20989,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -20740,11 +21004,11 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
   "processor": undefined,
@@ -21550,6 +21814,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -21795,7 +22060,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -21815,6 +22080,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -21851,6 +22119,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -21898,6 +22178,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -21960,14 +22241,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -22171,6 +22455,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -22189,6 +22476,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -22390,6 +22678,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -22600,6 +22891,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -22679,6 +22973,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:d.ts] > should match
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -22970,7 +23267,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -22985,13 +23282,13 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
@@ -24252,6 +24549,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -24529,7 +24827,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -24552,6 +24850,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -24598,6 +24899,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -24648,6 +24961,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -24716,14 +25030,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -24930,6 +25247,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -24948,6 +25268,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -25149,6 +25470,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -25359,6 +25683,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -25438,6 +25765,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:mts] > should match 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -25729,7 +26059,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -25744,13 +26074,13 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
   ],
@@ -27011,6 +27341,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -27288,7 +27619,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -27311,6 +27642,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -27357,6 +27691,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -27407,6 +27753,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -27475,14 +27822,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -27689,6 +28039,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -27707,6 +28060,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -27908,6 +28262,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -28118,6 +28475,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -28197,6 +28557,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:ts] > should match s
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -28488,7 +28851,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -28507,13 +28870,13 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
     "react",
     "react-hooks:eslint-plugin-react-hooks@7.0.0",
@@ -29775,6 +30138,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -30052,7 +30416,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -30075,6 +30439,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -30121,6 +30488,18 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -30171,6 +30550,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -30239,14 +30619,17 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     "prefer-spread": [
       2,
     ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
+    ],
     "quote-props": [
       0,
     ],
     "quotes": [
       0,
-    ],
-    "react-hooks/component-hook-factories": [
-      2,
     ],
     "react-hooks/config": [
       2,
@@ -30550,6 +30933,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -30568,6 +30954,7 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -30769,6 +31156,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -30979,6 +31369,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -31058,6 +31451,9 @@ exports[`Snapshot testing > [frameworks/react][lang:ts][ext:tsx] > should match 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,

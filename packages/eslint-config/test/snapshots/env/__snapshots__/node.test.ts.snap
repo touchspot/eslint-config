@@ -151,7 +151,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -165,13 +165,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -1477,6 +1477,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -1751,7 +1752,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -1774,6 +1775,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -1820,6 +1824,18 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -1867,6 +1883,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -1920,6 +1937,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -2082,6 +2105,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -2100,6 +2126,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -2301,6 +2328,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -2511,6 +2541,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -2590,6 +2623,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:cjs] > should match snapshot
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -2938,7 +2974,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -2952,13 +2988,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -4261,6 +4297,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -4535,7 +4572,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -4558,6 +4595,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -4604,6 +4644,18 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -4651,6 +4703,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -4704,6 +4757,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -4866,6 +4925,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -4884,6 +4946,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -5085,6 +5148,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -5295,6 +5361,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -5374,6 +5443,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:js] > should match snapshot 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -5722,7 +5794,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -5736,13 +5808,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -7045,6 +7117,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -7319,7 +7392,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -7342,6 +7415,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -7388,6 +7464,18 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -7435,6 +7523,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -7488,6 +7577,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -7650,6 +7745,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -7668,6 +7766,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -7869,6 +7968,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -8079,6 +8181,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -8158,6 +8263,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:jsx] > should match snapshot
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -8506,7 +8614,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "program": null,
       "project": false,
@@ -8520,13 +8628,13 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -9829,6 +9937,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -10103,7 +10212,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -10126,6 +10235,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       2,
@@ -10172,6 +10284,18 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -10219,6 +10343,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -10272,6 +10397,12 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       0,
       {
         "allowEmptyReject": false,
+      },
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
       },
     ],
     "quote-props": [
@@ -10434,6 +10565,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -10452,6 +10586,7 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -10653,6 +10788,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -10863,6 +11001,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -10942,6 +11083,9 @@ exports[`Snapshot testing > [env/node][lang:js][ext:mjs] > should match snapshot
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -11290,7 +11434,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -11305,13 +11449,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -12569,6 +12713,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -12846,7 +12991,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -12869,6 +13014,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -12915,6 +13063,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -12965,6 +13125,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -13032,6 +13193,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -13193,6 +13360,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -13211,6 +13381,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -13412,6 +13583,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -13622,6 +13796,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -13701,6 +13878,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:cts] > should match snapshot
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -14074,7 +14254,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -14089,11 +14269,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -14898,6 +15078,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -15143,7 +15324,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -15163,6 +15344,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -15199,6 +15383,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -15246,6 +15442,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -15307,6 +15504,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -15465,6 +15668,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -15483,6 +15689,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -15684,6 +15891,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -15894,6 +16104,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -15973,6 +16186,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.css.ts] > should match sna
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -16346,7 +16562,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -16361,11 +16577,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -17173,6 +17389,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -17418,7 +17635,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -17438,6 +17655,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -17474,6 +17694,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -17521,6 +17753,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -17582,6 +17815,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -17740,6 +17979,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -17758,6 +18000,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -17959,6 +18202,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -18169,6 +18415,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -18248,6 +18497,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.cts] > should match snapsh
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -18621,7 +18873,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -18636,11 +18888,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -19445,6 +19697,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -19690,7 +19943,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -19710,6 +19963,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -19746,6 +20002,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -19793,6 +20061,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -19854,6 +20123,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -20012,6 +20287,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -20030,6 +20308,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -20231,6 +20510,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -20441,6 +20723,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -20520,6 +20805,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.mts] > should match snapsh
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -20893,7 +21181,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -20908,11 +21196,11 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
   ],
   "processor": undefined,
   "rules": {
@@ -21717,6 +22005,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -21962,7 +22251,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -21982,6 +22271,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -22018,6 +22310,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -22065,6 +22369,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -22126,6 +22431,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -22284,6 +22595,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -22302,6 +22616,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -22503,6 +22818,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -22713,6 +23031,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -22792,6 +23113,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:d.ts] > should match snapsho
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -23165,7 +23489,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -23180,13 +23504,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -24441,6 +24765,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -24718,7 +25043,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -24741,6 +25066,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -24787,6 +25115,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -24837,6 +25177,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -24904,6 +25245,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -25065,6 +25412,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -25083,6 +25433,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -25284,6 +25635,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -25494,6 +25848,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -25573,6 +25930,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:mts] > should match snapshot
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -25946,7 +26306,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -25961,13 +26321,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -27222,6 +27582,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -27499,7 +27860,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -27522,6 +27883,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -27568,6 +27932,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -27618,6 +27994,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -27685,6 +28062,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -27846,6 +28229,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -27864,6 +28250,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -28065,6 +28452,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -28275,6 +28665,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -28354,6 +28747,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:ts] > should match snapshot 
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,
@@ -28727,7 +29123,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       "undefined": false,
       "unescape": false,
     },
-    "parser": "typescript-eslint/parser@8.57.1",
+    "parser": "typescript-eslint/parser@8.59.4",
     "parserOptions": {
       "projectService": {
         "allowDefaultProject": {},
@@ -28742,13 +29138,13 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
   },
   "plugins": [
     "@",
-    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.57.1",
-    "unicorn:eslint-plugin-unicorn@63.0.0",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin@8.59.4",
+    "unicorn:eslint-plugin-unicorn@64.0.0",
     "import-x:eslint-plugin-import-x@4.16.2",
     "unused-imports:unused-imports",
     "no-relative-import-paths",
-    "functional:eslint-plugin-functional@9.0.4",
-    "perfectionist:eslint-plugin-perfectionist@5.6.0",
+    "functional:eslint-plugin-functional@9.0.5",
+    "perfectionist:eslint-plugin-perfectionist@5.9.0",
     "check-file:eslint-plugin-check-file@3.3.1",
   ],
   "processor": undefined,
@@ -30003,6 +30399,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "max-params": [
       2,
+      3,
     ],
     "max-statements-per-line": [
       0,
@@ -30280,7 +30677,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     "no-shadow-restricted-names": [
       2,
       {
-        "reportGlobalThis": false,
+        "reportGlobalThis": true,
       },
     ],
     "no-space-before-semi": [
@@ -30303,6 +30700,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "no-trailing-spaces": [
       0,
+    ],
+    "no-unassigned-vars": [
+      2,
     ],
     "no-undef": [
       0,
@@ -30349,6 +30749,18 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "no-unused-vars": [
       0,
+      {
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreClassWithStaticInitBlock": false,
+        "ignoreRestSiblings": false,
+        "ignoreUsingDeclarations": false,
+        "reportUsedIgnorePattern": false,
+        "vars": "all",
+      },
+    ],
+    "no-useless-assignment": [
+      2,
     ],
     "no-useless-backreference": [
       2,
@@ -30399,6 +30811,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "object-shorthand": [
       2,
+      "always",
     ],
     "one-var-declaration-per-line": [
       0,
@@ -30466,6 +30879,12 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     ],
     "prefer-spread": [
       2,
+    ],
+    "preserve-caught-error": [
+      2,
+      {
+        "requireCatchParameter": false,
+      },
     ],
     "quote-props": [
       0,
@@ -30627,6 +31046,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
         "checkArrowFunctions": false,
       },
     ],
+    "unicorn/consistent-template-literal-escape": [
+      2,
+    ],
     "unicorn/custom-error-definition": [
       0,
     ],
@@ -30645,6 +31067,7 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       {
         "allowWarningComments": true,
         "ignore": [],
+        "ignoreDates": false,
         "ignoreDatesOnPullRequests": true,
         "terms": [
           "todo",
@@ -30846,6 +31269,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
       2,
     ],
     "unicorn/no-useless-fallback-in-spread": [
+      2,
+    ],
+    "unicorn/no-useless-iterator-to-array": [
       2,
     ],
     "unicorn/no-useless-length-check": [
@@ -31056,6 +31482,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     "unicorn/prefer-set-size": [
       2,
     ],
+    "unicorn/prefer-simple-condition-first": [
+      2,
+    ],
     "unicorn/prefer-single-call": [
       2,
       {
@@ -31135,6 +31564,9 @@ exports[`Snapshot testing > [env/node][lang:ts][ext:tsx] > should match snapshot
     "unicorn/switch-case-braces": [
       2,
       "always",
+    ],
+    "unicorn/switch-case-break-position": [
+      2,
     ],
     "unicorn/template-indent": [
       0,

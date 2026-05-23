@@ -1,3 +1,4 @@
+import { fixupConfigRules } from "@eslint/compat";
 import React from "eslint-plugin-react";
 import { defineConfig } from "eslint/config";
 
@@ -5,7 +6,7 @@ export const reactRuleset = () =>
 	defineConfig({
 		name: "@touchspot/eslint-config/rulesets/react",
 		files: ["**/*.{jsx,tsx}"],
-		extends: [React.configs.flat["recommended"] ?? {}, React.configs.flat["jsx-runtime"] ?? {}],
+		extends: fixupConfigRules([React.configs.flat["recommended"] ?? {}, React.configs.flat["jsx-runtime"] ?? {}]),
 		languageOptions: {
 			parserOptions: {
 				jsxPragma: null,
